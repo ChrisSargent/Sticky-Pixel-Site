@@ -1,0 +1,75 @@
+/*------ Buttons ------*/
+button,
+a.button
+    color: $main-text-color
+    font-size: 14px
+    line-height: 2.5em
+    text-decoration: none
+    padding: 0 1.5em
+    display: inline-block
+    cursor: pointer
+    border-radius: 2px
+
+.social-buttons a.button
+    color: $muted
+    font-weight: bold
+    text-transform: uppercase
+    margin: 0 0.1em
+    border: $thinborder $mid-trans
+
+    &:hover,
+    &:focus,
+    &:active
+        color: $main-text-color
+        background-color: $brand-color
+        border-color: $hi-trans
+        [class^="icon-"],
+        [class*=" icon-"]
+            color: $main-text-color
+
+    [class^="icon-"],
+    [class*=" icon-"]
+        transition: all .2s ease-in-out
+        margin-left: 10px
+        font-size: 15px
+        color: $muted
+
+    @media #{$btnsBreak}
+        display: block
+        margin: 0 auto 1em auto
+        width: 90%
+        max-width: 300px
+        &:last-child
+            margin-bottom: 0px
+
+input
+    @extend button
+    font-size: 14px
+    width: 90%
+    max-width: 300px
+    background-color: white
+    border-radius: 0
+    vertical-align: top
+    height: 40px
+    -webkit-appearance: none
+    -webkit-text-size-adjust: none
+    &[type="email"]
+        text-transform: inherit
+        color: $mutedDark
+        cursor: auto
+    &[type="submit"]
+        background-color: $brand-color
+        text-transform: uppercase
+        letter-spacing: 2px
+        &:hover,
+        &:focus,
+        &:active
+            background-color: $brand-color-highlighted
+
+    @media #{$mediumScreen}
+        display: block
+        margin: 0 auto
+        margin-bottom: 2px
+
+.form-contact
+    margin: 2em 0

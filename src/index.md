@@ -21,7 +21,7 @@ links:
     -   url: "#contact"
         text: Contact Us
 ---
-{% assign sections = site.home | sort:"order" | where: "type", "home" %}
+{% assign sections = site.home | sort:"order" | where: "homesection", true %}
 
 <main>
     {% for page in sections %}

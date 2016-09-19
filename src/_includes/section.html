@@ -1,6 +1,8 @@
-<section id="{{ page.id }}" {% if page.classes %}class="{{ page.classes }}" {% endif %}{% if page.bg %}style="background-image: url({{site.assets}}/img/{{ page.bg }})" {% endif %}>
+<section id="{{ page.sectionid }}"{% if page.classes %} class="{{ page.classes }}"{% endif %}{% if page.bg %} style="background-image: url({{site.assets}}/img/{{ page.bg }})"{% endif %}>
   <div class="container">
     {% if page.title %}
-    <h1>{{ page.title }}</h1>{% endif %} {{ page.content }}
+    <h1>{{ page.title }}</h1>
+    {% endif %}
+    {{ page.content }}
   </div>
 </section>

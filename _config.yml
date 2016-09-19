@@ -28,7 +28,7 @@ address: 29 Crick Road, Rugby, Warwickshire, CV21 4DU
 fraddress: Le Saphir, Rue Bricka, Juan&#8209;les&#8209;Pins, 06160 France
 legal_name: Sticky Pixel Ltd
 company_no: 6849452
-assets: 'assets'
+assets: '/assets'
 
 # Build settings
 markdown: kramdown
@@ -36,7 +36,7 @@ source: src
 destination: dist
 exclude: [assets]
 keep_files: [assets]
-incremental: true
+incremental: false
 collections:
   home:
     output: true

@@ -4,6 +4,7 @@ type: team
 order: 1
 layout: landing-page
 image: chris.jpg
+published: true
 ---
 
 <p>Joint founder and our Digital Director, Chris&nbsp;is responsible for the development and operations of the business. With a background in Technology and Business Development, Chris has not only the expertise to successfully build your digital project, but also a keen understanding of what is most important for our customers.</p>

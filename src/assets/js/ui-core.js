@@ -2,55 +2,101 @@
  * Custom Sticky Pixel Javascript
  */
 
-var StickyPixel = {
 
-	init: function() {
-		cache = this.cacheDom;
-		this.bindUIActions();
-	},
+var StickyPixel = (function() {
+  var uiCache = {};
+  var last_known_scroll_position = 0;
+  var ticking = false;
 
-	cacheDom: {
-		$mainNav: $('#main-nav'),
-		$window: $(window),
-		$page: $('html, body'),
-		$intLink: $('a[href^="#"]'),
-		$mobileNavCheck: $('#mobile-nav-check')
-	},
+  function _init() {
+    _cacheDom();
+    _bindUIActions();
+    _writeURLToInput();
+  };
 
-	bindUIActions: function() {
-		cacheThis = this;
-		cache.$window.bind('scroll', this.shrinkMainNav);
-		cache.$intLink.bind('click', this.pageScroll);
-	},
+  function _cacheDom() {
+    uiCache = {
+      mainNav: document.getElementById('main-nav'),
+      mobileNavCheck: document.getElementById('mobile-nav-check'),
+      intLinks: document.querySelectorAll('a[href^="#"]'),
+    }
+  };
 
-	shrinkMainNav: function() {
-		if (cache.$mainNav.offset().top > 50) {
-			cache.$mainNav.addClass('navbar-shrink');
-		} else if (cache.$mainNav.offset().top <= 50) {
-			cache.$mainNav.removeClass('navbar-shrink');
-		}
+  function _bindUIActions() {
+    // Throttle scroll event with request animation frame: https://developer.mozilla.org/en-US/docs/Web/Events/scroll
+    window.addEventListener('scroll', function(e) {
+      last_known_scroll_position = window.scrollY;
+      if (!ticking) {
+        window.requestAnimationFrame(function() {
+          _shrinkMainNav(last_known_scroll_position);
+          ticking = false;
+        });
+      }
+      ticking = true;
+    });
+    for (var i = 0; i < uiCache.intLinks.length; i++) {
+      uiCache.intLinks[i].addEventListener('click', _pageScroll);
+    }
+  };
 
-	},
+  function _shrinkMainNav(scrollPos) {
+    if (scrollPos > 50) {
+      uiCache.mainNav.classList.add('navbar-shrink');
+    } else if (scrollPos <= 50) {
+      uiCache.mainNav.classList.remove('navbar-shrink');
+    }
+  };
 
-	pageScroll: function(event) {
-		event.preventDefault();
-		StickyPixel.hideMobileNav();
-		$anchor = $($(this).attr('href'));
+  function _pageScroll(event) {
+    var targetId, targetEl;
+    event.preventDefault();
+    _hideMobileNav();
 
-		cache.$page.stop().animate({
-			scrollTop: $anchor.offset().top
-		}, 1000, 'easeInOutExpo');
-	},
+    targetId = event.target.hash.split('#')[1];
+    targetEl = document.getElementById(targetId);
+    _scrollTo(document.body, targetEl.offsetTop, 450);
+  };
 
-	hideMobileNav: function(event) {
-		cache.$mobileNavCheck.prop('checked', false);
-	}
-};
+  function _scrollTo(element, to, duration) {
+    var start = element.scrollTop,
+      change = to - start,
+      increment = 20;
 
-// Submit Form - writes document URL to a hidden field
-var currURL = document.location.href;
-document.getElementById("fieldukkddk").value = currURL;
+    var _animateScroll = function(elapsedTime) {
+      elapsedTime += increment;
+      var position = _easeInOut(elapsedTime, start, change, duration);
+      element.scrollTop = position;
+      if (elapsedTime < duration) {
+        setTimeout(function() {
+          _animateScroll(elapsedTime);
+        }, increment);
+      }
+    };
 
-(function() {
-	StickyPixel.init();
+    _animateScroll(0);
+  }
+
+  function _easeInOut(currentTime, start, change, duration) {
+    currentTime /= duration / 2;
+    if (currentTime < 1) {
+      return change / 2 * currentTime * currentTime + start;
+    }
+    currentTime -= 1;
+    return -change / 2 * (currentTime * (currentTime - 2) - 1) + start;
+  }
+
+
+  function _hideMobileNav(event) {
+    uiCache.mobileNavCheck.checked = false;
+  };
+
+  function _writeURLToInput() {
+    // Submit Form - writes document URL to a hidden field
+    var currURL = document.location.href;
+    document.getElementById("fieldukkddk").value = currURL;
+  };
+
+
+  // Run the Initialise Function when the Dom is ready
+  _init();
 })();

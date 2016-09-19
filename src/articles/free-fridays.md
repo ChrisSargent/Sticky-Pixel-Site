@@ -6,6 +6,7 @@ heading_pre: Working on a
 heading_post: non-profit project?
 sub_heading: Then ask us about our Philanthropic Fridays!
 title: Free Philanthropic Web Development
+published: true
 buttons:
     -   url: "#free-fridays"
         text: Learn More &#x25BE;

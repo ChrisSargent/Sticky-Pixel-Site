@@ -7,6 +7,7 @@ heading_pre: Ready to build some
 heading_post: beautiful websites?
 sub_heading: Then let us know because we're hiring
 title: Front End Developer
+published: true
 buttons:
     -   url: "#front-end-developer"
         text: Learn More &#x25BE;

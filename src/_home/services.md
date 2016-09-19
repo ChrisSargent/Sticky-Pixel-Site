@@ -1,13 +1,14 @@
 ---
 title: Services
-id: services
+sectionid: services
 classes: detailed-section
-type: home
+homesection: true
 order: 2
 layout: landing-page
+published: true
 ---
 
-##Digital Design and Development
+## Digital Design and Development
 Our core business is building the things you see; the look, feel and interaction of your website or application. We use the latest HTML, CSS and Javascript technologies and naturally our work looks delicious on all devices.
 
 <div class="cleared">
@@ -26,7 +27,8 @@ Our core business is building the things you see; the look, feel and interaction
     </div>
 </div>
 
-##Digital Marketing
+
+## Digital Marketing
 We care about our client’s stories and we go out of our way to ensure they are told in the most compelling way. We are big believers of using inbound marketing strategies and amazing content to drive traffic your way. Whether you need to generate more leads, increase your brand recognition or convert more prospects we’ll have some ideas that we think you’ll love.
 
 <div class="cleared">

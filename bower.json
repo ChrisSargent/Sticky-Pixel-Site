@@ -5,10 +5,6 @@
         "Chris Sargent <chris@stickypixel.com>"
     ],
     "description": "Website for Sticky Pixel.",
-    "main": [
-        "js/scripts.js",
-        "sass/spx-custom.js"
-    ],
     "license": "MIT",
     "homepage": "www.stickypixel.com",
     "ignore": [

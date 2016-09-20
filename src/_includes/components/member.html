@@ -1,0 +1,8 @@
+<div class="member js__act--fuf-00">
+  <img src="{{ site.assets }}/img/{{ member.image }}" alt="{{ member.title }}" width="356" height="356">
+  <h2>
+    {{ member.name }}
+    <small>{{ member.title }}</small>
+  </h2>
+  {{ member.content | markdownify }}
+</div>

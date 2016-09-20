@@ -1,0 +1,33 @@
+.member
+  img
+    float: left
+    width: 50%
+    height: auto
+    padding-right: 0.5em
+    margin: 0 0.5em 1em 0
+    transition: all 0.2s ease-in-out
+
+  p
+    clear: both
+
+.has__bgimg
+  color: $co--wt
+
+#contact
+  text-align: center
+
+@media (min-width: $bp--m)
+  .member
+    img
+      width: 30%
+
+      filter: grayscale(100%)
+      filter: gray
+
+      &:hover
+        filter: grayscale(0%)
+        filter: none
+
+    p
+      clear: none
+      overflow: hidden

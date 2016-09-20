@@ -1,0 +1,25 @@
+.form--contact
+  margin: 2em 0
+
+  input
+    font-weight: 300
+    display: block
+    width: 90%
+    max-width: 300px
+    height: $ia-min-size
+    margin: 0 auto
+    vertical-align: middle
+
+    &[type='email']
+      font-size: $fs--s
+      margin-bottom: 2px
+      color: $co--gr--mdk
+      border: $ln--thin $co--gr--lt
+
+  @media (min-width: $bp--m)
+    input
+      display: inline-block
+      margin: 0
+
+      &[type='email']
+        margin-bottom: 0

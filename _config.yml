@@ -25,7 +25,7 @@ telephone: +33 652 15 13 00
 foundingDate: 2015-05-01
 founder: Chris Sargent
 address: 29 Crick Road, Rugby, Warwickshire, CV21 4DU
-fraddress: Le Saphir, Rue Bricka, Juan&#8209;les&#8209;Pins, 06160 France
+fraddress: Le Saphir, Rue Bricka, Juan&#8209;les&#8209;Pins, 06160&nbsp;France
 legal_name: Sticky Pixel Ltd
 company_no: 6849452
 assets: '/assets'
@@ -44,13 +44,17 @@ collections:
     output: true
 
 landing_links:
-  - url: "/index.html"
+  - url: ""
     text: Home
-  - url: "/index.html#about"
+  - url: "#about"
     text: About Us
-  - url: "/index.html#services"
+  - url: "#services"
     text: Services
-  - url: "/index.html#team"
-    text: Our Team
-  - url: "/index.html#contact"
+  - url: "#team"
+    text: Team
+  - url: "careers/front-end-developer.html"
+    text: Careers
+  - url: "articles/free-fridays.html"
+    text: Free Fridays
+  - url: "#contact"
     text: Contact Us

@@ -1,19 +1,20 @@
 {
-    "name": "StickyPixel",
-    "version": "1.0.0",
-    "authors": [
-        "Chris Sargent <chris@stickypixel.com>"
-    ],
-    "description": "Website for Sticky Pixel.",
-    "license": "MIT",
-    "homepage": "www.stickypixel.com",
-    "ignore": [
-        "**/.*",
-        "node_modules",
-        "bower_components"
-    ],
-    "dependencies": {
-        "jquery": "~2.1.4"
-    },
-    "devDependencies": {}
+  "name": "stickypixel",
+  "version": "1.2.1",
+  "authors": [
+    "Chris Sargent <chris@stickypixel.com>"
+  ],
+  "description": "Website for Sticky Pixel.",
+  "license": "MIT",
+  "homepage": "www.stickypixel.com",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components"
+  ],
+  "dependencies": {
+    "reset-css": "^2.0.2011012603",
+    "scrollmagic": "^2.0.5"
+  },
+  "devDependencies": {}
 }

@@ -1,0 +1,52 @@
+.logo__text
+  fill: currentColor
+
+.header--primary
+  position: fixed
+  z-index: 1
+  top: 0
+  right: 0
+  left: 0
+  transition: all 0.5s ease-in-out
+  color: $co--wt
+  border-bottom: $ln--thin $co--brand
+  background-color: $co--header
+
+  .logo
+    font-size: $fs--s
+    line-height: 5em
+    position: absolute
+    top: 0
+    left: 0
+    display: block
+    padding: 0.5em
+    color: inherit
+
+  svg
+    display: block
+    width: auto
+    height: 30px
+
+@media (min-width: $bp--nav)
+  .header--primary
+    color: $co--bk
+    border-bottom: $ln--thin transparent
+    background-color: transparent
+
+    .logo
+      svg
+        height: 40px
+
+    .logo__text
+      fill: $co--bk
+
+    &.header--primary-shrink
+      color: $co--wt
+      background-color: $co--header
+      border-bottom: $ln--thin transparentize($co--brand, 0.5)
+
+      .logo
+        padding: 4px 0.5em
+
+      .logo__text
+          fill: $co--wt

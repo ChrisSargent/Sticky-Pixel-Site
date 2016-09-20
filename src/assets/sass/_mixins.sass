@@ -1,0 +1,29 @@
+=input-reset
+  -webkit-appearance: none
+  appearance: none
+  font: inherit
+  font-weight: 300
+  line-height: $ia-min-size
+  min-width: $ia-min-size
+  min-height: $ia-min-size
+  padding: 0 1.2em
+  white-space: nowrap
+  text-decoration: none
+  border: 0
+  border-radius: 0
+
+=clearfix
+  &:after
+    content: " "
+    display: table
+    clear: both
+
+=sr-only
+  position: absolute
+  overflow: hidden
+  clip: rect(0, 0, 0, 0)
+  width: 1px
+  height: 1px
+  margin: -1px
+  padding: 0
+  border: 0

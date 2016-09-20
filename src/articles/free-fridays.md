@@ -1,5 +1,5 @@
 ---
-layout: single-section
+layout: page
 category: article
 id: free-fridays
 heading_pre: Working on a
@@ -7,6 +7,7 @@ heading_post: non-profit project?
 sub_heading: Then ask us about our Philanthropic Fridays!
 title: Free Philanthropic Web Development
 published: true
+cont_size: --s
 buttons:
     -   url: "#free-fridays"
         text: Learn More &#x25BE;

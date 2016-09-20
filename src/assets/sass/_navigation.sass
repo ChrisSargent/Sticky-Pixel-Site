@@ -1,116 +1,100 @@
-.navbar
-    position: fixed
-    right: 0
-    left: 0
-    top: 0
-    z-index: 1
-    transition: all 0.5s ease-in-out
-    border-bottom: $thinborder transparent
-    background-color: transparent
+.page__home
+  .nav--primary
+    a[href=""]
+      display: none
 
-    .nav-list-container
-        float: right
-        margin-right: 0.5em
-        transition: all 0.1s ease-in-out
-        /* Transition hiding the menu */
+
+.nav--primary
+  overflow: scroll
+  width: 100%
+  transition: all 0.1s ease-in-out
+  background-color: rgba(0, 0, 0, 0.5)
+
+  a
+    font-size: $fs--s
+    line-height: 5em
+    display: block
+    padding: 0 1em
+    transition: all 0.2s ease-in-out
+    text-align: center
+    white-space: nowrap
+    text-decoration: none
+    letter-spacing: 0.5px
+    text-transform: uppercase
+    color: $co--wt
+    border-top: $ln--thin $co--gr--dk
+
+    &:hover,
+    &.active
+      background-color: $co--gr--lt
+
+.nav__toggle
+  display: block
+  float: right
+  min-width: $ia-min-size
+  min-height: $ia-min-size
+  padding: 0 1em
+
+.i--bars
+  position: relative
+  top: 14px
+  display: block
+  width: 24px
+  height: 2px
+  margin: 0 auto
+  background-color: currentColor
+
+  &::before,
+  &::after
+    @extend .i--bars
+
+    content: ' '
+    position: relative
+    top: 7px
+    display: block
+    margin-bottom: 5px
+
+#nav--primary
+  max-height: 0
+
+#nav__toggle--primary
+  +sr-only
+
+  &:checked + #nav--primary
+    max-height: 400px
+    transition: all 0.2s ease-in-out
+
+    /* Transition displaying the menu
+
+@media (min-width: $bp--nav)
+  #nav--primary
+    max-height: none
+
+  #nav__toggle--primary,
+  .nav__toggle
+    display: none
+
+  .nav--primary
+    background: none
+    float: right
+    width: auto
+    margin-right: 0.5em
 
     li
-        float: left
+      float: left
+      margin: 0
 
-        + li
-            margin-left: 0.2em
-        a
-            display: block
-            text-transform: uppercase
-            font-size: $xsmall
-            font-weight: 700
-            text-align: center
-            line-height: 46px
-            padding: 0 1em
-            margin: 10px 0
-            transition: all 0.2s ease-in-out
-            color: $main-text-color
-            letter-spacing: 2px
-            text-decoration: none
+      + li
+        margin-left: 0.2em
 
-            &:hover,
-            &.active
-                background-color: $nav-hover-bgcolor
+    a
+      line-height: 60px
+      color: $co--bk
+      margin: 0
+      border: 0
+      font-weight: 300
 
-            @media #{$navBreakToLarge}
-                font-size: $xxsmall
-
-    .menu-toggle
-        display: none
-
-    .logo
-        display: inline-block
-        height: 40px
-        margin: 10px 10px
-
-    &.navbar-shrink
-        border-bottom: $thinborder $nav-border-bottom-colour
-        background-color: $nav-bar-color
-        .nav-list-container a
-            margin: 0
-        .logo
-            margin: 3px 10px
-
-    @media #{$navBreak}
-        padding: 0
-
-        .logo
-            margin: 6px 10px
-
-        &.navbar-shrink
-            border-bottom: $thinborder $nav-border-bottom-colour
-            background-color: $nav-bar-color
-
-            .logo
-                margin: 6px 10px
-
-        .nav-list-container
-            float: none
-            width: 100%
-            max-height: 0px
-            overflow: scroll
-            background-color: #000
-            margin: 0
-
-            li
-                float: none
-                margin: 0
-            a
-                border-top: $thinborder $mob-nav-seperator
-                margin: 0
-                padding: 1em 1em
-
-        .menu-toggle
-            display: block
-            float: right
-            height: 52px
-            padding: 13px 1em
-
-        .menu-bars
-            display: block
-            width: 30px
-            height: 4px
-            background-color: white
-            border-radius: 2px
-            &::before,
-            &::after
-                @extend .menu-bars
-                content: ' '
-                display: block
-                position: relative
-                top: 10px
-                margin-bottom: 6px
-                clear: both
-
-input#mobile-nav-check
-    display: none
-    @media #{$navBreak}
-        &:checked + .nav-list-container
-            max-height: 400px
-            transition: all 0.2s ease-in-out
-            /* Transition displaying the menu */
+    .header--primary-shrink &
+      a
+        line-height: 48px
+        color: $co--wt

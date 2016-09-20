@@ -1,0 +1,68 @@
+/*------ Buttons ------
+.btn
+  +input-reset
+  display: inline-block
+  cursor: pointer
+  transition: all 0.2s ease-in-out
+
+  &--ghost
+    border-radius: 2px
+    color: inherit
+    border: $ln--thin $co--gr--mid
+
+    &:hover,
+    &:focus,
+    &:active
+      color: $co--wt
+      background-color: $co--brand
+      border-color: $co--brand
+
+  &[type='submit']
+    color: $co--wt
+    background-color: $co--brand
+
+    &:hover,
+    &:focus,
+    &:active
+      background-color: $co--brand-highlighted
+
+.btn-group--inline
+  .btn
+    display: block
+    margin: 0.5em auto
+    width: 90%
+    max-width: 300px
+
+    &:hover,
+    &:focus,
+    &:active
+      color: $co--wt
+      // border-color: $wt--hi-trans
+      background-color: $co--brand
+
+      [class^="icon-"],
+      [class*=' icon-']
+        color: $co--wt
+
+    [class^="icon-"],
+    [class*=' icon-']
+      font-size: 15px
+      margin-left: 10px
+      transition: all 0.2s ease-in-out
+      color: $co--gr--mdk
+
+@media (min-width: $bp--m)
+  .btn
+    padding: 0 2em
+
+@media (min-width: 710px)
+  .btn-group--inline
+    .btn
+      display: inline-block
+      padding: 0 1.2em
+      margin: 0 0.1em
+      width: auto
+      max-width: none
+
+      &:last-child
+        margin-bottom: 0

@@ -3,7 +3,7 @@
  */
 
 
-var StickyPixel = (function() {
+var stickypixel = (function() {
   var uiCache = {};
   var last_known_scroll_position = 0;
   var ticking = false;
@@ -16,8 +16,8 @@ var StickyPixel = (function() {
 
   function _cacheDom() {
     uiCache = {
-      mainNav: document.getElementById('main-nav'),
-      mobileNavCheck: document.getElementById('mobile-nav-check'),
+      mainNav: document.getElementById('header--primary'),
+      mobileNavCheck: document.getElementById('nav__toggle--primary'),
       intLinks: document.querySelectorAll('a[href^="#"]'),
     }
   };
@@ -41,21 +41,38 @@ var StickyPixel = (function() {
 
   function _shrinkMainNav(scrollPos) {
     if (scrollPos > 50) {
-      uiCache.mainNav.classList.add('navbar-shrink');
+      uiCache.mainNav.classList.add('header--primary-shrink');
     } else if (scrollPos <= 50) {
-      uiCache.mainNav.classList.remove('navbar-shrink');
+      uiCache.mainNav.classList.remove('header--primary-shrink');
     }
   };
 
   function _pageScroll(event) {
     var targetId, targetEl;
+    console.log('Test');
     event.preventDefault();
     _hideMobileNav();
 
-    targetId = event.target.hash.split('#')[1];
+    targetId = _getTargetHash(event.target);
     targetEl = document.getElementById(targetId);
     _scrollTo(document.body, targetEl.offsetTop, 450);
   };
+
+
+  function _getTargetHash(el) {
+    var hash;
+
+		while (el.parentNode) {
+			if (el.hash) {
+				break;
+			}
+			el = el.parentNode;
+		}
+    console.log(el.hash);
+    hash = el.hash.split('#')[1];
+    console.log(hash);
+    return hash;
+  }
 
   function _scrollTo(element, to, duration) {
     var start = element.scrollTop,
@@ -96,7 +113,7 @@ var StickyPixel = (function() {
     document.getElementById("fieldukkddk").value = currURL;
   };
 
-
   // Run the Initialise Function when the Dom is ready
   _init();
+  uiScroll.init();
 })();

@@ -1,9 +1,8 @@
 ---
 homesection: false
 type: contact
-layout: landing-page
+layout: page
 description: Contact Sticky Pixel
 published: true
+cont_size: --l
 ---
-
-{% include footer.html %}

@@ -2,94 +2,54 @@
 
 html,
 body
-    width: 100%
-    height: 100%
-
-main
-    min-height: 100%
+  width: 100%
+  height: 100%
 
 body
-    background-color: #000
-    -webkit-tap-highlight-color: rgba(255, 255, 255, .2)
-    position: relative
+  position: relative
+  background-color: $co--wt
 
 .container
-    text-align: center
-    max-width: 960px
-    margin: 0 auto
-    padding: 0 24px
-    box-sizing: content-box
-    position: relative
-    @extend %clearfix
+  position: relative
+  margin: 0 auto
+  padding: 0 1.5em
+
+.container--s
+  @extend .container
+  max-width: 720px
+
+.container--m
+  @extend .container
+  max-width: 960px
+
+.container--l
+  @extend .container
+  max-width: 1440px
+
+.section--block
+  padding: 8em 0
+  background-repeat: no-repeat
+  background-attachment: scroll
+  background-position: center
+  background-size: cover
+  border-top: 1px solid $co--gr--lt
+
+  main &
+
+    &:nth-child(odd)
+      border-top: 1px solid $co--gr--lt
+
+section[style*='background-image']
+  -webkit-transform: translate3d(0, 0, 0)
+  -webkit-backface-visibility: hidden
 
 .fullscreen
-    width: 100%
-    height: 100%
-    display: table
+  display: table
+  width: 100%
+  height: 100%
 
-.fullscreen-inner
-    width: 100%
-    height: 100%
-    display: table-cell
-    vertical-align: middle
-
-section, footer
-    background-attachment: scroll
-    background-position: center
-    background-repeat: no-repeat
-    background-size: cover
-    padding: 100px 0
-
-section[style*="background-image"]
-    -webkit-backface-visibility: hidden
-    -webkit-transform: translate3d(0, 0, 0)
-
-.col-2
-    float: left
-    width: 50%
-    overflow: auto
-    &:first-child
-        padding-right: 1em
-    &:last-child
-        padding-left: 1em
-
-    @media #{$mediumScreen}
-        display: block
-        width: 100%
-        &:first-child,
-        &:last-child
-            padding: 0
-
-
-.cleared
-    @extend %clearfix
-
-.detailed-section
-    .container
-        text-align: left
-        max-width: 720px
-
-    p, li
-        color: $mutedDark
-        font-size: $normal
-        @media #{$mediumScreen}
-            color: $muted
-
-    h1
-        text-align: center
-
-    h2
-        margin-bottom: 1em
-        font-size: $normal
-
-    ul
-        list-style: circle
-        padding-left: 1.5em
-        margin-bottom: 2em
-
-    .col-2:first-child ul
-        @media #{$mediumScreen}
-            margin-bottom: 0
-
-    li
-        line-height: 1.4em
+.fullscreen__inner
+  display: table-cell
+  width: 100%
+  height: 100%
+  vertical-align: middle

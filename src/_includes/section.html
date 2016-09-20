@@ -1,8 +1,11 @@
-<section id="{{ page.sectionid }}"{% if page.classes %} class="{{ page.classes }}"{% endif %}{% if page.bg %} style="background-image: url({{site.assets}}/img/{{ page.bg }})"{% endif %}>
-  <div class="container">
-    {% if page.title %}
-    <h1>{{ page.title }}</h1>
+{% assign section = include.section %}
+<section id="{{ section.sectionid }}" class="section--block {{section.classlist}} js__sce"{% if section.bg %} style="background-image: url({{site.assets}}/img/{{ section.bg }})"{% endif %}>
+  <div class="container{{section.cont_size}}">
+    {% if section.title %}
+    <h1 class="{{ section.jsActHead | default: 'js__act--fus-00' }}">{{ section.title }}</h1>
     {% endif %}
-    {{ page.content }}
+    <div class="content {{ section.jsActContent | default: 'js__act--fuf-00' }}">
+      {{ section.content | markdownify }}
+    </div>
   </div>
 </section>

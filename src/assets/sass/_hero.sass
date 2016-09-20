@@ -1,0 +1,42 @@
+.hero
+  h1
+    font-family: $ff--headings
+    font-size: $fs--j
+    font-weight: 800
+    margin-bottom: 0
+    letter-spacing: -1px
+    text-transform: none
+
+    // @media screen and (min-width: 530px)
+    //   // Nothing
+
+    @media screen and (min-width: $bp--s)
+      font-size: $fs--xj
+
+    @media screen and (min-width: 480px)
+      span
+        display: block
+
+  p
+    font-weight: 300
+    margin: 2em 0
+
+  .btn--ghost
+    color: $co--brand
+    border: $ln--thin $co--brand
+    border-radius: 2px
+
+    &:hover,
+    &:focus,
+    &:active
+      color: $co--wt
+
+  @media screen and (min-width: $bp--s)
+    h1
+      font-size: $fs--xj
+
+      span
+        display: block
+
+    p
+      font-size: $fs--l

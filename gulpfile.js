@@ -20,8 +20,9 @@ var distCss = dist + '/assets/css';
 
 var srcJs = src + '/assets/js';
 var srcJsFiles = [
+  "bower_components/scrollmagic/scrollmagic/minified/ScrollMagic.min.js",
+  srcJs + '/ui-scroll.js',
   srcJs + '/ui-core.js',
-  srcJs + '/test.js'
 ];
 var distJs = dist + '/assets/js';
 var distJsFile = 'ui-core.min.js';

@@ -1,57 +1,52 @@
 //------ Colors ------
-$brand-color: #e96408
-$brand-color-highlighted: lighten($brand-color, 10%)
-$brand-color-bright: #ffbc05
-$brand-color-darkened: darken($brand-color, 10%)
-$hi-trans: rgba(255, 255, 255, .1)
-$mid-trans: rgba(255, 255, 255, .2)
-$lo-trans: rgba(255, 255, 255, .5)
-$muted: #bbb
-$mutedDark: darken($muted, 30%)
+$co--brand: #e96408
+$co--brand-highlighted: lighten($co--brand, 10%)
+$co--brand-bright: #ffbc05
+$co--brand-darkened: darken($co--brand, 10%)
+$co--wt: #ffffff
+$co--bk: #303030
+$co--gr--lt: #e6e6e6
+$co--gr--mid: #a6a6a6
+$co--gr--mdk: #4b4b4b
+$co--gr--dk: #303030
+$co--fd: #fffaf2
 
 //------ Colored Elements ------
-$circle-hover-bgcolor: $mid-trans
-$nav-border-bottom-colour: $mid-trans
-$nav-hover-bgcolor: $mid-trans
-$nav-bar-color: rgba(black, 0.8)
-$mob-nav-seperator: $hi-trans
+$co--header: rgba(black, 0.8)
 
 //------ Typography ------
-$main-text-color: #fff
-$paragraph-font: Raleway, "Helvetica Neue", Helvetica, Arial, sans-serif
-$headings-font: $paragraph-font
+$fs--base: 16px
+$ff--main: 'Open Sans', "Helvetica Neue", Helvetica, Arial, sans-serif
+$ff--headings: 'Playfair Display', Georgia, Courier, serif
+
+$lh--base: 1.375
+$lh--tight: 1.2
+$lh--para: 1.6
 
 //------ Others ------
-$thinborder: 1px solid
-$thickborder: 2px solid
-
-//------ Layout ------
-$largeScreen: "screen and (min-width: 1024px)"
-$mediumScreen: "screen and (max-width: 640px)"
-$smallScreen: "screen and (max-width: 380px)"
+$ln--thin: 1px solid
+$ia-min-size: 44px
 
 //------ Media Queries ------
-$navBreakToLarge: "screen and (min-width: 781px) and (max-width: 940px)"
-/* Reduces the font-size of the nav links between the navbar turning mobile and */
-/* fitting the full text size - just allows a bit more room for the full width navbar at smaller screen sizes */
-$navBreak: "screen and (max-width: 780px)"
-/* This break controls when the nav bar changes to the mobile version, only when the nav linkgs crash into the logo */
-$btnsBreak: "screen and (max-width: 750px)"
-/* This break controls when the buttons start to stack */
-
-%clearfix
-    &:after
-        content: " "
-        display: table
-        clear: both
+$bp--s: 580px
+$bp--m: 640px
+$bp--nav: 780px
 
 //------ Sizes ------
 
-$jumbo: 3em // 60
-$xxlarge: 2em // 40
-$xlarge: 1.5em // 30
-$large: 1.250em // 25
-$normal: 1em // 20
-$small: 0.8em // 16
-$xsmall: 0.7em // 14
-$xxsmall: 0.65em // 13
+$fs--xj: 4em
+$fs--j: 3em
+$fs--xxl: 2em
+$fs--xl: 1.5em
+$fs--l: 1.250em
+$fs--m: 1em
+$fs--s: 0.875em
+$fs--xs: 0.75em
+$fs--xxs: 0.625em
+
+//------ Transitions ------
+
+$tr--xslow: 1000ms ease-in-out
+$tr--slow: 500ms ease-in-out
+$tr--mid: 250ms ease-in-out
+$tr--fast: 150ms ease-in-out

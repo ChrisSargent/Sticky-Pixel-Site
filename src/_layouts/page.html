@@ -3,6 +3,5 @@ layout: default
 ---
 
 {% unless page.type == "contact" %}
-{% include fullscreen-section.html %}
+  {% include section.html section=page %}
 {% endunless %}
-{% include footer.html %}

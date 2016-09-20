@@ -1,0 +1,25 @@
+.js
+  [class*="js__act--fus"]
+    transition: transform $tr--mid, opacity $tr--mid
+    transform: translate3d(0, 100px, 0)
+    opacity: 0
+
+    &.js--active
+      transform: translate3d(0, 0, 0)
+      opacity: 1
+
+
+  [class*="js__act--fuf"]
+    > *
+      transition: transform $tr--slow, opacity $tr--slow
+      transform: translate3d(0, 100px, 0)
+      opacity: 0
+
+      @for $i from 1 to 15
+        &:nth-child(#{$i})
+          transition-delay: 100ms * ($i - 1)
+
+    &.js--active
+      > *
+        transform: translate3d(0, 0, 0)
+        opacity: 1

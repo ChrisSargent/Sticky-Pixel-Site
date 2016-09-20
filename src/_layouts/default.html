@@ -1,11 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
+<script>
+  // Add a class to the html element if JS is enabled
+  (function(html) {
+    html.classList.add('js');
+  })(document.documentElement);
+</script>
 {% include head.html %}
 
-<body>
-  {% include components/google-tag-manager.html %}
-  {% include components/nav.html %}
-  {{ content }}
-  {% include components/scripts.html %}
+<body class="page__{{ page.id }}">
+  <div id="pin--top"></div>
+  {% include components/google-tag-manager.html %} {% include components/nav.html %} {% include components/hero--fp.html %}
+
+  <main>
+    {{ content }}
+  </main>
+
+  {% include footer.html %} {% include components/scripts.html %}
 </body>
+
 </html>

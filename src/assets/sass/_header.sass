@@ -7,6 +7,9 @@
   top: 0
   right: 0
   left: 0
+  overflow: scroll
+  -webkit-overflow-scrolling: touch
+  max-height: 100%
   transition: all 0.5s ease-in-out
   animation: fadeIn $tr--slow 2s both
   color: $co--wt
@@ -20,12 +23,12 @@
     top: 0
     left: 0
     display: block
-    padding: 0.5em
+    padding: 0.6em 0.6em
     color: inherit
 
   svg
     display: block
-    width: auto
+    width: 103.5px
     height: 30px
 
 @media (min-width: $bp--nav)
@@ -36,6 +39,7 @@
 
     .logo
       svg
+        width: 138px
         height: 40px
 
     .logo__text

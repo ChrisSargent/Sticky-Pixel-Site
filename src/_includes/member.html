@@ -3,8 +3,8 @@
     <img src="{{ site.assets }}/img/{{ member.image }}" alt="{{ member.title }}" width="356" height="356">
   </div>
   <h2>
-    {{ member.name }}
-    <small>{{ member.title }}</small>
+    {{ member.heading.pre }}
+    <small>{{ member.sub_heading }}</small>
   </h2>
   {{ member.content | markdownify }}
 </div>

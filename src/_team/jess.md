@@ -1,11 +1,12 @@
 ---
 name: Jess Duguid
-title: Art Director
+sub_heading: Art Director
 type: team
 order: 2
 layout: page
 image: jess.jpg
 published: false
+cont_size: --s
 ---
 
 Jess&nbsp;oversees all things design. With buckets of passion and brain bursting with ideas, Jess&nbsp;has the ability to synthesise your complex corporate objectives into unique, targeted design concept.

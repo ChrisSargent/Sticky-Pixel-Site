@@ -1,11 +1,13 @@
 ---
-name: Chris Sargent
-title: Founder & Digital Director
+heading:
+    pre: Chris Sargent
+sub_heading: Founder & Digital Director
 type: team
 order: 1
 layout: page
 image: chris.jpg
 published: true
+cont_size: --s
 ---
 
 With a background in technology and business development, Chris has not only the expertise to successfully build your digital project, but also a keen understanding of what is most important for our customers. He wrote his first 'code' on a BBC Basic computer; some games from a programming book and has been building websites since 2000 (the normal story of building one for his band!). His passion for design has always played an important part of his life and was often drawing cars and dreaming of being an industrial designer at school.

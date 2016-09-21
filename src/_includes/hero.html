@@ -2,7 +2,7 @@
   <div class="fullscreen__inner">
     <div class="container--s">
       {% if page.heading %}
-        <h1 class="js__act-this--rt"><span>{{ page.heading.pre }}</span> <span>{{ page.heading.post }}</span></h1>
+        <h1 class="js__act-this--rt"><span>{{ page.heading.pre }}</span>{% if page.heading.post %} <span>{{ page.heading.post }}</span>{% endif %}</h1>
       {% else %}
         <h1 class="js__act-this--rt"><span>{{ page.title }}</h1>
       {% endif %}

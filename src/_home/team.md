@@ -12,8 +12,10 @@ jsActContent: na
 use_sitedesc: true
 ---
 
-{% assign team = site.team | sort:"order" %}
+{% assign team = site.team | sort:"order" | where: "published", true %}
 
 {% for member in team %}
   {% include member.html %}
 {% endfor %}
+
+{% include subscript.html %}

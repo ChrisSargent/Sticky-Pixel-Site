@@ -1,3 +1,7 @@
+.header--primary
+  nav
+    +clearfix
+
 .page__home
   .nav--primary
     a[href='']
@@ -8,6 +12,9 @@
   width: 100%
   transition: all 0.1s ease-in-out
   background-color: rgba(0, 0, 0, 0.5)
+
+  ul
+    +clearfix
 
   a
     font-size: $fs--s
@@ -69,7 +76,6 @@
   .nav--primary
     float: right
     width: auto
-    margin-right: 0.5em
     background: none
 
     li

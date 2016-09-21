@@ -1,23 +1,25 @@
 <header id="header--primary" class="header--primary">
-  {% include logo.html %}
-  <nav>
-    <label for="nav__toggle--primary" class="nav__toggle" role="presentation">
-    <span class="sr-only">Toggle Mobile Navigation</span>
-    <i class="i--bars" aria-hidden="true"></i>
-  </label>
-    <input type="checkbox" id="nav__toggle--primary" aria-controls="nav--primary">
-    <div id="nav--primary" class="nav--primary">
-      <ul>{% for link in site.landing_links %}
-        {% if page.url != "/" %}
-          {% assign link_url = link.url | prepend: '/' %}
-        {% else %}
-          {% assign link_url = link.url %}
-        {% endif %}
-        {% unless page.url == link_url %}
-          <li><a href="{{ link_url }}">{{ link.text }}</a></li>
-        {% endunless %}
-        {% endfor %}
-      </ul>
-    </div>
-  </nav>
+  <div class="container--xl">
+    {% include logo.html %}
+    <nav>
+      <label for="nav__toggle--primary" class="nav__toggle" role="presentation">
+      <span class="sr-only">Toggle Mobile Navigation</span>
+      <i class="i--bars" aria-hidden="true"></i>
+    </label>
+      <input type="checkbox" id="nav__toggle--primary" aria-controls="nav--primary">
+      <div id="nav--primary" class="nav--primary">
+        <ul>{% for link in site.landing_links %}
+          {% if page.url != "/" %}
+            {% assign link_url = link.url | prepend: '/' %}
+          {% else %}
+            {% assign link_url = link.url %}
+          {% endif %}
+          {% unless page.url == link_url %}
+            <li><a href="{{ link_url }}">{{ link.text }}</a></li>
+          {% endunless %}
+          {% endfor %}
+        </ul>
+      </div>
+    </nav>
+  </div>
 </header>

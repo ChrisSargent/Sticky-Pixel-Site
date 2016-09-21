@@ -26,7 +26,8 @@
   <meta property="og:type" content="website" />
   <meta property="og:url" content="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}" />
   <meta property="og:title" content="{{ meta_title }}" />
-  <meta name="og:description" content="{{ meta_description | truncate: 160 }}" />
+  <meta property="og:description" content="{{ meta_description | truncate: 160 }}" />
+  <meta property="fb:app_id" content="{{ site.fb_app_id }}" />
   <meta property="fb:admins" content="{{ site.fb_admins }}" />
   <meta property="fb:profile_id" content="{{ site.fb_profile_id }}" />
   <meta property="og:image" content="{{ page.og_image | default: site.og_image }}" />

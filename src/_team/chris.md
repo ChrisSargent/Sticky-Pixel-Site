@@ -8,6 +8,6 @@ image: chris.jpg
 published: true
 ---
 
-Founder and our Digital Director, Chris is responsible for the development and operations of the business. With a background in Technology and Business Development, Chris has not only the expertise to successfully build your digital project, but also a keen understanding of what is most important for our customers.
+With a background in technology and business development, Chris has not only the expertise to successfully build your digital project, but also a keen understanding of what is most important for our customers. He wrote his first 'code' on a BBC Basic computer; some games from a programming book and has been building websites since 2000 (the normal story of building one for his band!). His passion for design has always played an important part of his life and was often drawing cars and dreaming of being an industrial designer at school.
 
-Chris' passion for design and creativity comes primarily from years of writing and playing rock music but also 'coding' games from books on BBC Basic computers.
+After cultivating his creativity through years of writing music and playing in hard rock bands, the web is now the perfect outlet to bring together his experience. In his role as designer / developer, he specialises in front-end builds, style guides and user interaction using HTML, CSS, JavaScript, SASS, LESS, Angular, jQuery, Jekyll, Twig, WordPress, PHP, Greensock (animations), Grunt, Gulp etc.

@@ -8,10 +8,10 @@
   right: 0
   left: 0
   transition: all 0.5s ease-in-out
+  animation: fadeIn $tr--slow 2s both
   color: $co--wt
   border-bottom: $ln--thin $co--brand
   background-color: $co--header
-  animation: fadeIn $tr--slow 2s both
 
   .logo
     font-size: $fs--s
@@ -43,11 +43,11 @@
 
     &.header--primary-shrink
       color: $co--wt
-      background-color: $co--header
       border-bottom: $ln--thin transparentize($co--brand, 0.5)
+      background-color: $co--header
 
       .logo
         padding: 4px 0.5em
 
       .logo__text
-          fill: $co--wt
+        fill: $co--wt

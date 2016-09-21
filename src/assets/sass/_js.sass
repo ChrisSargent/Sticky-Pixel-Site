@@ -1,24 +1,23 @@
 .js
-
-  [class*="js__act-this"],
-  [class*="js__act-child"] > *
-    transition-property: transform, opacity
+  [class*='js__act-this'],
+  [class*='js__act-child'] > *
     transition-timing-function: ease-in-out
+    transition-property: transform, opacity
     opacity: 0
 
     @for $i from 1 to 15
       &:nth-child(#{$i})
         transition-delay: 100ms * ($i - 1)
 
-  [class*="js__act-this"]
+  [class*='js__act-this']
     transition-duration: $tr--mid
 
-  [class*="js__act-child"] > *
+  [class*='js__act-child'] > *
     transition-duration: $tr--slow
 
   .js--active
-    [class*="js__act-this"],
-    [class*="js__act-child"] > *
+    [class*='js__act-this'],
+    [class*='js__act-child'] > *
       transform: translate3d(0, 0, 0)
       opacity: 1
 

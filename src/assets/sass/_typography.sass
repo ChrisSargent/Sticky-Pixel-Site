@@ -1,5 +1,3 @@
-/*--- Typography ---*/
-
 html
   font-size: 14px
 
@@ -9,8 +7,8 @@ html
 body
   font-family: $ff--main
   font-weight: 400
-  color: $co--bk
   line-height: $lh--base
+  color: $co--bk
 
 h1,
 h2,
@@ -18,7 +16,7 @@ h3,
 h4,
 h5,
 h6
-  font-weight: 700
+  font-weight: 900
   line-height: $lh--tight
   margin-bottom: 1em
   text-transform: uppercase
@@ -35,10 +33,10 @@ p
   margin-bottom: 2em
 
   a
+    transition: all 0.2s ease-in-out
     text-decoration: none
     color: $co--brand
     border-bottom: $ln--thin transparent
-    transition: all 0.2s ease-in-out
 
     &:hover,
     &:focus,
@@ -49,24 +47,24 @@ p
       outline: 0
 
 small
-  display: block
-  font-weight: 300
-  text-transform: none
   font-size: 0.9em
+  font-weight: 300
+  display: block
+  text-transform: none
   opacity: 0.8
 
 .legal
   font-size: $fs--xs
+  font-weight: 300
   margin-top: 5em
   color: $co--gr--mdk
-  font-weight: 300
 
 .contact-details
   a,
   span
+    line-height: $ia-min-size
     display: inline-block
     min-width: $ia-min-size
-    line-height: $ia-min-size
 
   span
     display: block

@@ -9,10 +9,14 @@
     "url": "git+https://github.com/ChrisSargent/Sticky-Pixel-Site.git"
   },
   "dependencies": {
-    "critical": "^0.8.0"
   },
   "devDependencies": {
+    "critical": "^0.8.0",
+    "autoprefixer": "^6.4.1",
     "browser-sync": "^2.14.3",
+    "critical": "^0.8.0",
+    "css-mqpacker": "^5.0.1",
+    "cssnano": "^3.7.5",
     "gulp": "^3.9.1",
     "gulp-concat": "^2.6.0",
     "gulp-htmlmin": "^2.0.0",

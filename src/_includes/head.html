@@ -1,77 +1,66 @@
+{% if page.title %}
+  {% assign meta_title = page.title | append: ' - ' | append: site.title %}
+{% else %}
+  {% assign meta_title = site.title %}
+{% endif %}
+{% if page.use_sitedesc %}
+  {% assign meta_description = site.description %}
+{% elsif page.description %}
+  {% assign meta_description = page.description | append: site.append_desc %}
+{% else %}
+  {% assign meta_description = page.content | strip_html | strip_newlines | prepend: ' - ' | prepend: page.title %}
+{% endif %}
 <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# website: http://ogp.me/ns/website#">
-    <title>{% if page.title %}{{ page.title | append: ' - ' | append: site.title }}{% else %}{{ site.title }}{% endif %}</title>
-    <meta charset="utf-8" />
-    <meta name="keywords" content="{% if page.keywords %}{{ page.keywords }}{% else %}{{ site.keywords }}{% endif %}" />
-
-    {% if page.use_sitedesc %}
-    <meta name="description" content="{{ site.description | truncate: 160 }}" />
-    {% elsif page.description %}
-    <meta name="description" content="{{ page.description | append: site.append_desc | truncate: 160 }}" />
-    {% else %}
-    <meta name="description" content="{{ page.content | strip_html | strip_newlines | prepend: ' - ' | prepend: page.title | truncate: 160 }}" />
-    {% endif %}
-    <meta name="author" content="{% if page.author %}{{ page.author }}{% else %}{{ site.author }}{% endif %}" />
-    <meta name="robots" content="index, follow">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <!-- Canonical link for any .fr or non-www traffic -->
-    <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
-
-    <!-- Pinterest Verification -->
-    <meta name="p:domain_verify" content="{{ site.pinterest_verify }}" />
-
-    <!-- Facebook Open Graph Info -->
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}" />
-    <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}" />
-    {% if page.use_sitedesc %}
-    <meta name="og:description" content="{{ site.description | truncate: 160 }}" />
-    {% elsif page.description %}
-    <meta name="og:description" content="{{ page.description | append: site.append_desc | truncate: 160 }}" />
-    {% else %}
-    <meta name="og:description" content="{{ page.content | strip_html | strip_newlines | prepend: ' - ' | prepend: page.title | truncate: 160 }}" />
-    {% endif %}
-    <meta property="fb:admins" content="{{ site.fb_admins }}" />
-    <meta property="fb:profile_id" content="{{ site.fb_profile_id }}" />
-    <meta property="og:image" content="{% if page.og_image %}{{ page.og_image }}{% else %}{{ site.og_image }}{% endif %}" />
-    <meta property="og:image:type" content="image/jpeg" />
-    <meta property="og:image:width" content="1500" />
-    <meta property="og:image:height" content="785" />
-
-    <!-- Google+ Stuff -->
-    <link rel="publisher" href="https://plus.google.com/{{ site.google_plus }}" />
-
-    <!-- Critical CSS Files and Custom Fonts -->
-    <style type="text/css">
-        {% include critical.css %}
-    </style>
-    {% include criticalcss.html %}
-
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-
-    <!-- Favicons etc -->
-    <link rel="shortcut icon" href="/img/favicons/favicon.ico" type="image/x-icon">
-    <link rel="icon" href="/img/favicons/favicon.ico" type="image/x-icon">
-    <link rel="apple-touch-icon" sizes="57x57" href="img/favicons/apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="img/favicons/apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="img/favicons/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="img/favicons/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="img/favicons/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="img/favicons/apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="img/favicons/apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="img/favicons/apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192" href="img/favicons/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="img/favicons/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="img/favicons/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="img/favicons/favicon-16x16.png">
-    <link rel="manifest" href="img/favicons/manifest.json">
-    <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-TileImage" content="img/favicons/ms-icon-144x144.png">
-    <meta name="theme-color" content="#ffffff">
+  <title>{{ meta_title }}</title>
+  <meta charset="utf-8" />
+  <meta name="keywords" content="{{ page.keywords | default: site.keywords }}" />
+  <meta name="description" content="{{ meta_description | truncate: 160 }}" />
+  <meta name="author" content="{{ page.author | default: site.author }}" />
+  <meta name="robots" content="index, follow">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0">
+  <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+  <!-- Verifications -->
+  <meta name="p:domain_verify" content="{{ site.pinterest_verify }}" />
+  <meta name="msvalidate.01" content="{{ site.bing_verify }}" />
+  <!-- Facebook Open Graph Info -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}" />
+  <meta property="og:title" content="{{ meta_title }}" />
+  <meta name="og:description" content="{{ meta_description | truncate: 160 }}" />
+  <meta property="fb:admins" content="{{ site.fb_admins }}" />
+  <meta property="fb:profile_id" content="{{ site.fb_profile_id }}" />
+  <meta property="og:image" content="{{ page.og_image | default: site.og_image }}" />
+  <meta property="og:image:type" content="image/jpeg" />
+  <meta property="og:image:width" content="1500" />
+  <meta property="og:image:height" content="785" />
+  <!-- Google+ Stuff -->
+  <link rel="publisher" href="https://plus.google.com/{{ site.google_plus }}" />
+  <!-- Favicons etc -->
+  <link rel="shortcut icon" href="/img/favicons/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="/img/favicons/favicon.ico" type="image/x-icon">
+  <link rel="apple-touch-icon" sizes="57x57" href="img/favicons/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="img/favicons/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="img/favicons/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="img/favicons/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="img/favicons/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="img/favicons/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="img/favicons/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="img/favicons/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="img/favicons/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="img/favicons/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="img/favicons/favicon-16x16.png">
+  <link rel="manifest" href="img/favicons/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="img/favicons/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+  <script>
+    // Add a class to the html element if JS is enabled
+    (function(html) {
+      html.classList.add('js');
+    })(document.documentElement);
+  </script>
+  <link href="{{site.assets}}/css/main.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Playfair+Display:900" rel="stylesheet">
 </head>

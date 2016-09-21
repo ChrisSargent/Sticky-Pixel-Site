@@ -1,5 +1,6 @@
 ---
 title: About Us
+sub_heading: Relentless in the pursuit of creating beautiful digital experiences.
 sectionid: about
 homesection: true
 order: 1
@@ -10,6 +11,8 @@ published: true
 cont_size: --s
 ---
 
-Sticky Pixel is a digital design agency relentless in the pursuit of creating beautiful, effortless experiences that drive the real-world growth of our clients’ businesses. We specialise in web design & development, front-end engineering and digital marketing activities from our base near Nice on the French&nbsp;Riviera.
+Sticky Pixel is a digital design agency relentless in the pursuit of creating beautiful, effortless experiences that drive the real-world growth of our clients’ businesses. We specialise in web design & development, front-end engineering and digital marketing activities.
 
 We pride ourselves on being very customer-centric and we spend time with you to ask the right questions about who you are, what you’re trying to achieve and how your current online activities are performing. Then we put together a solution that address those aspirations, combining what you need to say, who you want to say it to and how you will say it.
+
+We are based near Nice on the French Riviera and work on projects from Monaco, Sophia Antipolis, Antibes, Cannes, St Tropez as well as the UK. We have experience with luxury yacht charter and brokerage sites, travel management applications and corporate websites.

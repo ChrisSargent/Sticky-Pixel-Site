@@ -1,4 +1,11 @@
-<!-- <script>
+
+    <!-- Critical CSS Files and Custom Fonts -->
+    <style type="text/css">
+        {% include critical.css %}
+    </style>
+    {% include criticalcss.html %}
+
+<script>
   (function(u) {
     function loadCSS(e, t, n) {
       "use strict";
@@ -16,8 +23,8 @@
       loadCSS(u[i]);
     }
   }(['{{site.assets}}/css/main.css', 'http://fonts.googleapis.com/css?family=Raleway:400,700']));
-</script> -->
-<!-- <noscript> -->
+</script>
+<noscript>
   <link href="{{site.assets}}/css/main.css" rel="stylesheet">
   <link href="http://fonts.googleapis.com/css?family=Raleway:400,700" rel="stylesheet" type="text/css">
-<!-- </noscript> -->
+</noscript>

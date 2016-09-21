@@ -1,8 +1,7 @@
 .page__home
   .nav--primary
-    a[href=""]
+    a[href='']
       display: none
-
 
 .nav--primary
   overflow: scroll
@@ -43,7 +42,6 @@
   &::before,
   &::after
     @extend .i--bars
-
     content: ' '
     position: relative
     top: 7px
@@ -60,8 +58,6 @@
     max-height: 400px
     transition: all 0.2s ease-in-out
 
-    /* Transition displaying the menu
-
 @media (min-width: $bp--nav)
   #nav--primary
     max-height: none
@@ -71,10 +67,10 @@
     display: none
 
   .nav--primary
-    background: none
     float: right
     width: auto
     margin-right: 0.5em
+    background: none
 
     li
       float: left
@@ -84,11 +80,11 @@
         margin-left: 0.2em
 
     a
-      line-height: 60px
-      color: black
-      margin: 0
-      border: 0
       font-weight: 300
+      line-height: 60px
+      margin: 0
+      color: black
+      border: 0
 
       &:hover,
       &:focus,

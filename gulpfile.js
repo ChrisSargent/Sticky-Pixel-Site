@@ -145,38 +145,22 @@ gulp.task('html', ['jekyll'], function() {
 });
 
 gulp.task('images', function() {
-  return gulp.src(srcImgs + '**/*')
+  return gulp.src(srcImgs + '/**/*')
     .pipe(imagemin({
       progressive: true
     }))
-    .pipe(gulp.dest(distAssets));
+    .pipe(gulp.dest(distAssets + '/img'));
 });
 
-//
-// gulp.task('deploy', function() {
-//   rsync({
-//     src: 'wordpress/',
-//     dest: 'stgsear1@akascia.com:~/www/aqvaluxe/',
-//     // options: '--archive --delete --progress --compress --dry-run --human-readable',
-//     options: '--archive --delete --progress --compress --human-readable --exclude .DS_Store'
-//   });
-// });
 
-// module.exports = {
-//
-// 	rsync: {
-// 		options: {
-// 			recursive: true,
-// 			src: "<%= vars.build %>/",
-// 			dest: "~/www/stickypixel/",
-// 			host: "stgsear1@akascia.com",
-// 			delete: "true",
-// 			exclude: ["node_modules", ".gitignore", "grunt", ".git", "Gruntfile.js", "*.DS_store"],
-// 			ssh: true,
-// 			args: ["--verbose"],
-// 		}
-// 	}
-// };
+gulp.task('deploy', function() {
+  rsync({
+    src: 'dist/',
+    dest: 'stgsear1@akascia.com:~/www/stickypixel/',
+    // options: '--archive --delete --progress --compress --human-readable --exclude .DS_Store --dry-run'
+    options: '--archive --delete --progress --compress --human-readable --exclude .DS_Store'
+  });
+});
 
 gulp.task('default', function() {
   console.log('No task defined as default');

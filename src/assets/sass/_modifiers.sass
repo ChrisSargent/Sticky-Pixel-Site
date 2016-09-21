@@ -1,14 +1,12 @@
-.member
-  img
-    float: left
-    width: 50%
-    height: auto
-    padding-right: 0.5em
-    margin: 0 0.5em 1em 0
-    transition: all 0.2s ease-in-out
+.member__photo
+  width: 80%
+  max-width: 300px
+  margin: 0 auto
+  margin-bottom: 2em
 
-  p
-    clear: both
+  img
+    height: auto
+    transition: all 0.2s ease-in-out
 
 .has__bgimg
   color: $co--wt
@@ -18,16 +16,18 @@
 
 @media (min-width: $bp--m)
   .member
-    img
-      width: 30%
+    p
+      overflow: hidden
 
+  .member__photo
+    margin-right: 1em
+    float: left
+    width: 30%
+
+    img
       filter: grayscale(100%)
       filter: gray
 
       &:hover
         filter: grayscale(0%)
         filter: none
-
-    p
-      clear: none
-      overflow: hidden

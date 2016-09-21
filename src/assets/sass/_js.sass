@@ -1,25 +1,30 @@
 .js
-  [class*="js__act--fus"]
-    transition: transform $tr--mid, opacity $tr--mid
-    transform: translate3d(0, 100px, 0)
+
+  [class*="js__act-this"],
+  [class*="js__act-child"] > *
+    transition-property: transform, opacity
+    transition-timing-function: ease-in-out
     opacity: 0
 
-    &.js--active
+    @for $i from 1 to 15
+      &:nth-child(#{$i})
+        transition-delay: 100ms * ($i - 1)
+
+  [class*="js__act-this"]
+    transition-duration: $tr--mid
+
+  [class*="js__act-child"] > *
+    transition-duration: $tr--slow
+
+  .js--active
+    [class*="js__act-this"],
+    [class*="js__act-child"] > *
       transform: translate3d(0, 0, 0)
       opacity: 1
 
+  .js__act-this--up,
+  .js__act-child--up > *
+    transform: translate3d(0, 100px, 0)
 
-  [class*="js__act--fuf"]
-    > *
-      transition: transform $tr--slow, opacity $tr--slow
-      transform: translate3d(0, 100px, 0)
-      opacity: 0
-
-      @for $i from 1 to 15
-        &:nth-child(#{$i})
-          transition-delay: 100ms * ($i - 1)
-
-    &.js--active
-      > *
-        transform: translate3d(0, 0, 0)
-        opacity: 1
+  .js__act-this--rt
+    transform: translate3d(-100px, 0, 0)

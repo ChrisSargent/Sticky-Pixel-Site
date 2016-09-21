@@ -8,7 +8,7 @@ bg: "bg-imac.jpg"
 description: Chris Sargent and Jess Duguid make an awesome team at Sticky Pixel
 published: true
 cont_size: --m
-classlist: has__bgimg section--detail
+classlist: has__bgimg
 jsActContent: na
 ---
 

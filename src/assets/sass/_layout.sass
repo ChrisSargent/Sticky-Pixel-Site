@@ -27,17 +27,17 @@ body
   max-width: 1440px
 
 .section--block
+  position: relative
   padding: 8em 0
   background-repeat: no-repeat
   background-attachment: scroll
   background-position: center
   background-size: cover
-  border-top: 1px solid $co--gr--lt
 
   main &
-
     &:nth-child(odd)
       border-top: 1px solid $co--gr--lt
+      border-bottom: 1px solid $co--gr--lt
 
 section[style*='background-image']
   -webkit-transform: translate3d(0, 0, 0)

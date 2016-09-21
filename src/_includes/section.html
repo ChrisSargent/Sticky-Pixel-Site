@@ -1,10 +1,10 @@
 {% assign section = include.section %}
-<section id="{{ section.sectionid }}" class="section--block {{section.classlist}} js__sce"{% if section.bg %} style="background-image: url({{site.assets}}/img/{{ section.bg }})"{% endif %}>
+<section id="{{ section.sectionid }}" class="section--block {{section.classlist}} js__scn"{% if section.bg %} style="background-image: url({{site.assets}}/img/{{ section.bg }})"{% endif %}>
   <div class="container{{section.cont_size}}">
     {% if section.title %}
-    <h1 class="{{ section.jsActHead | default: 'js__act--fus-00' }}">{{ section.title }}</h1>
+    <h1 class="{{ section.jsActHead | default: 'js__act-this--up' }}">{{ section.title }}</h1>
     {% endif %}
-    <div class="content {{ section.jsActContent | default: 'js__act--fuf-00' }}">
+    <div class="content {{ section.jsActContent | default: 'js__act-child--up' }}">
       {{ section.content | markdownify }}
     </div>
   </div>

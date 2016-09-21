@@ -24,10 +24,6 @@
     color: $co--wt
     border-top: $ln--thin $co--gr--dk
 
-    &:hover,
-    &.active
-      background-color: $co--gr--lt
-
 .nav__toggle
   display: block
   float: right
@@ -89,12 +85,22 @@
 
     a
       line-height: 60px
-      color: $co--bk
+      color: black
       margin: 0
       border: 0
       font-weight: 300
+
+      &:hover,
+      &:focus,
+      &:active
+        background-color: rgba(0, 0, 0, 0.05)
 
     .header--primary-shrink &
       a
         line-height: 48px
         color: $co--wt
+
+        &:hover,
+        &:focus,
+        &:active
+          background-color: rgba(255, 255, 255, 0.1)

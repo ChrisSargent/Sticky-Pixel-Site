@@ -1,0 +1,11 @@
+<section class="section--block hero fullscreen js__scn">
+  <div class="fullscreen__inner">
+    <div class="container--s">
+      <h1 class="js__act-this--rt"><span>{{ page.heading_pre }}</span> <span>{{ page.heading_post }}</span></h1>
+      <p class="js__act-this--rt">{{ page.sub_heading )}}</p>
+      {% for button in page.buttons %}
+        <span class="js__act-this--rt"><a href="{{ button.url }}" class="btn btn--ghost">{{ button.text }}</a></span>
+      {% endfor %}
+    </div>
+  </div>
+</section>

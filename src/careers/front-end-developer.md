@@ -24,7 +24,8 @@ Due to high demand, we are seeking a web designer / front-end developer, initial
 - Enthusiasm for learning new technologies
 - Fantastic communication and customer service skills
 - Experience of web design and development
-- Deep knowledge of HTML, CSS and Javascript
+- Experience with software such as Sketch, Photoshop, Illustrator
+- Good knowledge of HTML, CSS and Javascript
 - Keen eye for detail
 - Talent to quickly understand complex client requirements and suggest simple, logical solutions
 - Desire for doing things right
@@ -36,6 +37,7 @@ Due to high demand, we are seeking a web designer / front-end developer, initial
 - Experience with a build system such as Grunt or Gulp
 - Knowledge of Git / Github
 - UI / UX Development skills
+- Experience with WordPress or another CMS
 - If you're based near Nice too then great but otherwise we're happy to consider remote working too
 
 Interested? Then please let us know by sending a message to <mailto:chris@stickypixel.com> explaining in one sentence why you think you'd be a good fit for us. If you have one then please include your CV and Portfolio too.

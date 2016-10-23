@@ -12,7 +12,6 @@ var htmlmin = require('gulp-htmlmin');
 var env_prod = true;
 var src = 'src';
 var dist = 'dist';
-var bower = 'bower_components';
 var distAssets = dist + '/assets';
 
 var srcSass = src + '/assets/sass';
@@ -21,9 +20,9 @@ var distCss = dist + '/assets/css';
 
 var srcJs = src + '/assets/js';
 var srcJsFiles = [
-  "bower_components/scrollmagic/scrollmagic/minified/ScrollMagic.min.js",
+  'bower_components/scrollmagic/scrollmagic/minified/ScrollMagic.min.js',
   srcJs + '/ui-scroll.js',
-  srcJs + '/ui-core.js',
+  srcJs + '/ui-core.js'
 ];
 var distJs = dist + '/assets/js';
 var distJsFile = 'ui-core.min.js';
@@ -42,12 +41,13 @@ gulp.task('sass', function() {
 });
 
 gulp.task('css', ['sass'], function() {
+  var autoprefixer, cssnano, mqpacker;
   if (!env_prod) {
     return;
   } else {
-    var autoprefixer = require('autoprefixer');
-    var cssnano = require('cssnano');
-    var mqpacker = require('css-mqpacker');
+    autoprefixer = require('autoprefixer');
+    cssnano = require('cssnano');
+    mqpacker = require('css-mqpacker');
 
     return gulp.src(distCss + '/*.css')
       .pipe(postcss([
@@ -78,7 +78,7 @@ gulp.task('js', function(cb) {
           booleans: true,
           unused: true,
           if_return: true,
-          join_vars: true,
+          join_vars: true
         }
       }))
       .pipe(gulp.dest(distJs));

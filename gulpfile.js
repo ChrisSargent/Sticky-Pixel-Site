@@ -111,8 +111,9 @@ gulp.task('browser-sync', function() {
 });
 
 gulp.task('jekyll', function(gulpCallBack) {
+  var jekyllExec = process.platform === "win32" ? "jekyll.bat" : "jekyll";
   var spawn = require('child_process').spawn;
-  var jekyll = spawn('jekyll', ['build'], {
+  var jekyll = spawn(jekyllExec, ['build'], {
     stdio: 'inherit'
   });
 

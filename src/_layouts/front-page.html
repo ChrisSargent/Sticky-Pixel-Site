@@ -5,5 +5,9 @@ layout: default
 {% assign fp_sections = site.home | sort:"order" | where: "homesection", true %}
 
 {% for fp_section in fp_sections %}
-  {% include section.html section=fp_section %}
+  {% if fp_section.type == "ourwork" %}
+    {% include section_ourwork.html section_ourwork=fp_section %}
+  {% else %}
+    {% include section.html section=fp_section %}
+  {% endif %}
 {% endfor %}

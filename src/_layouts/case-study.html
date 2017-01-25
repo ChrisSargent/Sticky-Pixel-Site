@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+{% include head.html %}
+
+<body class="page__{{ page.id }}">
+  <div id="pin--top"></div>
+  {% include google-tag-manager.html %}
+  {% include nav.html %}
+  {% include hero_case-study.html %}
+
+  <main>
+ 	<section id="{{ page.id }}" class="section--block js__scn">
+	  <div class="container{{page.cont_size}}">
+	    <div class="content {{ page.jsActContent | default: 'js__act-child--up' }}">
+	      {{ page.content | markdownify }}
+	    </div>
+	  </div>
+	</section>
+  </main>
+
+  {% include footer.html %}
+  {% include scripts.html %}
+</body>
+
+</html>

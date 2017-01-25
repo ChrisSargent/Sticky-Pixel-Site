@@ -3,7 +3,7 @@ title: Services
 sectionid: services
 classes: detailed-section
 homesection: true
-order: 2
+order: 3
 layout: page
 published: true
 cont_size: --s

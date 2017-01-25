@@ -2,7 +2,7 @@
 title: Our Team
 sectionid: team
 homesection: true
-order: 3
+order: 4
 layout: page
 bg: "bg-imac.jpg"
 published: true

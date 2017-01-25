@@ -44,6 +44,8 @@ collections:
     output: true
   team:
     output: true
+  our-work:
+    output: true
 
 landing_links:
   - url: ""

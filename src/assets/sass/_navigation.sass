@@ -98,12 +98,20 @@
       &:active
         background-color: rgba(0, 0, 0, 0.05)
 
+    .header--primary.has__bgimg &,
+      a
+        opacity: 0.75
+
+    .header--primary.has__bgimg &,
     .header--primary-shrink &
       a
-        line-height: 48px
         color: $co--wt
 
         &:hover,
         &:focus,
         &:active
           background-color: rgba(255, 255, 255, 0.1)
+
+    .header--primary-shrink &
+      a
+        line-height: 48px

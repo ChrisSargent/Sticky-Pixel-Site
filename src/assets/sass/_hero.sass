@@ -13,10 +13,6 @@
   .container
     max-width: $sz--m
 
-  .fullscreen__inner
-    vertical-align: bottom
-    padding-bottom: 3rem
-
   .btn--ghost
     margin-top: 3rem
     color: $co--brand
@@ -29,6 +25,10 @@
       color: $co--wt
 
   &.has__bgimg
+    .fullscreen__inner
+      vertical-align: bottom
+      padding-bottom: 3rem
+      
     &::before
       display: block
       content: ' '

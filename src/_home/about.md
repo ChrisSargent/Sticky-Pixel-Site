@@ -1,5 +1,5 @@
 ---
-title: About Us
+heading: About Us
 sub_heading: Relentless in the pursuit of creating beautiful digital experiences.
 ident: about
 homesection: true

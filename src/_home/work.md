@@ -1,5 +1,5 @@
 ---
-title: Our Work
+heading: Our Work
 ident: work
 homesection: true
 order: 2

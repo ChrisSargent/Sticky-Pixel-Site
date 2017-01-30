@@ -1,5 +1,5 @@
 ---
-title: Services
+heading: Services
 ident: services
 homesection: true
 order: 3

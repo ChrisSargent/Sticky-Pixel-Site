@@ -1,8 +1,7 @@
 ---
 layout: page
-heading: Case Study 2
-sub_heading: Description of the second case
-title: Case Study 2
+heading: Travelaer
+sub_heading: Responisve, React-Powered Single Page Website for an Airline Software company
 published: true
 cont_size: --m
 hero: work2_bg.jpg

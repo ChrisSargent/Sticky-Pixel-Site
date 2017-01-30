@@ -62,3 +62,6 @@ landing_links:
     text: Careers
   - url: "#contact"
     text: Contact Us
+
+gems:
+  - jekyll-sitemap

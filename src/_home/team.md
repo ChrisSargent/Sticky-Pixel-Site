@@ -1,5 +1,5 @@
 ---
-title: Our Team
+heading: Our Team
 ident: team
 homesection: true
 order: 4

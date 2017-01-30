@@ -5,7 +5,7 @@ heading:
     pre: Working on a digital
     post: non-profit project?
 sub_heading: Then ask us about our Philanthropic Fridays!
-title: Free Philanthropic Web Development
+meta_title: Free Philanthropic Web Development
 ident: free-fridays
 published: true
 cont_size: --s

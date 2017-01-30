@@ -41,11 +41,11 @@ keep_files: [assets]
 incremental: false
 collections:
   home:
-    output: true
+    output: false
   team:
-    output: true
+    output: false
   work:
-    output: true
+    output: false
 
 landing_links:
   - url: ""

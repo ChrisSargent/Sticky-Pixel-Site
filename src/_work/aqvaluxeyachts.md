@@ -14,11 +14,6 @@ order: 1
 website: http://www.aqvaluxeyachts.com/
 ---
 
-page_url: aqvaluxeyachts.html
-
-published: true
-
-
 ## Introduction
 Our core business is building the things you see; the look, feel and interaction of your website or application. We use the latest HTML, CSS and Javascript technologies and naturally our work looks delicious on all devices.
 

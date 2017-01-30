@@ -10,6 +10,5 @@ published: true
 {% assign work = site.work | sort:"order" | where: "published", true %}
 
 {% for case-study in work %}
-  FECK
   {% include case-study.html %}
 {% endfor %}

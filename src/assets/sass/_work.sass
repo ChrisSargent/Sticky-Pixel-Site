@@ -8,20 +8,13 @@
   margin-bottom: 1em
   color: #fff
 
-
 .section--work .work-list
   list-style: none
   margin: 0 0 0 0
   padding: 0
   display: flex
-  display: -webkit-box
-  display: -webkit-flex
-  display: -ms-flexbox
-  -webkit-flex-wrap: wrap
-  -ms-flex-wrap: wrap
   flex-wrap: wrap
   width: 100%
-
 
 .section--work .single-work
   margin: 0
@@ -33,38 +26,26 @@
   color: #fff
   background-color: #3a4b62
   min-height: 30vw
-  -webkit-box-flex: 1
-  -webkit-flex-grow: 1
-  -ms-flex-positive: 1
   flex-grow: 1
   z-index: 0
-  -webkit-flex-basis: 33.3%
-  -ms-flex-preferred-size: 33.3%
   flex-basis: 33.3%
   overflow: hidden
 
-
 .section--work .single-work:nth-child(5n+1),
 .section--work .single-work:nth-child(5n+2)
-  -webkit-flex-basis: 50%
-    -ms-flex-preferred-size: 50%
-    flex-basis: 50%
-
+  flex-basis: 50%
 
 .section--work .single-work--inner
-  background-color: rgba(0,0,0,0.5)
+  background-color: rgba(0, 0, 0, 0.5)
   width: 100%
   height: 100%
   position: relative
   z-index: -1
   opacity: 0
-  -webkit-transition: opacity .25s ease-in-out
-  transition: opacity .25s ease-in-out
-
+  transition: opacity 0.25s ease-in-out
 
 .section--work .single-work:hover .single-work--inner
   opacity: 1
-
 
 .section--work .single-work--titles
   position: absolute
@@ -72,18 +53,15 @@
   text-align: center
   width: 100%
 
-
 .section--work .single-work--title
-  font-family: Playfair Display,Georgia,Courier,serif
+  font-family: Playfair Display, Georgia, Courier, serif
   color: #fff
   text-transform: none
   font-size: 1.5em
   margin-bottom: 0.2em
 
-
 .section--work .single-work--subtitle
   color: #fff
-
 
 .section--work .single-work--links
   position: absolute
@@ -91,34 +69,26 @@
   text-align: center
   width: 100%
 
-
 .section--work .single-work--link
   color: #fff
   text-decoration: none
   font-size: 0.9em
-  -webkit-transition: all .2s ease-in-out
-  transition: all .2s ease-in-out
+  transition: all 0.2s ease-in-out
   border-bottom: 1px solid transparent
-
 
 .section--work .single-work--link:hover
   border-bottom: 1px solid #fff
-
 
 @media (max-width: 640px)
   .section--work .single-work,
   .section--work .single-work,
   .section--work .single-work:nth-child(5n+1),
   .section--work .single-work:nth-child(5n+2)
-    -webkit-flex-basis: 100%
-    -ms-flex-preferred-size: 100%
     flex-basis: 100%
     min-height: 100vw
 
-
   .section--work .single-work .single-work--inner
     opacity: 1
-
 
 /*--------Layout case-study---------
 
@@ -129,12 +99,11 @@
   border: 0
 
 .section--title h1
-  font-family: Playfair Display,Georgia,Courier,serif
+  font-family: Playfair Display, Georgia, Courier, serif
   font-size: 3em
   color: #fff
   text-transform: none
   margin-bottom: 0.2em
-
 
 .section--title h3
   color: #fff
@@ -142,5 +111,5 @@
   font-weight: normal
 
 .work--site-img
-  box-shadow: 0 0 10px rgba(0,0,0,0.5)
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5)
   margin-top: 50px

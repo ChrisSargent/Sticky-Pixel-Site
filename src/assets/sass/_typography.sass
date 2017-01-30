@@ -10,7 +10,7 @@ body
   font-family: $ff--main
   font-weight: 400
   line-height: $lh--base
-  color: $co--bk
+  color: $co--gr--dk
 
 h1,
 h2,
@@ -75,10 +75,10 @@ small
   margin-top: 2em
 
 .content
-  ul
+  ul:not([class])
     margin-bottom: 2em
     padding-left: 1.5em
     list-style: circle
 
-    li
+    li:not([class])
       margin-bottom: 1em * $lh--para - $lh--base

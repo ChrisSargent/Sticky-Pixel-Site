@@ -4,8 +4,14 @@
     {% if section.title %}
     <h1 class="{{ section.jsActHead | default: 'js__act-this--up' }}">{{ section.title }}</h1>
     {% endif %}
-    <div class="content {{ section.jsActContent | default: 'js__act-child--up' }}">
-      {{ section.content | markdownify }}
+    {% assign content = section.content | strip_newlines %}
+    {% unless content == ''  %}
+    <div class="content{% unless section.js_act_content == 'null'%} {{ section.js_act_content | default: 'js__act-child--up' }}{% endunless %}">
+      {{ content | markdownify }}
     </div>
+    {% endunless %}
   </div>
+  {% for add_content in section.additional_content %}
+    {% include {{add_content}} %}
+  {% endfor %}
 </section>

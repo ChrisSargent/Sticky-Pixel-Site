@@ -52,16 +52,13 @@ landing_links:
     text: Home
   - url: "#about"
     text: About Us
+  - url: "#work"
+    text: Work
   - url: "#services"
     text: Services
   - url: "#team"
     text: Team
   - url: "careers/front-end-developer.html"
     text: Careers
-  - url: "articles/free-fridays.html"
-    text: Free Fridays
   - url: "#contact"
     text: Contact Us
-
-gems: [jekyll-contentblocks]
- # This will require each of these gems automatically.

@@ -1,5 +1,5 @@
 ---
-name: Jess Duguid
+ident: Jess Duguid
 sub_heading: Art Director
 type: team
 order: 2

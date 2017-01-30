@@ -1,11 +1,10 @@
 ---
 title: About Us
 sub_heading: Relentless in the pursuit of creating beautiful digital experiences.
-sectionid: about
+ident: about
 homesection: true
 order: 1
 bg: bg-macbook.jpg
-classlist: has__bgimg
 published: true
 cont_size: --s
 ---

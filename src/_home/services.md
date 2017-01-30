@@ -1,6 +1,6 @@
 ---
 title: Services
-sectionid: services
+ident: services
 homesection: true
 order: 3
 published: true

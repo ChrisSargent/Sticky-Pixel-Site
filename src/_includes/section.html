@@ -1,5 +1,5 @@
 {% assign section = include.section %}
-<section id="{{ section.sectionid }}" class="section--block {{ section.classlist }} js__scn"{% if section.bg %} style="background-image: url({{ site.assets }}/img/{{ section.bg }})"{% endif %}>
+<section class="section--block js__scn {{ section.classlist }}{% if section.bg %} has__bgimg{% endif %}"{% if section.bg %} style="background-image: url({{ site.assets }}/img/{{ section.bg }})"{% endif %}>
   <div class="container{{ section.cont_size }}">
     {% if section.title %}
     <h1 class="{{ section.jsActHead | default: 'js__act-this--up' }}">{{ section.title }}</h1>
@@ -7,11 +7,12 @@
     {% assign content = section.content | strip_newlines %}
     {% unless content == ''  %}
     <div class="content{% unless section.js_act_content == 'null'%} {{ section.js_act_content | default: 'js__act-child--up' }}{% endunless %}">
-      {{ content | markdownify }}
+      {{ section.content | markdownify }}
     </div>
     {% endunless %}
   </div>
   {% for add_content in section.additional_content %}
     {% include {{add_content}} %}
   {% endfor %}
+  <div class="pin--top" id="{{ section.ident }}" aria-hidden="true"></div>
 </section>

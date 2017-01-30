@@ -1,6 +1,6 @@
 ---
 title: Our Team
-sectionid: team
+ident: team
 homesection: true
 order: 4
 bg: "bg-imac.jpg"

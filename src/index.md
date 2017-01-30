@@ -1,6 +1,6 @@
 ---
-id: home
 layout: default
+ident: home
 use_sitedesc: true
 heading:
     pre: Ready to build
@@ -18,5 +18,3 @@ buttons:
 {% for fp_section in fp_sections %}
   {% include section.html section=fp_section %}
 {% endfor %}
-
-{% contentblock additional_content %}

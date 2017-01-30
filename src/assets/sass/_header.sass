@@ -10,7 +10,7 @@
   overflow: scroll
   -webkit-overflow-scrolling: touch
   max-height: 100%
-  transition: all 0.5s ease-in-out
+  transition: all $tr--slow ease-in-out
   animation: fadeIn $tr--slow 2s both
   color: $co--wt
   border-bottom: $ln--thin $co--brand
@@ -25,6 +25,7 @@
     display: block
     padding: 0.6em 0.6em
     color: inherit
+    transition: padding $tr--slow ease-in-out
 
   svg
     display: block
@@ -49,7 +50,4 @@
       background-color: $co--header
 
       .logo
-        padding: 4px 0.5em
-
-      .logo__text
-        fill: $co--wt
+        padding: 4px 0.6em

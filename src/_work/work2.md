@@ -1,14 +1,12 @@
 ---
-layout: case-study
-category: work
-id: work2
+layout: page
 heading: Case Study 2
-subheading: Description of the second case
+sub_heading: Description of the second case
 title: Case Study 2
 published: true
 cont_size: --m
-bg_image: work2_bg.jpg
-website_image: work2_web.jpg
+hero: work2_bg.jpg
+main_screenshot: work2_web.jpg
 order: 2
 website: http://www.aqvaluxeyachts.com/
 ---

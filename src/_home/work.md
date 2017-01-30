@@ -1,6 +1,6 @@
 ---
 title: Our Work
-sectionid: work
+ident: work
 homesection: true
 order: 2
 published: true

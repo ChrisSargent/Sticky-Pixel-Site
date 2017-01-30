@@ -49,13 +49,13 @@ var stickypixel = (function() {
 
   function _pageScroll(event) {
     var targetId, targetEl;
-    console.log('Test');
     event.preventDefault();
     _hideMobileNav();
 
     targetId = _getTargetHash(event.target);
     targetEl = document.getElementById(targetId);
-    _scrollTo(document.body, targetEl.offsetTop, 450);
+    console.log(targetEl.getBoundingClientRect());
+    _scrollTo(document.body, targetEl.getBoundingClientRect().top + window.scrollY, 450);
   };
 
 
@@ -68,9 +68,7 @@ var stickypixel = (function() {
 			}
 			el = el.parentNode;
 		}
-    console.log(el.hash);
     hash = el.hash.split('#')[1];
-    console.log(hash);
     return hash;
   }
 

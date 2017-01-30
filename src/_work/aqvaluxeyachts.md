@@ -1,15 +1,13 @@
 ---
-layout: case-study
-category: work
-id: aqvaluxeyachts
+layout: page
 heading: AqvaLuxe Yachts
-home_subheading: Luxury Yacht Sales & Charters
-subheading: A Luxury Responsive Website for a Luxury Yacht Sales & Charter Company
+home_sub_heading: Luxury Yacht Sales & Charters
+sub_heading: A Luxury Responsive Website for a Luxury Yacht Sales & Charter Company
 title: AqvaLuxe Yachts
 published: true
 cont_size: --m
-bg_image: aqvaluxe_bg.jpg
-website_image: aqvaluxe_web.jpg
+hero: aqvaluxe_bg.jpg
+main_screenshot: aqvaluxe_web.jpg
 order: 1
 website: http://www.aqvaluxeyachts.com/
 ---

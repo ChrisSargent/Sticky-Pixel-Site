@@ -8,9 +8,17 @@
 
   p
     font-weight: 300
-    margin: 2em 0
+    margin: 2rem 0 0
+
+  .container
+    max-width: $sz--m
+
+  .fullscreen__inner
+    vertical-align: bottom
+    padding-bottom: 3rem
 
   .btn--ghost
+    margin-top: 3rem
     color: $co--brand
     border: $ln--thin $co--brand
     border-radius: 2px
@@ -19,6 +27,17 @@
     &:focus,
     &:active
       color: $co--wt
+
+  &.has__bgimg
+    &::before
+      display: block
+      content: ' '
+      position: absolute
+      top: 0
+      left: 0
+      width: 100%
+      height: 100%
+      background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.95) 100%)
 
   @media (min-width: $bp--s)
     h1

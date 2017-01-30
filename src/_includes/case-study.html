@@ -1,13 +1,11 @@
 <li class="single-work" style="background-image:url({{ site.assets }}/img/{{ case-study.bg_image }});">
-	<div class="single-work--inner">
+	<a class="single-work--inner" href="{{ case-study.url }}">
 		<div class="single-work--titles">
 			<h4 class="single-work--title">{{ case-study.heading }}</h4>
 			<span class="single-work--subtitle">{{ case-study.subheading }}</span>
 		</div>
 		<div class="single-work--links">
-			<a class="single-work--link" href="{{ case-study.url }}">Read the Case Study</a>
-			<span class="single-work--link-divider">|</span>
-			<a class="single-work--link" target="_blank" href="{{ case-study.website }}">Visit the Site</a>
+			<span class="single-work--link">Read the Case Study</span>
 		</div>
-	</div>
+	</a>
 </li>

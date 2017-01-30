@@ -4,7 +4,7 @@ sectionid: services
 classes: detailed-section
 homesection: true
 order: 3
-layout: page
+
 published: true
 cont_size: --s
 classlist: section--detail

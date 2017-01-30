@@ -4,7 +4,6 @@ sub_heading: Relentless in the pursuit of creating beautiful digital experiences
 sectionid: about
 homesection: true
 order: 1
-layout: page
 bg: bg-macbook.jpg
 classlist: has__bgimg
 published: true

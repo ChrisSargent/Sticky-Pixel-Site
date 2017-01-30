@@ -1,6 +1,6 @@
 {% assign section = include.section %}
-<section id="{{ section.sectionid }}" class="section--block {{section.classlist}} js__scn"{% if section.bg %} style="background-image: url({{site.assets}}/img/{{ section.bg }})"{% endif %}>
-  <div class="container{{section.cont_size}}">
+<section id="{{ section.sectionid }}" class="section--block {{ section.classlist }} js__scn"{% if section.bg %} style="background-image: url({{ site.assets }}/img/{{ section.bg }})"{% endif %}>
+  <div class="container{{ section.cont_size }}">
     {% if section.title %}
     <h1 class="{{ section.jsActHead | default: 'js__act-this--up' }}">{{ section.title }}</h1>
     {% endif %}

@@ -7,7 +7,7 @@ home_subheading: Luxury Yacht Sales & Charters
 subheading: A Luxury Responsive Website for a Luxury Yacht Sales & Charter Company
 title: AqvaLuxe Yachts
 published: true
-cont_size: --s
+cont_size: --m
 bg_image: aqvaluxe_bg.jpg
 website_image: aqvaluxe_web.jpg
 order: 1

@@ -6,7 +6,7 @@ heading: Case Study 2
 subheading: Description of the second case
 title: Case Study 2
 published: true
-cont_size: --s
+cont_size: --m
 bg_image: work2_bg.jpg
 website_image: work2_web.jpg
 ---

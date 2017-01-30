@@ -1,14 +1,14 @@
 ---
 layout: case-study
-category: our-work
-id: aqvaluxeyachts
-heading: AqvaLuxe Yachts
-subheading: A Luxury Responsive Website for a Luxury Yacht Sales & Charter Company
-title: AqvaLuxe Yachts
+category: work
+id: work2
+heading: Case Study 2
+subheading: Description of the second case
+title: Case Study 2
 published: true
 cont_size: --s
-bg_image: aqvaluxe_bg.jpg
-website_image: aqvaluxe_web.jpg
+bg_image: work2_bg.jpg
+website_image: work2_web.jpg
 ---
 
 ## Introduction

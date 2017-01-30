@@ -1,6 +1,6 @@
 ---
 title: Our Work
-sectionid: our-work
+sectionid: work
 homesection: true
 order: 2
 layout: page
@@ -9,8 +9,8 @@ published: true
 type: ourwork
 ---
 
-{% assign our-work = site.our-work | sort:"order" | where: "published", true %}
+{% assign work = site.work | sort:"order" | where: "published", true %}
 
-{% for case-study in our-work %}
+{% for case-study in work %}
   {% include case-study.html %}
 {% endfor %}

@@ -1,12 +1,12 @@
 ---
 layout: page
-heading: Travelaer
-sub_heading: Responsive, High Performance Website for an Airline Software company
+heading: Silex2
+sub_heading: Animation-Crazy, delightful website for a major French building project
 published: true
 cont_size: --m
 hero: work2_bg.jpg
 main_screenshot: work2_web.jpg
-order: 2
+order: 1
 website: http://www.aqvaluxeyachts.com/
 ---
 

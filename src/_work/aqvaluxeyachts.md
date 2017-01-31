@@ -6,7 +6,7 @@ published: true
 cont_size: --m
 hero: aqvaluxe_bg.jpg
 main_screenshot: aqvaluxe_web.jpg
-order: 1
+order: 3
 website: http://www.aqvaluxeyachts.com/
 ---
 

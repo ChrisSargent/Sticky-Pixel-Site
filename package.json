@@ -8,7 +8,10 @@
     "type": "git",
     "url": "git+https://github.com/ChrisSargent/Sticky-Pixel-Site.git"
   },
-  "dependencies": {},
+  "dependencies": {
+    "reset-css": "^2.2.0",
+    "scrollmagic": "^2.0.5"
+  },
   "devDependencies": {
     "critical": "*",
     "autoprefixer": "*",

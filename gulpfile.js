@@ -20,7 +20,7 @@ var distCss = dist + '/assets/css';
 
 var srcJs = src + '/assets/js';
 var srcJsFiles = [
-  'bower_components/scrollmagic/scrollmagic/minified/ScrollMagic.min.js',
+  'node_modules/scrollmagic/scrollmagic/minified/ScrollMagic.min.js',
   srcJs + '/ui-scroll.js',
   srcJs + '/ui-core.js'
 ];
@@ -33,7 +33,7 @@ var srcImgs = src + '/assets/img';
 gulp.task('sass', function() {
   return gulp.src(srcSassFile)
     .pipe(sass({
-        includePaths: ['bower_components']
+        includePaths: ['node_modules']
       })
       .on('error', sass.logError))
     .pipe(gulp.dest(distCss))

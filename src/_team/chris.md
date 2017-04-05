@@ -4,7 +4,7 @@ heading:
 sub_heading: Founder & Digital Director
 type: team
 order: 1
-layout: page
+layout: article
 image: chris.jpg
 published: true
 cont_size: --s

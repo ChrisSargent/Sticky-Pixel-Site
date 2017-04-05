@@ -65,3 +65,4 @@ landing_links:
 
 gems:
   - jekyll-sitemap
+  - jekyll-contentblocks

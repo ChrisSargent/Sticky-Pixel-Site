@@ -1,23 +1,24 @@
 ---
-layout: page
+layout: work
 heading: AqvaLuxe Yachts
-sub_heading: Luxury Responsive Website for a Luxury Yacht Sales & Charter Company
+sub_heading: Luxury, Responsive and Engaging; for a Luxury Yacht Sales & Charter Company
 published: true
-cont_size: --m
 hero: aqvaluxe_bg.jpg
 main_screenshot: aqvaluxe_web.jpg
 order: 3
 website: http://www.aqvaluxeyachts.com/
+dates: June 2016 - November 2016
+technologies: Responsive, HTML, CSS, JavaScript, Sass, PHP, Timber / Twig, WordPress, jQuery
+testimonial:
 ---
 
-## Introduction
-Our core business is building the things you see; the look, feel and interaction of your website or application. We use the latest HTML, CSS and Javascript technologies and naturally our work looks delicious on all devices.
+{% contentfor intro %}
+AqvaLuxe Yachts is a Yacht sales, brokerage and charter company based in Monaco.
+{% endcontentfor %}
 
-## Services
-Our core business is building the things you see; the look, feel and interaction of your website or application. We use the latest HTML, CSS and Javascript technologies and naturally our work looks delicious on all devices.
+# Services
+Visual Design, UI Design, UX Design, Interaction Design, Front-End Build, Database Design & Admin, Back-End Development
 
-## Goals
-Our core business is building the things you see; the look, feel and interaction of your website or application. We use the latest HTML, CSS and Javascript technologies and naturally our work looks delicious on all devices.
+# Approach
 
-## Approach
-Our core business is building the things you see; the look, feel and interaction of your website or application. We use the latest HTML, CSS and Javascript technologies and naturally our work looks delicious on all devices.
+# Outcome

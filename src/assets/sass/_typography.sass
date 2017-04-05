@@ -34,6 +34,9 @@ p
   line-height: $lh--para
   margin-bottom: 2em
 
+  &:last-child
+    margin-bottom: 0!important
+
   a
     transition: all 0.2s ease-in-out
     text-decoration: none
@@ -54,6 +57,22 @@ small
   display: block
   text-transform: none
   opacity: 0.8
+
+blockquote
+  font-family: $ff--alt
+  font-size: $fs--xl
+  font-weight: 300
+  font-style: italic
+
+  p
+    opacity: 0.9
+
+  cite
+    font-style: normal
+    display: block
+    margin-top: 2em
+    font-size: $fs--xs
+    font-weight: 700
 
 .legal
   font-size: $fs--xs

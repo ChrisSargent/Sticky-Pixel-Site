@@ -3,7 +3,7 @@ ident: Jess Duguid
 sub_heading: Art Director
 type: team
 order: 2
-layout: page
+layout: article
 image: jess.jpg
 published: false
 cont_size: --s

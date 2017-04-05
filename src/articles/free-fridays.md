@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: article
 category: article
 heading:
     pre: Working on a digital

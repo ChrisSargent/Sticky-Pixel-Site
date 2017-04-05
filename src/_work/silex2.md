@@ -1,23 +1,22 @@
 ---
-layout: page
-heading: Silex2
-sub_heading: Animation-Crazy, delightful website for a major French building project
+layout: work
+heading: Saentys / Silex2
+sub_heading: Animation-Crazy and Delightful; for a Major French Building Project
 published: true
-cont_size: --m
 hero: work2_bg.jpg
 main_screenshot: work2_web.jpg
 order: 1
 website: http://www.aqvaluxeyachts.com/
+dates: April 2016 - July 2016
+technologies: Responsive, HTML, CSS, JavaScript, Less, Twig, PHP, jQuery, GSAP
 ---
 
 ## Introduction
-Our core business is building the things you see; the look, feel and interaction of your website or application. We use the latest HTML, CSS and Javascript technologies and naturally our work looks delicious on all devices.
+AqvaLuxe Yachts is a Yacht sales, brokerage and charter company based in Monaco.
 
 ## Services
-Our core business is building the things you see; the look, feel and interaction of your website or application. We use the latest HTML, CSS and Javascript technologies and naturally our work looks delicious on all devices.
-
-## Goals
-Our core business is building the things you see; the look, feel and interaction of your website or application. We use the latest HTML, CSS and Javascript technologies and naturally our work looks delicious on all devices.
+Front-End Build, Interaction Design
 
 ## Approach
-Our core business is building the things you see; the look, feel and interaction of your website or application. We use the latest HTML, CSS and Javascript technologies and naturally our work looks delicious on all devices.
+
+## Outcome

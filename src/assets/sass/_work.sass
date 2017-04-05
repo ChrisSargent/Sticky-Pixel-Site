@@ -1,13 +1,22 @@
 /*--------Section work---------
 
+.page__work
+  .section--block:not(.fullscreen):not(.testimonial)
+    .container
+      border-top: $ln--thin $co--gr--lt
+
+  .section--screenshot + .section--block
+    .container
+      border-top: 0
+
 .section--work
-  background: $co--bk
   padding-top: 2.5rem
   padding-bottom: 0
+  background: $co--bk
 
   h1
-    color: $co--wt
     margin-bottom: 2.5rem
+    color: $co--wt
 
   .pin--top
     top: $hd-height / -1
@@ -17,39 +26,40 @@
   flex-wrap: wrap
 
 .work__tile
+  line-height: 1.2
+  position: relative
+  z-index: 0
+  overflow: hidden
+  flex-grow: 1
+  flex-basis: 100%
+  height: 60vw
+  min-height: 320px
+  max-height: 520px
+  color: $co--wt
+  background-color: #3a4b62
   background-repeat: no-repeat
   background-position: 50%
   background-size: cover
-  line-height: 1.2
-  position: relative
-  color: $co--wt
-  background-color: #3a4b62
-  flex-grow: 1
-  z-index: 0
-  flex-basis: 100%
-  overflow: hidden
-  height: 60vw
-  min-height: 320px
 
   &--inner
-    text-decoration: none
-    color: $co--wt
-    padding: 2em 10%
     display: flex
     align-items: center
-    background-color: rgba(0, 0, 0, 0.5)
     width: 100%
     height: 100%
+    padding: 2em 10%
     transition: opacity $tr--mid ease-in-out
+    text-decoration: none
+    color: $co--wt
+    background-color: rgba(0, 0, 0, 0.5)
 
   &--titles
     width: 100%
 
   &--title
     font-family: $ff--headings
-    text-transform: none
     font-size: $fs--xl
     margin-bottom: 0.2em
+    text-transform: none
 
   &--subtitle
     font-weight: 300
@@ -58,10 +68,10 @@
     display: none
 
   &--link
-    font-weight: 300
-    text-decoration: none
     font-size: $fs--s
+    font-weight: 300
     transition: all $tr--mid ease-in-out
+    text-decoration: none
     border-bottom: 1px solid transparent
 
     &:hover
@@ -69,8 +79,8 @@
 
 @media (min-width: $bp--l)
   .work__tile
-    height: 30vw
     flex-basis: 33.3%
+    height: 30vw
 
     &--inner
       opacity: 0
@@ -83,18 +93,66 @@
       flex-basis: 50%
 
     &--links
-      display: block
       position: absolute
       bottom: 2em
       left: 10%
+      display: block
 
 /*--------Layout case-study---------
 
 .section--screenshot
   position: relative
-  padding: 0
   margin-top: -8rem
+  padding: 0
   border: 0
 
-.work--site-img
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5)
+.screenshot
+  &--dt
+    box-shadow: 0 0 30px 10px rgba(0, 0, 0, 0.5)
+
+  &--mob
+
+.screenshot__bg--mob
+  margin: -9.5% -10.5%
+  padding: 30% 16% 35%
+  background-image: url('/assets/img/iphone.png')
+  background-repeat: no-repeat
+  background-size: 100%
+
+  img
+    border-radius: 4px
+
+.ssleft,
+.ssright
+  display: flex
+  align-items: center
+
+  .screenshot--mob
+    flex: none
+    width: 50%
+
+  .content
+    width: 60%
+    margin-left: 2rem
+
+    p
+      margin-bottom: 4rem
+
+    span
+      display: block
+
+.ssleft
+  .screenshot--mob
+    margin-left: -10%
+
+  .content
+    margin-left: 2rem
+
+.ssright
+  .screenshot--mob
+    order: 2
+    margin-right: -10%
+
+  .content
+    order: 1
+    margin-right: 2rem

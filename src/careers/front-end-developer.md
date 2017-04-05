@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: article
 category: career
 heading:
     pre: Ready to build some

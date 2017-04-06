@@ -11,31 +11,42 @@ mobile2: travelaer-mob-two.jpg
 order: 2
 website: http://www.travelaer.com/
 dates: September 2016 – March 2017
-technologies: Responsive, HTML, CSS, JavaScript, Sass, ReactJS, Redux, Isomorphic / Universal, PHP, WordPress API, NodeJS, Express
+technologies: Responsive, HTML, CSS, JavaScript, Sass, ReactJS, Redux, Isomorphic / Universal, PHP, WordPress, REST API, NodeJS, Express, Nginx
 services: Interaction Design, Front-End Build, Database Design & Admin, Back-End Development
 ---
 
 {% contentfor intro %}
-Travelaer is a digital product company focused on the airline and travel industry. Their market-challenging software is focused on providing an amazing customer experience for travellers, based on market trends and behavioural patterns within internal and external data. Their two core products are proven to increase conversion rates and improve the customer satisfaction scores across all touch points of travel and the booking process;
+Travelaer is a digital product company serving the airline and travel industry. Their core products focus on providing an amazing customer experience for travellers and are proven to increase conversion rates as well as improve the customer satisfaction scores across all touch points of travel and the booking process.
 
-Travelaer approached us to build their new, state-of-the-art website in order to show off their design, usability and technical expertise as well as improving their visibility to search engines and the outsite world.
+Travelaer approached us to build their new, state-of-the-art website in order to better demonstrate their design, usability and technical expertise as well as improving their visibility to search engines and the outside world by integrating their existing, disparate blogs.
 {% endcontentfor %}
 
 
 {% contentfor approach %}
-Approach
+After discussions with the Travelaer team we settled on building the site as a React.js single-page application, using WordPress as a CMS and serving content via its REST API. This gives their team the ability to easily add and update content & images with ease, in a familiar and, frankly, fantastic way using the standard, WordPress Admin interface.
+
+The React.js powered front-end means that users are engaged in a native-app-like experience with near instant navigation and page loads. Using React Redux and Router means that we are able to also deliver an initial server-side render to the browser, making an isomorphic / universal site that’s fast-to-load on mobile devices and is just as friendly for social-sharing, SEO, bots and other devices with JavaScript disabled.
+
+The modern and friendly feel, working across all devices, helps to reinforce Travelaer’s pursuit of being a state-of-the-art tech company focused on usability and design.
 {% endcontentfor %}
 
 {% contentfor why %}
-Why
+Sticky Pixel has a close collaboration with Travelaer, the two companies working together in the past on two consulting projects for Amadeus. In the first, we developed a library of reusable, front-end components and online style guide for a flagship consumer and business travel management app. In the second, we provided front-end development of a brand-new app for their Outlook Web platform.
+
+This experience gave Travelaer the knowledge and confidence that we were able to produce high-quality results, reflecting the values of Travelaer.
 {% endcontentfor %}
 
 {% contentfor scope %}
-Scope
+For this project, Travelaer already had a clear vision of the look and feel of the site and were able to provide us with comprehensive visual designs and content in Photoshop files. Our focus was on bringing those designs to life, delivering a beautiful, responsive and intuitive experience for users, including:
+- Initial site and state management architecture
+- Creation of bespoke, single-page, React.js powered site, using multiple reusable components and modules
+- Setup of WordPress using extensive custom fields to turn it in to a fully-fledged CMS
+- Customisation of the WordPress API using a mix of custom and built-in end points
+- Setup and customisation of Node.JS & Express server to provide the initial server-side render
+- Setup and hosting of the site on a Digital Ocean Linux / Nginx Server
 {% endcontentfor %}
 
 {% contentfor testimonial %}
-> "We are very satisfied with this approach. We are a digital product company focused on flexibility, usability and accessibility. What we wanted was to have a website closely aligned with these values. Sticky Pixel produced an accurate and relevant site, introducing compelling tools and techniques for an engaging experince. This is our third collaboration with them and they did a fantastic job again. We are definitely going to collaborate with them on our future projects."
-<cite>Mike Slone, Travelaer Co-Founder and CEO</cite>
-
+> “We are extremely happy with the approach and results that the team have delivered. Being a digital product company focused on flexibility, usability and customer experience, we needed a website that clearly demonstrated these values to our customers. They produced an accurate and relevant site, using the right tools and techniques for an engaging experience. This is our third collaboration with them and they did a fantastic job again, we will definitely continue to work with them on future projects.”
+<cite>Mike Slone, Travelaer CEO</cite>
 {% endcontentfor %}

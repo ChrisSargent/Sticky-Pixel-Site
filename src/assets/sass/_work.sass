@@ -1,11 +1,14 @@
 /*--------Section work---------
 
 .page__work
-  .section--block:not(.fullscreen):not(.testimonial)
+  .section--block
     .container
       border-top: $ln--thin $co--gr--lt
 
-  .section--screenshot + .section--block
+  .section--screenshot + .section--block,
+  .testimonial,
+  .hero,
+  .fullscreen
     .container
       border-top: 0
 
@@ -102,15 +105,21 @@
 
 .section--screenshot
   position: relative
-  margin-top: -8rem
-  padding: 0
-  border: 0
+
+  &:first-child
+    margin-top: -8rem
+
+  .container
+    padding-top: 0
+    padding-bottom: 0
 
 .screenshot
   &--dt
     box-shadow: 0 0 30px 10px rgba(0, 0, 0, 0.5)
 
   &--mob
+    max-width: 320px
+    margin: 0 auto
 
 .screenshot__bg--mob
   margin: -9.5% -10.5%
@@ -124,35 +133,48 @@
 
 .ssleft,
 .ssright
-  display: flex
-  align-items: center
 
   .screenshot--mob
-    flex: none
-    width: 50%
 
   .content
-    width: 60%
-    margin-left: 2rem
+    margin-top: 4rem
 
-    p
-      margin-bottom: 4rem
+    p + h2
+      margin-top: 4rem
 
     span
       display: block
 
-.ssleft
-  .screenshot--mob
-    margin-left: -10%
+    li
+      margin-bottom: 1.5em * $lh--para - $lh--base
 
-  .content
-    margin-left: 2rem
+@media (min-width: $bp--l)
+  .ssleft,
+  .ssright
+    display: flex
+    align-items: center
 
-.ssright
-  .screenshot--mob
-    order: 2
-    margin-right: -10%
+    .screenshot--mob
+      margin: 0
+      flex: 2 10 50%
 
-  .content
-    order: 1
-    margin-right: 2rem
+    .content
+      margin-top: 0
+      width: 60%
+      flex: 0 0 auto
+
+  .ssleft
+    .screenshot--mob
+      margin-left: -10%
+
+    .content
+      margin-left: 2rem
+
+  .ssright
+    .screenshot--mob
+      order: 2
+      margin-right: -10%
+
+    .content
+      order: 1
+      margin-right: 2rem

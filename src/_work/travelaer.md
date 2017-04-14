@@ -3,7 +3,7 @@ layout: work
 heading: Travelaer
 sub_heading: Responsive and State-of-the-Art; for an Airline Software Company
 published: true
-hero: work2_bg.jpg
+hero: travelaer-hero.jpg
 desktop1: travelaer-dt-one.jpg
 desktop2: travelaer-dt-two.jpg
 mobile1: travelaer-mob-one.jpg
@@ -30,11 +30,13 @@ The React.js powered front-end means that users are engaged in a native-app-like
 The modern and friendly feel, working across all devices, helps to reinforce Travelaer’s pursuit of being a state-of-the-art tech company focused on usability and design.
 {% endcontentfor %}
 
+
 {% contentfor why %}
 Sticky Pixel has a close collaboration with Travelaer, the two companies working together in the past on two consulting projects for Amadeus. In the first, we developed a library of reusable, front-end components and online style guide for a flagship consumer and business travel management app. In the second, we provided front-end development of a brand-new app for their Outlook Web platform.
 
 This experience gave Travelaer the knowledge and confidence that we were able to produce high-quality results, reflecting the values of Travelaer.
 {% endcontentfor %}
+
 
 {% contentfor scope %}
 For this project, Travelaer already had a clear vision of the look and feel of the site and were able to provide us with comprehensive visual designs and content in Photoshop files. Our focus was on bringing those designs to life, delivering a beautiful, responsive and intuitive experience for users, including:
@@ -45,6 +47,7 @@ For this project, Travelaer already had a clear vision of the look and feel of t
 - Setup and customisation of Node.JS & Express server to provide the initial server-side render
 - Setup and hosting of the site on a Digital Ocean Linux / Nginx Server
 {% endcontentfor %}
+
 
 {% contentfor testimonial %}
 > “We are extremely happy with the approach and results that the team have delivered. Being a digital product company focused on flexibility, usability and customer experience, we needed a website that clearly demonstrated these values to our customers. They produced an accurate and relevant site, using the right tools and techniques for an engaging experience. This is our third collaboration with them and they did a fantastic job again, we will definitely continue to work with them on future projects.”

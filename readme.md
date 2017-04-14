@@ -17,3 +17,10 @@ See the website here: http://www.stickypixel.com
 
 # Build
 - Run `gulp build`: For an optimised build which does the same as the above but with minified and autoprefixed code etc. and also critical, inlined-css.
+- Run `gulp prod`: For an optimised build which does the same as the above but with also critical, inlined-css.
+
+# Images
+- Run `gulp images` to minify and copy images to the `dist` folder
+
+# Fonts
+- Copy the `assets/fonts` folder to the `dist` folder

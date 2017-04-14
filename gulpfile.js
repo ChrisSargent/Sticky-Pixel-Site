@@ -180,10 +180,16 @@ gulp.task('critical', ['build'], function(cb) {
     inline: true,
     base: dist + '/',
     src: 'index.html',
-    dest: dist + '/index.html',
+    dest: 'index.html',
     minify: true,
-    width: 1440,
-    height: 900
+    dimensions: [{
+        height: 568,
+        width: 320
+    }, {
+        height: 900,
+        width: 1440
+    }],
+    ignore: ['@font-face'],
   });
 });
 

@@ -1,7 +1,6 @@
 ---
-heading: Services
+title: Services
 ident: services
-homesection: true
 order: 3
 published: true
 cont_size: --s

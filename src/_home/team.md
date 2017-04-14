@@ -1,7 +1,6 @@
 ---
-heading: Our Team
+title: Our Team
 ident: team
-homesection: true
 order: 4
 bg: "bg-imac.jpg"
 published: true

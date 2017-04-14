@@ -1,12 +1,11 @@
 ---
-heading: Our Work
+title: Our Work
 ident: work
-homesection: true
 order: 2
-published: true
+published: false
 classlist: section--work
 js_act_content: 'null'
 additional_content:
   - work-list.html
-cont_size: --s nopad
+cont_size: --s
 ---

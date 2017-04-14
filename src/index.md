@@ -13,7 +13,7 @@ buttons:
         text: Get in Touch
 ---
 
-{% assign fp_sections = site.home | sort:"order" | where: "homesection", true %}
+{% assign fp_sections = site.home | sort:"order" | where: "published", true %}
 
 {% for fp_section in fp_sections %}
   {% include section.html section=fp_section %}

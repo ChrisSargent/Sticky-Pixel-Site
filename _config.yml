@@ -27,8 +27,8 @@ foundingDate: 2015-05-01
 founder: Chris Sargent
 address: 29 Crick Road, Rugby, Warwickshire, CV21 4DU
 fraddress: Le Saphir, Rue Bricka, Juan&#8209;les&#8209;Pins, 06160&nbsp;France
-legal_name: Sticky Pixel Ltd
-company_no: 6849452
+legal_name: Sticky Pixel SARL
+company_no: 828790030 RCS Antibes
 assets: '/assets'
 images: '/assets/img'
 
@@ -52,14 +52,12 @@ landing_links:
     text: Home
   - url: "#about"
     text: About Us
-  # - url: "#work"
-  #   text: Work
+  - url: "#work"
+    text: Work
   - url: "#services"
     text: Services
   - url: "#team"
     text: Team
-  - url: "careers/front-end-developer.html"
-    text: Careers
   - url: "#contact"
     text: Contact Us
 

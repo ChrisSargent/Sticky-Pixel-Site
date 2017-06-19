@@ -54,7 +54,6 @@ var stickypixel = (function() {
 
     targetId = _getTargetHash(event.target);
     targetEl = document.getElementById(targetId);
-    console.log(targetEl.getBoundingClientRect());
     _scrollTo(document.body, targetEl.getBoundingClientRect().top + window.scrollY, 450);
   };
 

@@ -14,5 +14,3 @@ js_act_content: 'null'
 {% for member in team %}
   {% include member.html %}
 {% endfor %}
-
-{% include subscript.html %}

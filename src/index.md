@@ -3,9 +3,9 @@ layout: default
 ident: home
 use_sitedesc: true
 heading:
-    pre: Ready to build
-    post: something beautiful?
-sub_heading: You've come to the right place. We are experts at bringing ideas to life by building the things you see and interact with online.
+    pre: Are you ready to
+    post: delight your customers?
+sub_heading: You've come to the right place; we help our clients create beautiful and effective digital experiences.
 buttons:
     -   url: "#about"
         text: Learn More &#x25BE;

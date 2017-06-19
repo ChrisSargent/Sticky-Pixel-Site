@@ -7,23 +7,35 @@ cont_size: --s
 classlist: section--detail
 ---
 
-## Digital Design and Development
-Our core business is building the things you see; the look, feel and interaction of your website or application. We use the latest HTML, CSS and Javascript technologies and naturally our work looks delicious on all devices.
+To help our clients become more successful in ultra-competitive environments, we focus on three core services:
 
-- Web design and development (HTML, CSS, Javascript)
+## Web and Application Development
+Building beautiful, digital things; using the latest HTML, CSS and Javascript technologies to create cohesive experiences for your customers across all devices.
+
+- Bespoke web and application design and development
 - Responsive development
 - Front-end engineering
-- User experience and interaction
-- Ecommerce
+- eCommerce
+- WordPress & CMS customisation
+
+## UX / UI and Product Consulting
+Designing the look and feel of websites and applications to create memorable user interactions and product experience.
+
+- User and product discovery consulting
+- User scenarios and persona development
+- User journey & story mapping
+- User experience & interaction best practice
+- Designing for accessibility
+- Managing external development agencies where necessary, using Agile-inspired methods
 
 ## Digital Marketing
-We care about our client’s stories and we go out of our way to ensure they are told in the most compelling way. We are big believers of using inbound marketing strategies and amazing content to drive traffic your way. Whether you need to generate more leads, increase your brand recognition or convert more prospects we’ll have some ideas that we think you’ll love.
+We care about our clients' stories and we go out of our way to ensure they are told in the most compelling way. We employ content marketing methods to generate more leads, increase brand recognition and convert more prospects, leading to improvements in our clients' bottom line.
 
+- Marketing strategy design and consulting
+- Digital marketing campaigns
+- PPC campaign management
+- On-page and external SEO Consulting
+- Online content strategy
 - Visual and graphic design
 - Branding and identity design
 - Digital and physical style guides
-- Digital marketing (not just ppc!)
-- Online content strategy
-- User scenarios and persona development
-
-When we need them, we can count on a small network of trusted specialists; copywriters, back-end developers and programmers who extend our services and our expertise.

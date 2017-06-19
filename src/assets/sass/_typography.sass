@@ -48,6 +48,9 @@ p
       border-bottom: $ln--thin $co--brand-highlighted
       outline: 0
 
+ul
+  line-height: $lh--para
+
 small
   font-size: 0.9em
   font-weight: 300
@@ -60,6 +63,9 @@ blockquote
   font-size: $fs--xl
   font-weight: 300
   font-style: italic
+
+  + blockquote
+    margin-top: 4rem
 
   cite
     font-style: normal
@@ -84,11 +90,8 @@ blockquote
   span
     display: block
 
-.subscript
-  margin-top: 2em
-
 .content
-  *:last-child
+  > *:last-child
     margin-bottom: 0!important
 
   ul

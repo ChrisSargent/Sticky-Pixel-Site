@@ -4,7 +4,10 @@ heading: Moodesignz
 sub_heading: Responsive, Clean and Luxurious; for an Interior Design Firm
 published: false
 hero: XX
-main_screenshot: XX
+desktop1: XX
+desktop2: XX
+mobile1: XX
+mobile2: XX
 order: 4
 website: http://www.moodesignz.com/
 dates: November 2015 – March 2016

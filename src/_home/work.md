@@ -1,8 +1,8 @@
 ---
-title: Our Work
+title: Recent Work
 ident: work
 order: 2
-published: false
+published: true
 classlist: section--work
 js_act_content: 'null'
 additional_content:

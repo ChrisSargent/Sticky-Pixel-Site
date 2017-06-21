@@ -163,6 +163,15 @@ gulp.task('deploy', function() {
   });
 });
 
+gulp.task('stage', function() {
+  rsync({
+    src: 'dist/',
+    dest: 'stgsear1@akascia.com:~/www/staging/',
+    // options: '--archive --delete --progress --compress --human-readable --exclude .DS_Store --dry-run'
+    options: '--archive --delete --progress --compress --human-readable --exclude .DS_Store'
+  });
+});
+
 gulp.task('default', function() {
   console.log('No task defined as default');
 });

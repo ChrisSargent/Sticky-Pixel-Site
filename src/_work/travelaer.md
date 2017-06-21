@@ -32,9 +32,9 @@ The modern and friendly feel, working across all devices, helps to reinforce Tra
 
 
 {% contentfor why %}
-Sticky Pixel has a close collaboration with Travelaer, the two companies working together in the past on two consulting projects for Amadeus. In the first, we developed a library of reusable, front-end components and online style guide for a flagship consumer and business travel management app. In the second, we provided front-end development of a brand-new app for their Outlook Web platform.
+Sticky Pixel has collaborated closely with Travelaer in the past, working on two consulting projects for a large Airline IT Services company. In the first, we developed a library of reusable, front-end components and online style guide for a flagship consumer and business travel management app. In the second, we provided front-end development of a brand-new, enterprise-focused app that brought travel management right in to users' MS Outlook.
 
-This experience gave Travelaer the knowledge and confidence that we were able to produce high-quality results, reflecting the values of Travelaer.
+This experience gave Travelaer the knowledge and confidence that we were able to produce high-quality results, reflecting their values.
 {% endcontentfor %}
 
 
@@ -49,7 +49,7 @@ For this project, Travelaer already had a clear vision of the look and feel of t
 {% endcontentfor %}
 
 
-{% contentfor testimonial %}
+{% contentfor testimonialx %}
 > “We are extremely happy with the approach and results that the team have delivered. Being a digital product company focused on flexibility, usability and customer experience, we needed a website that clearly demonstrated these values to our customers. They produced an accurate and relevant site, using the right tools and techniques for an engaging experience. This is our third collaboration with them and they did a fantastic job again, we will definitely continue to work with them on future projects.”
 <cite>Mike Slone, Travelaer CEO</cite>
 {% endcontentfor %}

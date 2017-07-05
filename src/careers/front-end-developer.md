@@ -1,10 +1,8 @@
 ---
 layout: article
 category: career
-heading:
-    pre: Ready to build some
-    post: beautiful websites?
-sub_heading: Then let us know because we're hiring
+title: Ready to build some <br>beautiful websites?
+sub_title: Then let us know because we're hiring
 title: Front End Developer
 meta_title: Front End Developer
 ident: front-end-developer

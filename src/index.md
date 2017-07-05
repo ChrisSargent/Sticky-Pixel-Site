@@ -2,10 +2,8 @@
 layout: default
 ident: home
 use_sitedesc: true
-heading:
-    pre: Are you ready to
-    post: delight your customers?
-sub_heading: You've come to the right place; we help our clients create beautiful and effective digital experiences.
+title: Are you ready to <br>delight your customers?
+sub_title: You've come to the right place; we help our clients create beautiful and effective digital experiences.
 buttons:
     -   url: "#about"
         text: Learn More &#x25BE;

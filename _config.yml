@@ -47,8 +47,8 @@ collections:
   work:
     output: true
 
-landing_links:
-  - url: ""
+primary_nav:
+  - url: "/"
     text: Home
   - url: "#about"
     text: About Us

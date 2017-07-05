@@ -8,14 +8,11 @@
     </label>
       <input type="checkbox" id="nav__toggle--primary" aria-controls="nav--primary">
       <div id="nav--primary" class="nav--primary">
-        <ul>{% for link in site.landing_links %}
-          {% if page.url != "/" %}
-            {% assign link_url = link.url | prepend: '/' %}
-          {% else %}
-            {% assign link_url = link.url %}
-          {% endif %}
-          {% unless page.url == link_url %}
-            <li><a href="{{ link_url }}">{{ link.text }}</a></li>
+        <ul class="nav__list">{% for link in site.primary_nav %}
+          {% unless page.url == link.url %}
+            <li class="nav__item">
+              <a href="{{ link.url }}" class="nav__link">{{ link.text }}</a>
+            </li>
           {% endunless %}
           {% endfor %}
         </ul>

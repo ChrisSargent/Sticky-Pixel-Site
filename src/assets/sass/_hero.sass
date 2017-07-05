@@ -1,14 +1,5 @@
-.hero
-  h1
-    font-family: $ff--headings
-    font-size: $fs--j
-    margin-bottom: 0
-    letter-spacing: -1px
-    text-transform: none
-
-  p
-    font-weight: 300
-    margin: 2rem 0 0
+.section--hero
+  @extend %section
 
   .container
     max-width: $sz--m
@@ -25,10 +16,6 @@
       color: $co--wt
 
   &.has__bgimg
-    .fullscreen__inner
-      vertical-align: bottom
-      padding-bottom: 3rem
-
     &::before
       display: block
       content: ' '
@@ -39,12 +26,22 @@
       height: 100%
       background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.95) 100%)
 
-  @media (min-width: $bp--s)
-    h1
-      font-size: $fs--xj
+.hero__title
+  @extend %title--jumbo
 
-      span
-        display: block
+  br
+    display: none
 
-    p
-      font-size: $fs--xl
+.hero__content
+  font-weight: 300
+  margin-top: 2rem
+
+@media (min-width: $bp--s)
+  .hero__title
+    font-size: $fs--xj
+
+    br
+      display: block
+
+  .hero__content
+    font-size: $fs--xl

@@ -1,175 +1,115 @@
 /*--------Section work---------
 .section--work
-
   .container
     padding-top: 5rem
     padding-bottom: 0
 
-  h1
+  .section__title
     margin-bottom: 5rem
     color: $co--bk
 
   .pin--top
     top: $hd-height / -1
 
-.work__list
-  display: flex
-  flex-wrap: wrap
-  margin: -0.75rem 5px
-
-.work__tile
-  line-height: 1.2
-  flex: 1 1 100%
-  height: 60vw
-  min-height: 320px
-  max-height: 520px
-  color: $co--wt
-  background-color: #3a4b62
-  background-repeat: no-repeat
-  background-position: 50%
-  background-size: cover
-  margin: 0.75rem 0
-
-
-  &--inner
-    display: flex
-    align-items: center
-    width: 100%
-    height: 100%
-    padding: 2em 10%
-    transition: opacity $tr--mid ease-in-out
-    text-decoration: none
-    color: $co--wt
-    background-color: rgba(0, 0, 0, 0.5)
-
-  &--titles
-    width: 100%
-
-  &--title
-    font-family: $ff--headings
-    font-size: $fs--xl
-    margin-bottom: 0.2em
-    text-transform: none
-
-  &--subtitle
-    font-weight: 300
-
-  &--links
-    display: none
-
-  &--link
-    font-size: $fs--s
-    font-weight: 300
-    transition: all $tr--mid ease-in-out
-    text-decoration: none
-    border-bottom: 1px solid transparent
-
-    &:hover
-      border-bottom: 1px solid $co--wt
-
-@media (min-width: $bp--l)
-  .work__tile
-    flex-basis: 40%
-    height: 30vw
-    margin: 0.75rem
-
-    &--inner
-      opacity: 0
-
-      &:hover
-        opacity: 1
-
-    &--links
-      position: absolute
-      bottom: 2em
-      left: 10%
-      display: block
-
 /*--------Layout case-study---------
-.page__work
-  .section--block
-    .container
+
+.page--work
+  .section--hero
+    .fullscreen__inner
+      vertical-align: bottom
+      padding-bottom: 3rem
+
+  .section
+    + .section .container
       border-top: $ln--thin $co--gr--lt
 
-  .section--screenshot + .section--block,
-  .testimonial,
-  .hero,
-  .fullscreen
-    .container
-      border-top: 0
+    &:last-child .container
+      border-bottom: $ln--thin $co--gr--lt
 
-  .content
-    li
-      margin-bottom: 1.5em * $lh--para - $lh--base
-
-.section--screenshot
+.work__screenshot
   position: relative
 
-  &:first-child
-    margin-top: -8rem
-
-  .container
-    padding-top: 0
-    padding-bottom: 0
-
-.screenshot
   &--dt
-    border-radius: 3px
-    background: #9F9F9F
-    box-shadow: 0 0 30px 10px rgba(0, 0, 0, 0.5)
+    .container--m
+      padding-top: 0
+      padding-bottom: 0
 
-  &--mob
+    img
+      border-radius: 3px
+      box-shadow: 0 0 30px 10px rgba(0, 0, 0, 0.5)
+
+    &:first-child
+      margin-top: -8rem
+
+  &--mob--left,
+  &--mob--right
     max-width: 320px
     margin: 0 auto
 
-.screenshot__bg--mob
-  margin: -9.5% -10.5%
-  padding: 30% 16% 35%
-  background-image: url('/assets/img/iphone.png')
-  background-repeat: no-repeat
-  background-size: 100%
+    img
+      border-radius: 2px
+      border: $ln--thin $co--gr--lt
 
-  img
-    border-radius: 2px
+.work__title
+  @extend %title--large
 
-.ssleft,
-.ssright
-  .content
+  &--sub
+    @extend %title--small
+
+.work__content
+  @extend %content
+
+  &--left,
+  &--right
+    @extend %content
     margin-top: 4rem
-
-    p + h2
-      margin-top: 4rem
 
     span
       display: block
 
+    li
+      margin-bottom: 1.5em * $lh--para - $lh--base
+
+.work__screenframe
+  margin: -9.5% -10.5%
+  padding: 30% 16% 35%
+  background-image: url('/assets/img/iphone.png')
+  background-repeat: no-repeat
+  background-size: 100% 100%
+
 @media (min-width: $bp--l)
-  .ssleft,
-  .ssright
+  .twocol
     display: flex
     align-items: center
 
-    .screenshot--mob
+  .work__screenshot
+    &--mob--left,
+    &--mob--right
       margin: 0
       flex: 2 10 50%
 
-    .content
+    &--mob--left
+      order: 1
+      margin-left: -10%
+
+    &--mob--right
+      order: 2
+      margin-right: -10%
+
+  .work__content
+    &--left,
+    &--right
       margin-top: 0
       width: 60%
       flex: 0 0 auto
 
-  .ssleft
-    .screenshot--mob
-      margin-left: -10%
+      p + .work__title--sub
+        margin-top: 4rem
 
-    .content
-      margin-left: 2rem
-
-  .ssright
-    .screenshot--mob
-      order: 2
-      margin-right: -10%
-
-    .content
+    &--left
       order: 1
       margin-right: 2rem
+
+    &--right
+      order: 2
+      margin-left: 2rem

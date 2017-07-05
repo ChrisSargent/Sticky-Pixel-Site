@@ -1,25 +1,35 @@
 .form--contact
   margin: 2em 0
 
-  input
-    font-weight: 300
-    display: block
-    width: 90%
-    max-width: 300px
-    height: $ia-min-size
-    margin: 0 auto
-    vertical-align: middle
+.form__input,
+.form__btn
+  display: block
+  width: 90%
+  max-width: 300px
+  margin-left: auto
+  margin-right: auto
 
-    &[type='email']
-      font-size: $fs--s
-      margin-bottom: 2px
-      color: $co--gr--mdk
-      border: $ln--thin $co--gr--lt
+.form__input
+  vertical-align: middle
+  font-weight: 300
+  min-height: $ia-min-size
+  font-size: $fs--s
+  margin-bottom: 2px
+  color: $co--gr--mdk
+  border: $ln--thin $co--gr--lt
 
-  @media (min-width: $bp--m)
-    input
-      display: inline-block
-      margin: 0
+.form__btn
+  @extend .btn
+  color: $co--wt
+  background-color: $co--brand
 
-      &[type='email']
-        margin-bottom: 0
+  &:hover,
+  &:focus,
+  &:active
+    background-color: $co--brand-highlighted
+
+@media (min-width: $bp--m)
+  .form__input,
+  .form__btn
+    display: inline-block
+    margin: 0

@@ -1,0 +1,29 @@
+.member + .member
+  margin-top: 2rem
+
+.member__photo
+  width: 80%
+  min-height: 180px
+  max-width: 300px
+  margin: 0 auto
+  margin-bottom: 2em
+
+  img
+    height: auto
+    transition: all 0.2s ease-in-out
+
+.member__title
+  @extend %title--small
+
+.member__content
+  @extend %content
+
+@media (min-width: $bp--m)
+  .member__photo
+    float: left
+    width: 30%
+    margin-right: 1em
+
+  .member__title,
+  .member__content
+    overflow: hidden

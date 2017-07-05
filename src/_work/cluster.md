@@ -1,7 +1,7 @@
 ---
 layout: work
-heading: Cluster Yachting Monaco
-sub_heading: Clean, Responsive and Informative; for a Luxury Yacht Club
+title: Cluster Yachting Monaco
+sub_title: Clean, Responsive and Informative; for a Luxury Yacht Club
 published: true
 hero: cluster-hero.jpg
 desktop1: cluster-dt-one.jpg

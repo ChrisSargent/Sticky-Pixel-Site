@@ -1,13 +1,13 @@
 {% assign section = include.section %}
 
-<section class="section--block js__scn {{ section.classlist }}{% if section.bg %} has__bgimg{% endif %}"{% if section.bg %} style="background-image: url({{ site.images }}/{{ section.bg }})"{% endif %}>
+<section class="section js__scn {{ section.classlist }}{% if section.bg %} has__bgimg{% endif %}"
+  {% if section.bg %} style="background-image: url({{ site.images }}/{{ section.bg }})"{% endif %}>
   <div class="container{{ section.cont_size }}">
     {% if section.title %}
-    <h1 class="{{ section.jsActHead | default: 'js__act-this--up' }}">{{section.title}}</h1>
+      <h1 class="section__title js__act-header">{{section.title}}</h1>
     {% endif %}
-    {% assign content = section.content | strip_newlines %}
-    {% unless content == ''  %}
-    <div class="content{% unless section.js_act_content == 'null'%} {{ section.js_act_content | default: 'js__act-child--up' }}{% endunless %}">
+    {% unless section.content == '' %}
+    <div class="section__content{% unless section.js_act_content == 'null'%} js__act-content--up{% endunless %}">
       {{ section.content | markdownify }}
     </div>
     {% endunless %}

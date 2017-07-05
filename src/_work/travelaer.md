@@ -1,7 +1,7 @@
 ---
 layout: work
-heading: Travelaer
-sub_heading: Responsive and State-of-the-Art; for an Airline Software Company
+title: Travelaer
+sub_title: Responsive and State-of-the-Art; for an Airline Software Company
 published: true
 hero: travelaer-hero.jpg
 desktop1: travelaer-dt-one.jpg

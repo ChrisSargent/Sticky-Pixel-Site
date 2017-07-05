@@ -1,7 +1,7 @@
 ---
 layout: work
-heading: Amadeus
-sub_heading: Responsive, Front-End for a Hybrid, Angular App
+title: Amadeus
+sub_title: Responsive, Front-End for a Hybrid, Angular App
 published: false
 hero: XX
 desktop1: XX

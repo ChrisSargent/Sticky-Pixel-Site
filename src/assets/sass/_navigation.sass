@@ -2,33 +2,25 @@
   nav
     +clearfix
 
-.page__default
-  .nav--primary
-    a[href='']
-      display: none
-
 .nav--primary
   overflow: scroll
   width: 100%
   transition: all 0.1s ease-in-out
   background-color: rgba(0, 0, 0, 0.5)
 
-  ul
-    +clearfix
-
-  a
-    font-size: $fs--s
-    line-height: 5em
-    display: block
-    padding: 0 1em
-    transition: all 0.2s ease-in-out
-    text-align: center
-    white-space: nowrap
-    text-decoration: none
-    letter-spacing: 0.5px
-    text-transform: uppercase
-    color: $co--wt
-    border-top: $ln--thin $co--gr--dk
+.nav__link
+  font-size: $fs--s
+  line-height: 5em
+  display: block
+  padding: 0 1em
+  transition: all 0.2s ease-in-out
+  text-align: center
+  white-space: nowrap
+  text-decoration: none
+  letter-spacing: 0.5px
+  text-transform: uppercase
+  color: $co--wt
+  border-top: $ln--thin $co--gr--dk
 
 .nav__toggle
   display: block
@@ -79,39 +71,40 @@
     background: none
     overflow: hidden
 
-    li
-      float: left
-      margin: 0
+  .nav__link
+    font-weight: 300
+    line-height: 60px
+    margin: 0
+    color: black
+    border: 0
 
-      + li
-        margin-left: 0.2em
+    &:hover,
+    &:focus,
+    &:active
+      background-color: rgba(0, 0, 0, 0.05)
 
-    a
-      font-weight: 300
-      line-height: 60px
-      margin: 0
-      color: black
-      border: 0
+    .header--primary.has__bgimg &,
+    .header--primary-shrink &
+      color: $co--wt
 
       &:hover,
       &:focus,
       &:active
-        background-color: rgba(0, 0, 0, 0.05)
+        background-color: rgba(255, 255, 255, 0.1)
 
-    .header--primary.has__bgimg &,
-      a
-        opacity: 0.75
-
-    .header--primary.has__bgimg &,
-    .header--primary-shrink &
-      a
-        color: $co--wt
-
-        &:hover,
-        &:focus,
-        &:active
-          background-color: rgba(255, 255, 255, 0.1)
+    .header--primary.has__bgimg &
+      opacity: 0.75
 
     .header--primary-shrink &
-      a
-        line-height: $hd-height
+      line-height: $hd-height
+
+  .nav__list
+    overflow: hidden
+    // For clearfix
+
+  .nav__item
+    float: left
+    margin: 0
+
+    + .nav__item
+      margin-left: 0.2em

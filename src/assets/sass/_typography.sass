@@ -2,7 +2,6 @@ html
   font-size: 14px
   -webkit-text-size-adjust: none
 
-
   @media (min-width: $bp--m)
     font-size: $fs--base
 
@@ -12,51 +11,74 @@ body
   line-height: $lh--base
   color: $co--gr--dk
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6
+%_title
   font-weight: 900
   line-height: $lh--tight
   margin-bottom: 1em
   text-transform: uppercase
 
-h1
+  small
+    font-size: 0.9em
+    font-weight: 300
+    display: block
+    text-transform: none
+    opacity: 0.8
+
+%title--large
+  @extend %_title
   font-size: $fs--xl
   margin-bottom: 1.5em
 
-h2
+%title--small
+  @extend %_title
   font-size: $fs--l
 
-p
+%title--jumbo
+  font-family: $ff--headings
+  font-size: $fs--j
+  margin-bottom: 0
+  letter-spacing: -1px
+  text-transform: none
+
+=fancy-link
+  transition: all 0.2s ease-in-out
+  text-decoration: none
+  color: $co--brand
+  border-bottom: $ln--thin transparent
+
+  &:hover,
+  &:focus,
+  &:active
+    text-decoration: none
+    color: $co--brand-highlighted
+    border-bottom: $ln--thin $co--brand-highlighted
+    outline: 0
+
+%content
   line-height: $lh--para
-  margin-bottom: 2em
+
+  p
+    margin-bottom: 2em
 
   a
-    transition: all 0.2s ease-in-out
-    text-decoration: none
-    color: $co--brand
-    border-bottom: $ln--thin transparent
+    +fancy-link
 
-    &:hover,
-    &:focus,
-    &:active
-      text-decoration: none
-      color: $co--brand-highlighted
-      border-bottom: $ln--thin $co--brand-highlighted
-      outline: 0
+  > *:last-child
+    margin-bottom: 0!important
 
-ul
-  line-height: $lh--para
+  ul
+    margin-bottom: 2em
+    padding-left: 1.5em
+    list-style: circle
 
-small
-  font-size: 0.9em
-  font-weight: 300
-  display: block
-  text-transform: none
-  opacity: 0.8
+  li
+    margin-bottom: 1em * $lh--para - $lh--base
+
+  h2
+    @extend %title--small
+
+  strong
+    font-weight: 700
 
 blockquote
   font-family: $ff--alt
@@ -73,31 +95,3 @@ blockquote
     margin-top: 2em
     font-size: $fs--xs
     font-weight: 700
-
-.legal
-  font-size: $fs--xs
-  font-weight: 300
-  margin-top: 5em
-  color: $co--gr--mdk
-
-.contact-details
-  a,
-  span
-    line-height: $ia-min-size
-    display: inline-block
-    min-width: $ia-min-size
-
-  span
-    display: block
-
-.content
-  > *:last-child
-    margin-bottom: 0!important
-
-  ul
-    margin-bottom: 2em
-    padding-left: 1.5em
-    list-style: circle
-
-    li
-      margin-bottom: 1em * $lh--para - $lh--base

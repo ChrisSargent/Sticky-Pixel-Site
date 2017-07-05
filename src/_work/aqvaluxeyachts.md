@@ -1,14 +1,13 @@
 ---
 layout: work
-heading: AqvaLuxe Yachts
-sub_heading: Luxury, Responsive and Engaging; for a Luxury Yacht Sales & Charter Company
+title: AqvaLuxe Yachts
+sub_title: Luxury, Responsive and Engaging; for a Luxury Yacht Sales & Charter Company
 published: true
 hero: aqvaluxe_bg.jpg
 desktop1: aqvaluxe-dt-one.jpg
 desktop2: aqvaluxe-dt-two.jpg
 mobile1: aqvaluxe-mob-one.jpg
 mobile2: aqvaluxe-mob-two.jpg
-main_screenshot: aqvaluxe_web.jpg
 order: 3
 website: http://www.aqvaluxeyachts.com/
 dates: June 2016 - November 2016

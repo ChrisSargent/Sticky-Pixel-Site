@@ -1,0 +1,66 @@
+.mosaic
+  display: flex
+  flex-wrap: wrap
+  margin: -0.75rem 0.5rem
+
+.tile
+  flex: 1 1 100%
+  height: 60vw
+  min-height: 320px
+  max-height: 520px
+  color: $co--wt
+  background-color: $co--gr--mid
+  background-repeat: no-repeat
+  background-position: 50%
+  background-size: cover
+  margin: 0.75rem 0
+
+  &__wrap
+    position: relative
+    display: flex
+    align-items: center
+    width: 100%
+    height: 100%
+    padding: 2em 10%
+    transition: opacity $tr--mid ease-in-out
+    text-decoration: none
+    color: $co--wt
+    background-color: rgba(0, 0, 0, 0.5)
+
+  &__title
+    font-family: $ff--headings
+    font-size: $fs--xl
+    margin-bottom: 0.2em
+    text-transform: none
+
+  &__subtitle
+    font-weight: 300
+
+  &__link
+    display: none
+
+
+@media (min-width: $bp--l)
+  .mosaic
+    margin: -0.5rem auto
+    max-width: $sz--l
+
+  .tile
+    flex-basis: 40%
+    height: 30vw
+    margin: 0.5rem
+
+    &__wrap
+      opacity: 0
+
+      &:hover
+        opacity: 1
+
+    &__link
+      +fancy-link
+      position: absolute
+      bottom: 2em
+      left: 10%
+      display: block
+      font-size: $fs--s
+      font-weight: 300

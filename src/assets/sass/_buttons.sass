@@ -4,10 +4,12 @@
   display: inline-block
   cursor: pointer
   transition: all 0.2s ease-in-out
+  vertical-align: middle
 
   &--ghost
+    @extend .btn
     color: inherit
-    border: $ln--thin $co--gr--mid
+    border: $ln--thin $co--gr--lt
     border-radius: 2px
 
     &:hover,
@@ -17,16 +19,9 @@
       border-color: $co--brand
       background-color: $co--brand
 
-  &[type='submit']
-    color: $co--wt
-    background-color: $co--brand
-
-    &:hover,
-    &:focus,
-    &:active
-      background-color: $co--brand-highlighted
-
 .btn-group--inline
+  margin: 4rem 0
+
   .btn
     display: block
     width: 90%

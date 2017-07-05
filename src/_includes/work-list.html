@@ -1,17 +1,15 @@
 {% assign worklist = site.work | sort:"order" | where: "published", true %}
 
-<ul class="work__list js__act-child--up">
-  {% for work in worklist %}
-    <li class="work__tile" style="background-image:url({{ site.images }}/{{ work.hero }});">
-      <a class="work__tile--inner" href="{{ work.url }}">
-        <div class="work__tile--titles">
-          <h4 class="work__tile--title">{{ work.heading }}</h4>
-          <span class="work__tile--subtitle">{{ work.sub_heading }}</span>
+  <ul class="mosaic js__act-content--up">
+    {% for work in worklist %}
+    <li class="tile" style="background-image:url({{ site.images }}/{{ work.hero }});">
+      <a class="tile__wrap" href="{{ work.url }}">
+        <div>
+          <h4 class="tile__title">{{ work.title }}</h4>
+          <span class="tile__subtitle">{{ work.sub_title }}</span>
         </div>
-        <div class="work__tile--links">
-          <span class="work__tile--link">Read the Case Study</span>
-        </div>
+        <span class="tile__link">Read the Case Study</span>
       </a>
     </li>
-  {% endfor %}
-</ul>
+    {% endfor %}
+  </ul>

@@ -3,78 +3,78 @@ layout: default
 ---
 
 <article>
-  <figure class="section--screenshot js__scn">
-    <div class="container--m">
-      <img class="screenshot--dt js__act-this--up" src="{{ site.images }}/{{ page.desktop1 }}" alt="{{ page.heading }} Desktop Screenshot" />
+  <figure class="work__screenshot--dt js__scn">
+    <div class="container--m js__act-this--up">
+      <img src="{{ site.images }}/{{ page.desktop1 }}" alt="{{ page.heading }} Desktop Screenshot" />
     </div>
   </figure>
-  <section class="section--block js__scn">
+  <section class="section js__scn">
     <div class="container--s">
-      <h1 class="js__act-this--up">Introduction</h1>
-      <div class="content js__act-child--up">
+      <h1 class="work__title js__act-header">Introduction</h1>
+      <div class="work__content js__act-content--up">
         {% contentblock intro %}
       </div>
     </div>
   </section>
-  <section class="section--block js__scn">
-    <div class="container--s ssleft">
-      <figure class="screenshot--mob js__act-this--rt">
-        <div class="screenshot__bg--mob">
+  <section class="section js__scn">
+    <div class="container--s twocol">
+      <figure class="work__screenshot--mob--left js__act-this--rt">
+        <div class="work__screenframe">
           <img src="{{ site.images }}/{{ page.mobile1 }}" alt="{{ page.heading }} Mobile Screenshot" />
         </div>
       </figure>
-      <div class="content js__act-this--lt">
-        <h2>Project Details</h2>
+      <div class="work__content--right js__act-content--left">
+        <h2 class="work__title--sub">Project Details</h2>
         <p>
           <span>Dates: {{page.dates}}</span>
           <span>Live Site: <a href="{{page.website}}" target="_blank">{{page.website}}</a></span>
         </p>
-        <h2>Services</h2>
+        <h2 class="work__title--sub">Services</h2>
         <p>{{page.services}}</p>
-        <h2>Technologies</h2>
+        <h2 class="work__title--sub">Technologies</h2>
         <p>{{page.technologies}}</p>
       </div>
     </div>
   </section>
-  <section class="section--block js__scn">
+  <section class="section js__scn">
     <div class="container--s">
-      <h1 class="js__act-this--up">Our Approach</h1>
-      <div class="content js__act-child--up">
+      <h1 class="work__title js__act-header">Our Approach</h1>
+      <div class="work__content js__act-content--up">
         {% contentblock approach %}
       </div>
     </div>
   </section>
-  <figure class="section--screenshot js__scn">
-    <div class="container--m">
-      <img class="screenshot--dt js__act-this--up" src="{{ site.images }}/{{ page.desktop2 }}" alt="{{ page.heading }}. {{ page.sub_heading }}" />
+  <figure class="work__screenshot--dt js__scn">
+    <div class="container--m js__act-content--up">
+      <img src="{{ site.images }}/{{ page.desktop2 }}" alt="{{ page.heading }}. {{ page.sub_heading }}" />
     </div>
   </figure>
-  <section class="section--block js__scn">
+  <section class="section js__scn">
     <div class="container--s">
-      <h1 class="js__act-this--up">Why Sticky Pixel?</h1>
-      <div class="content js__act-child--up">
+      <h1 class="work__title js__act-header">Why Sticky Pixel?</h1>
+      <div class="work__content js__act-content--up">
         {% contentblock why %}
       </div>
     </div>
   </section>
-  <section class="section--block js__scn">
-    <div class="container--m ssright">
-      <figure class="screenshot--mob js__act-this--lt">
-        <div class="screenshot__bg--mob">
+  <section class="section js__scn">
+    <div class="container--m twocol">
+      <figure class="work__screenshot--mob--right js__act-this--lt">
+        <div class="work__screenframe">
           <img src="{{ site.images }}/{{ page.mobile2 }}" alt="{{ page.heading }} Mobile Screenshot" />
         </div>
       </figure>
-      <div class="content js__act-this--rt">
-        <h2>Our Scope of Work</h2>
+      <div class="work__content--left js__act-content--right">
+        <h2 class="work__title--sub">Our Scope of Work</h2>
         {% contentblock scope %}
       </div>
     </div>
   </section>
   {% if contentblock.testimonial %}
-  <section class="section--block testimonial js__scn">
+  <section class="section testimonial js__scn">
     <div class="fullscreen__inner">
       <div class="container--s">
-        <div class="content js__act-child--up">
+        <div class="work__content js__act-content--up">
           {% contentblock testimonial %}
         </div>
       </div>

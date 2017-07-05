@@ -1,10 +1,8 @@
 ---
 layout: article
 category: article
-heading:
-    pre: Working on a digital
-    post: non-profit project?
-sub_heading: Then ask us about our Philanthropic Fridays!
+title: Working on a digital <br>non-profit project?
+sub_title: Then ask us about our Philanthropic Fridays!
 meta_title: Free Philanthropic Web Development
 ident: free-fridays
 published: true

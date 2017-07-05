@@ -1,7 +1,7 @@
 ---
 layout: work
-heading: Moodesignz
-sub_heading: Responsive, Clean and Luxurious; for an Interior Design Firm
+title: Moodesignz
+sub_title: Responsive, Clean and Luxurious; for an Interior Design Firm
 published: false
 hero: XX
 desktop1: XX

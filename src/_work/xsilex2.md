@@ -1,7 +1,7 @@
 ---
 layout: work
-heading: Saentys / Silex2
-sub_heading: Animation-Crazy and Delightful; for a Major French Building Project
+title: Saentys / Silex2
+sub_title: Animation-Crazy and Delightful; for a Major French Building Project
 published: false
 hero: XX
 desktop1: XX

@@ -1,10 +1,12 @@
-<div class="member js__act-child--up">
-  <div class="member__photo js__act-this--rt">
-    <img src="{{ site.images }}/{{ member.image }}" alt="{{ member.title }}" width="356" height="356">
+<article class="member">
+  <figure class="member__photo js__act-this--rt">
+    <img src="{{ site.images }}/{{ member.image }}" alt="{{ member.name }}" width="356" height="356">
+  </figure>
+  <h1 class="member__title js__act-header">
+    {{ member.name }}
+    <small>{{ member.job_title }}</small>
+  </h1>
+  <div class="member__content js__act-content--up">
+    {{ member.content | markdownify }}
   </div>
-  <h2>
-    {{ member.heading.pre }}
-    <small>{{ member.sub_heading }}</small>
-  </h2>
-  {{ member.content | markdownify }}
-</div>
+</article>

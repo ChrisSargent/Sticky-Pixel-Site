@@ -8,12 +8,12 @@
   right: 0
   left: 0
   overflow: scroll
-  -webkit-overflow-scrolling: touch
   max-height: 100%
   transition: all $tr--slow ease-in-out
   color: $co--wt
   border-bottom: $ln--thin $co--brand
   background-color: $co--header
+  -webkit-overflow-scrolling: touch
 
   .logo
     font-size: $fs--s
@@ -23,8 +23,8 @@
     left: 0
     display: block
     padding: 0.6em 0.6em
-    color: inherit
     transition: padding $tr--slow ease-in-out
+    color: inherit
 
   svg
     display: block
@@ -33,10 +33,10 @@
 
 @media (min-width: $bp--nav)
   .header--primary
+    overflow: hidden
     color: $co--gr--dk
     border-bottom: $ln--thin transparent
     background-color: transparent
-    overflow: hidden
 
     &.has__bgimg
       color: $co--wt

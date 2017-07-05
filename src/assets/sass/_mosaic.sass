@@ -8,12 +8,12 @@
   height: 60vw
   min-height: 320px
   max-height: 520px
+  margin: 0.75rem 0
   color: $co--wt
   background-color: $co--gr--mid
   background-repeat: no-repeat
   background-position: 50%
   background-size: cover
-  margin: 0.75rem 0
 
   &__wrap
     position: relative
@@ -42,8 +42,8 @@
 
 @media (min-width: $bp--l)
   .mosaic
-    margin: -0.5rem auto
     max-width: $sz--l
+    margin: -0.5rem auto
 
   .tile
     flex-basis: 40%
@@ -58,9 +58,9 @@
 
     &__link
       +fancy-link
+      font-size: $fs--s
+      font-weight: 300
       position: absolute
       bottom: 2em
       left: 10%
       display: block
-      font-size: $fs--s
-      font-weight: 300

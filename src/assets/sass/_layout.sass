@@ -59,3 +59,19 @@ body
   min-height: 80vh
   color: $co--wt
   background-color: $co--gr--dk
+
+.page--default
+  .section--hero
+    &::before
+      content: ' '
+      position: absolute
+      top: 0
+      right: 0
+      bottom: 0
+      left: 0
+      background-image: url('/assets/img/bg-polygon.jpg')
+      background-size: 100% auto
+      background-position: left bottom
+      background-repeat: no-repeat
+      animation: fadeIn ease-in-out 10s alternate infinite
+      transform-origin: left bottom

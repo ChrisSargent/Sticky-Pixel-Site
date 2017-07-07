@@ -2,7 +2,7 @@
 layout: default
 ident: home
 use_sitedesc: true
-title: Are you ready to <br>delight your customers?
+title: Are you ready to&nbsp;<br>delight your customers?
 sub_title: You've come to the right place; we help our clients create beautiful and effective digital experiences.
 bg: bg-polygon.jpg
 buttons:

@@ -1,7 +1,7 @@
 ---
 layout: article
 category: article
-title: Working on a digital <br>non-profit project?
+title: Working on a digital&nbsp;<br>non-profit project?
 sub_title: Then ask us about our Philanthropic Fridays!
 meta_title: Free Philanthropic Web Development
 ident: free-fridays

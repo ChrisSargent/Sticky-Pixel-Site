@@ -1,7 +1,7 @@
 ---
 layout: article
 category: career
-title: Ready to build some <br>beautiful websites?
+title: Ready to build some&nbsp;<br>beautiful websites?
 sub_title: Then let us know because we're hiring
 title: Front End Developer
 meta_title: Front End Developer

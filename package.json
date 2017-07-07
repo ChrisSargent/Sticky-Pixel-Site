@@ -13,9 +13,9 @@
     "scrollmagic": "*"
   },
   "devDependencies": {
-    "critical": "*",
     "autoprefixer": "*",
     "browser-sync": "*",
+    "critical": "*",
     "css-mqpacker": "*",
     "cssnano": "*",
     "gulp": "*",
@@ -25,6 +25,7 @@
     "gulp-postcss": "*",
     "gulp-sass": "*",
     "gulp-uglify": "*",
+    "imagemin-jpeg-recompress": "^5.1.0",
     "rsync-slim": "*"
   },
   "bugs": {

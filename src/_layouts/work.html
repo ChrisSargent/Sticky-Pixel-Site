@@ -70,7 +70,7 @@ layout: default
       </div>
     </div>
   </section>
-  {% if contentblock.testimonial %}
+  {% ifhascontent testimonial %}
   <section class="section testimonial js__scn">
     <div class="fullscreen__inner">
       <div class="container--s">
@@ -80,5 +80,5 @@ layout: default
       </div>
     </div>
   </section>
-  {% endif %}
+  {% endifhascontent %}
 </article>

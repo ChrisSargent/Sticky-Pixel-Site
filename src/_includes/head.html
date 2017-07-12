@@ -1,20 +1,13 @@
-{% if page.meta_title %}
-  {% assign meta_title = page.meta_title | append: ' - ' | append: site.title %}
+{% if page.meta_description %}
+  {% assign meta_description = page.meta_description %}
 {% else %}
-  {% assign meta_title = site.title %}
-{% endif %}
-{% if page.use_sitedesc %}
-  {% assign meta_description = site.description %}
-{% elsif page.meta_description %}
-  {% assign meta_description = page.meta_description | append: site.append_desc %}
-{% else %}
-  {% assign meta_description = page.content | strip_html | strip_newlines | prepend: ' - ' | prepend: page.meta_title %}
+  {% assign meta_description = page.content | strip_html | strip_newlines | truncate: 150 %}
 {% endif %}
 <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# website: http://ogp.me/ns/website#">
-  <title>{{ meta_title }}</title>
+  <title>{{ page.meta_title }}</title>
   <meta charset="utf-8" />
   <meta name="keywords" content="{{ page.keywords | default: site.keywords }}" />
-  <meta name="description" content="{{ meta_description | truncate: 160 }}" />
+  <meta name="description" content="{{ meta_description }}" />
   <meta name="author" content="{{ page.author | default: site.author }}" />
   <meta name="robots" content="index, follow">
   <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0">

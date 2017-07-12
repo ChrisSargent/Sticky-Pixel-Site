@@ -1,10 +1,8 @@
 # Site settings
 name: Sticky Pixel
-title: Riviera Web Design and Development | Sticky Pixel
 email: info@stickypixel.com
-description: Sticky Pixel is a digital design agency relentless in the pursuit of creating beautiful, effortless experiences from our base in Nice on the French Riviera.
-append_desc: ", a web design and development company covering Nice, Monaco, Antibes, Cannes, Juan-les-Pins."
 url: http://www.stickypixel.com
+baseurl: /
 author: Chris Sargent
 keywords: web design development agency html css graphic design seo inbound marketing france 06 riviera antibes nice juan-les-pins monaco cannes alpes-maritimes english speaking
 twitter_username: Chris5argent
@@ -48,7 +46,7 @@ collections:
     output: true
 
 primary_nav:
-  - url: "/"
+  - url:
     text: Home
   - url: "#about"
     text: About Us

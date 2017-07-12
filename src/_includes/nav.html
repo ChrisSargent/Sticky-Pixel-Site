@@ -11,7 +11,7 @@
         <ul class="nav__list">{% for link in site.primary_nav %}
           {% unless page.url == link.url %}
             <li class="nav__item">
-              <a href="{% unless page.url == "/" %}/{% endunless %}{{ link.url }}" class="nav__link">{{ link.text }}</a>
+              <a href="{{ link.url | prepend: site.baseurl }}" class="nav__link">{{ link.text }}</a>
             </li>
           {% endunless %}
           {% endfor %}

@@ -13,6 +13,8 @@ website: http://www.aqvaluxeyachts.com/
 dates: June 2016 - November 2016
 technologies: Responsive, HTML, CSS, JavaScript, Sass, PHP, Timber / Twig, WordPress, jQuery
 services: Visual Design, UI Design, UX Design, Interaction Design, Front-End Build, Database Design & Admin, Back-End Development
+meta_title: AqvaLuxe Yachts Website | Our Work
+meta_description: Luxury, Responsive and Engaging using WordPress for AqvaLuxe Yachts, a Luxury Yacht Sales & Charter Company
 ---
 
 {% contentfor intro %}

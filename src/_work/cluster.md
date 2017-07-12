@@ -2,6 +2,8 @@
 layout: work
 title: Cluster Yachting Monaco
 sub_title: Clean, Responsive and Informative; for a Luxury Yacht Club
+meta_title: Cluster Yachting Monaco Website | Our Work
+meta_description: Clean, Responsive and Informative website using WordPress for Cluster Yachting Monaco
 published: true
 hero: cluster-hero.jpg
 desktop1: cluster-dt-one.jpg

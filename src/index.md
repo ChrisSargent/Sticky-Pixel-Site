@@ -5,6 +5,8 @@ use_sitedesc: true
 title: Are you ready to&nbsp;<br>delight your customers?
 sub_title: You've come to the right place; we help our clients create beautiful and effective digital experiences.
 bg: bg-polygon.jpg
+meta_title: Brand, Product and Digital Design | Sticky Pixel
+meta_description: Sticky Pixel is a web design & development agency, relentless in the pursuit of creating beautiful, effortless digital experiences.
 buttons:
     -   url: "#about"
         text: Learn More &#x25BE;

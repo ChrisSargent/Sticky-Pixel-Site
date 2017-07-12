@@ -2,6 +2,8 @@
 layout: work
 title: Travelaer
 sub_title: Responsive and State-of-the-Art; for an Airline Software Company
+meta_title: Travelaer Website | Our Work
+meta_description: Responsive and State-of-the-Art website using React, Redux and WordPress for Travelaer, an Airline Software Company
 published: true
 hero: travelaer-hero.jpg
 desktop1: travelaer-dt-one.jpg

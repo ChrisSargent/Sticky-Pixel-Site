@@ -15,10 +15,6 @@
   .js__act-this--lt
     transition-duration: $tr--mid
 
-    @for $i from 1 to 10
-      &:nth-child(#{$i})
-        transition-delay: 100ms * ($i - 1)
-
   .js__act-this--up
     transform: translate3d(0, 100px, 0)
 
@@ -49,7 +45,7 @@
   .js__act-content--up > *,
   .js__act-content--left > *,
   .js__act-content--right > *
-    @for $i from 1 to 10
+    @for $i from 1 to 15
       &:nth-child(#{$i})
         transition-delay: 100ms * $i
 

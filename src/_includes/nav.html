@@ -10,8 +10,13 @@
       <div id="nav--primary" class="nav--primary">
         <ul class="nav__list">{% for link in site.primary_nav %}
           {% unless page.url == link.url %}
+            {% if page.url == "/" %}
+              {% assign link_url = link.url %}
+            {% else %}
+              {% assign link_url = link.url | prepend: site.baseurl %}
+            {% endif %}
             <li class="nav__item">
-              <a href="{{ link.url | prepend: site.baseurl }}" class="nav__link">{{ link.text }}</a>
+              <a href="{{ link_url | replace: "//", "/" }}" class="nav__link">{{ link.text }}</a>
             </li>
           {% endunless %}
           {% endfor %}

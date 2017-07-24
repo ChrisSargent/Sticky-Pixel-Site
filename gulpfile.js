@@ -139,7 +139,7 @@ gulp.task('images', function() {
 
 gulp.task('deploy', function() {
   rsync({
-    src: 'dist/', dest: 'stgsear1@akascia.com:~/www/stickypixel/',
+    src: 'dist/', dest: 'stgsear1@stickypixel.com:~/www/stickypixel/',
     // options: '--archive --delete --progress --compress --human-readable --exclude .DS_Store --dry-run'
     options: '--archive --delete --progress --compress --human-readable --exclude .DS_Store'
   });
@@ -147,7 +147,7 @@ gulp.task('deploy', function() {
 
 gulp.task('stage', function() {
   rsync({
-    src: 'dist/', dest: 'stgsear1@akascia.com:~/www/staging/',
+    src: 'dist/', dest: 'stgsear1@stickypixel.com:~/www/staging/',
     // options: '--archive --delete --progress --compress --human-readable --exclude .DS_Store --dry-run'
     options: '--archive --delete --progress --compress --human-readable --exclude .DS_Store'
   });

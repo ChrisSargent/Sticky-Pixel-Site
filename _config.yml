@@ -46,7 +46,7 @@ collections:
     output: true
 
 primary_nav:
-  - url:
+  - url: "/"
     text: Home
   - url: "#about"
     text: About Us

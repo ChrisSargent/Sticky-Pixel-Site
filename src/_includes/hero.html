@@ -1,14 +1,14 @@
 <section class="section--hero fullscreen js__scn {{ page.classlist }}{% if page.hero %} has__bgimg{% endif %}"{% if page.hero %} style="background-image: url({{ site.images }}/{{ page.hero }})"{% endif %}>
   <div class="fullscreen__inner">
-    <div class="container--s">
+    <div class="container--s js__act-content--right">
       {% if page.title %}
-        <h1 class="hero__title js__act-this--rt">{{ page.title }}</h1>
+        <h1 class="hero__title">{{ page.title }}</h1>
       {% endif %}
       {% if page.sub_title %}
-        <p class="hero__content js__act-this--rt">{{ page.sub_title )}}</p>
+        <p class="hero__content">{{ page.sub_title )}}</p>
       {% endif %}
       {% for button in page.buttons %}
-        <span class="js__act-this--rt"><a href="{{ button.url }}" class="btn--ghost">{{ button.text }}</a></span>
+        <span><a href="{{ button.url }}" class="btn--ghost">{{ button.text }}</a></span>
       {% endfor %}
     </div>
   </div>

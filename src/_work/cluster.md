@@ -10,7 +10,7 @@ desktop1: cluster-dt-one.jpg
 desktop2: cluster-dt-two.jpg
 mobile1: cluster-mob-one.jpg
 mobile2: cluster-mob-two.jpg
-order: 7
+order: 3
 website: http://www.clusteryachtingmonaco.com/
 dates: February 2016 – June 2016
 technologies: Responsive, HTML, CSS, JavaScript, Sass, PHP, WordPress, jQuery

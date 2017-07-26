@@ -8,7 +8,7 @@ desktop1: aqvaluxe-dt-one.jpg
 desktop2: aqvaluxe-dt-two.jpg
 mobile1: aqvaluxe-mob-one.jpg
 mobile2: aqvaluxe-mob-two.jpg
-order: 3
+order: 2
 website: http://www.aqvaluxeyachts.com/
 dates: June 2016 - November 2016
 technologies: Responsive, HTML, CSS, JavaScript, Sass, PHP, Timber / Twig, WordPress, jQuery

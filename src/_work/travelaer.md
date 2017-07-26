@@ -10,7 +10,7 @@ desktop1: travelaer-dt-one.jpg
 desktop2: travelaer-dt-two.jpg
 mobile1: travelaer-mob-one.jpg
 mobile2: travelaer-mob-two.jpg
-order: 2
+order: 1
 website: http://www.travelaer.com/
 dates: September 2016 – March 2017
 technologies: Responsive, HTML, CSS, JavaScript, Sass, ReactJS, Redux, Isomorphic / Universal, PHP, WordPress, REST API, NodeJS, Express, Nginx

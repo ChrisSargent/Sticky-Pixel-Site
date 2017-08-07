@@ -9,6 +9,7 @@ var uglify = require('gulp-uglify');
 var critical = require('critical');
 var postcss = require('gulp-postcss');
 var htmlmin = require('gulp-htmlmin');
+var versionAppend = require('gulp-version-append');
 
 var env_prod = true;
 var src = 'src';
@@ -119,7 +120,7 @@ gulp.task('html', ['jekyll'], function() {
   if (!env_prod) {
     return;
   } else {
-    return gulp.src(dist + '/**/*.html').pipe(htmlmin({collapseWhitespace: true, preserveLineBreaks: true, removeComments: false, minifyCSS: true, minifyJS: true})).pipe(gulp.dest(dist));
+    return gulp.src(dist + '/**/*.html').pipe(versionAppend(['html', 'js', 'css'])).pipe(htmlmin({collapseWhitespace: true, preserveLineBreaks: true, removeComments: false, minifyCSS: true, minifyJS: true})).pipe(gulp.dest(dist));
   }
 });
 
@@ -192,7 +193,7 @@ gulp.task('build', [
   'css:watch',
   'js',
   'js:watch',
-  'browser-sync'
+  'browser-sync',
 ]);
 gulp.task('dev', ['env_dev', 'build']);
 gulp.task('prod', ['env_prod', 'critical']);

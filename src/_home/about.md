@@ -7,8 +7,8 @@ published: true
 cont_size: --s
 ---
 
-Sticky Pixel is a web design & development agency, relentless in the pursuit of creating beautiful, effortless digital experiences that help raise the competitiveness of our clients' businesses. We specialise in user experience & interface (UX / UI) design & development, product development, front-end engineering and digital-marketing activities.
+Sticky Pixel is a design & development agency, relentless in the pursuit of creating products that help raise the competitiveness of our customers' businesses. We specialise in digital product design & build, embracing effortless user experience & beautiful interface design (UX / UI), front-end engineering, API & database (full-stack) development and a customer-first vision.
 
-We pride ourselves on our focus on our clients' business goals; we spend time with you discover who you are, what you're trying to achieve and how your current digital activities are performing. Then we put together a solution to address your aspirations, combining what you need to say, who you want to say it to and how you will say it. We then measure our results and make more changes and recommendations based on those analytics.
+We help our customers take their ideas from their heads and turn them in to a reality. We spend time to discover who they are, what they're trying to achieve and how their current digital activities are performing. Only then do we put together a solution to address those aspirations and stay aligned with their business goals.
 
-We are based near Nice on the French Riviera and work on projects from all over Europe and more locally in Nice, Cannes, Monaco, Sophia Antipolis, Antibes and St Tropez. We are experienced in the eCommerce, travel and luxury sectors, building both applications and corporate websites.
+We are based near Nice on the French Riviera and work on projects from all over Europe and more locally in Nice, Cannes, Monaco, Sophia Antipolis, Antibes and St Tropez. We are experienced in web app development, native app development and website development across a number of industries including Fin-tech and Travel-tech.

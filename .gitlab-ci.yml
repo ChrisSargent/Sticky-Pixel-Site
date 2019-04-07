@@ -1,11 +1,30 @@
 stages:
-  - build_deploy
+  - build
+  - deploy
+
+build:
+  only:
+    - master
+  image: Starefossen/docker-ruby-node
+  stage: build
+  cache:
+    paths:
+      - .yarn-cache/
+  artifacts:
+    expire_in: 1 month
+    paths:
+      - ./dist
+  before_script:
+    - bundle install
+    - yarn install --frozen-lockfile --cache-folder .yarn-cache
+  script:
+    - yarn build
 
 build_deploy:
   only:
     - master
   image: google/cloud-sdk:alpine
-  stage: build_deploy
+  stage: deploy
   cache:
     paths:
       - .yarn-cache/
@@ -16,12 +35,7 @@ build_deploy:
     expire_in: 1 month
     paths:
       - ./dist
-  before_script:
-    - bundle install
-    - yarn install --frozen-lockfile --cache-folder .yarn-cache
   script:
-    - yarn build
-  after_script:
     - gsutil rsync -d ./dist gs://www.stickypixel.com
     - |
       curl -X POST "https://api.cloudflare.com/client/v4/zones/84605ec2d4a19c5032a1ed0734da912a/purge_cache" \

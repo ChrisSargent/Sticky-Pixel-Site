@@ -28,6 +28,7 @@ build:
     # - bundle install
     # - yarn install --frozen-lockfile --cache-folder .yarn-cache
   script:
+    - echo nothing
     # - yarn build
 
 build_deploy:

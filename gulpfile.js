@@ -1,7 +1,6 @@
 var gulp = require('gulp');
 var browserSync = require('browser-sync').create();
 var sass = require('gulp-sass');
-var rsync = require('rsync-slim');
 var concat = require('gulp-concat');
 var imagemin = require('gulp-imagemin');
 var imageminJpegRecompress = require('imagemin-jpeg-recompress');
@@ -12,7 +11,6 @@ var htmlmin = require('gulp-htmlmin');
 var versionAppend = require('gulp-version-append');
 var exec = require('child_process').exec;
 
-var env_prod = true;
 var src = 'src';
 var dist = 'dist';
 var distAssets = dist + '/assets';
@@ -31,6 +29,9 @@ var distJs = dist + '/assets/js';
 var distJsFile = 'ui-core.min.js';
 
 var srcImgs = src + '/assets/img';
+var srcFonts = src + '/assets/fonts';
+
+var env = process.env.NODE_ENV || 'development';
 
 gulp.task('sass', function() {
   return gulp
@@ -42,9 +43,7 @@ gulp.task('sass', function() {
 
 gulp.task('css', ['sass'], function() {
   var autoprefixer, cssnano, mqpacker;
-  if (!env_prod) {
-    return;
-  } else {
+  if (env === 'production') {
     autoprefixer = require('autoprefixer');
     cssnano = require('cssnano');
     mqpacker = require('css-mqpacker');
@@ -53,6 +52,8 @@ gulp.task('css', ['sass'], function() {
       .src(distCss + '/*.css')
       .pipe(postcss([mqpacker({ sort: true }), autoprefixer(), cssnano()]))
       .pipe(gulp.dest(distCss));
+  } else {
+    return;
   }
 });
 
@@ -61,7 +62,7 @@ gulp.task('css:watch', function() {
 });
 
 gulp.task('js', function(cb) {
-  if (env_prod) {
+  if (env === 'production') {
     return gulp
       .src(srcJsFiles)
       .pipe(concat(distJsFile))
@@ -118,22 +119,22 @@ gulp.task('html:watch', function() {
 });
 
 gulp.task('html', ['jekyll'], function() {
-  if (!env_prod) {
-    return;
-  } else {
+  if (env === 'production') {
     return gulp
       .src(dist + '/**/*.html')
-      .pipe(versionAppend(['html', 'js', 'css']))
+      .pipe(versionAppend(['html', 'js', 'css', 'png', 'jpeg', 'jpg']))
       .pipe(
         htmlmin({
           collapseWhitespace: true,
-          preserveLineBreaks: true,
-          removeComments: false,
+          preserveLineBreaks: false,
+          removeComments: true,
           minifyCSS: true,
           minifyJS: true
         })
       )
       .pipe(gulp.dest(dist));
+  } else {
+    return;
   }
 });
 
@@ -156,37 +157,11 @@ gulp.task('images', function() {
     .pipe(gulp.dest(distAssets + '/img'));
 });
 
-gulp.task('deploy', function() {
-  rsync({
-    src: 'dist/',
-    dest: 'stgsear1@stickypixel.com:~/www/stickypixel/',
-    // options: '--archive --delete --progress --compress --human-readable --exclude .DS_Store --dry-run'
-    options: '--archive --delete --progress --compress --human-readable --exclude .DS_Store'
-  });
+gulp.task('fonts', function() {
+  return gulp.src(srcFonts + '/**/*').pipe(gulp.dest(distAssets + '/fonts'));
 });
 
-gulp.task('stage', function() {
-  rsync({
-    src: 'dist/',
-    dest: 'stgsear1@stickypixel.com:~/www/staging/',
-    // options: '--archive --delete --progress --compress --human-readable --exclude .DS_Store --dry-run'
-    options: '--archive --delete --progress --compress --human-readable --exclude .DS_Store'
-  });
-});
-
-gulp.task('default', function() {
-  console.log('No task defined as default');
-});
-
-gulp.task('env_dev', function() {
-  env_prod = false;
-});
-
-gulp.task('env_prod', function() {
-  env_prod = true;
-});
-
-gulp.task('critical', ['build'], function(cb) {
+gulp.task('critical', ['build:ci'], function(cb) {
   critical.generate({
     inline: true,
     base: dist + '/',
@@ -207,6 +182,18 @@ gulp.task('critical', ['build'], function(cb) {
   });
 });
 
-gulp.task('build', ['html', 'html:watch', 'css', 'css:watch', 'js', 'js:watch', 'browser-sync']);
-gulp.task('dev', ['env_dev', 'build']);
-gulp.task('prod', ['env_prod', 'critical']);
+gulp.task('build:watch', [
+  'images',
+  'fonts',
+  'html',
+  'html:watch',
+  'css',
+  'css:watch',
+  'js',
+  'js:watch',
+  'browser-sync'
+]);
+gulp.task('build:ci', ['images', 'fonts', 'html', 'css', 'js']);
+
+gulp.task('start', ['build:watch']);
+gulp.task('build', ['critical']);

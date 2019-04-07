@@ -36,9 +36,9 @@
   "homepage": "https://github.com/ChrisSargent/Sticky-Pixel-Site#readme",
   "main": "source/index.md",
   "scripts": {
-    "start": "npx gulp images && npx gulp dev",
-    "images": "npx gulp images",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "npx gulp start",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "NODE_ENV=production npx gulp build"
   },
   "keywords": [
     "Web",

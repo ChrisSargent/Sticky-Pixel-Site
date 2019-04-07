@@ -17,8 +17,9 @@ build:
       - ./dist
   before_script:
     - export PATH="$(ruby -r rubygems -e 'puts Gem.user_dir')/bin:$PATH"
-    # - export PATH=$HOME/gems/bin:$PATH
-    # - export GEM_HOME=$HOME/gems
+    - export PATH=$HOME/gems/bin:$PATH
+    - export GEM_HOME=$HOME/gems
+    - echo $PATH
     - ruby --version
     - gem --version
     - bundler --version
@@ -27,7 +28,11 @@ build:
     - ruby --version
     - gem --version
     - bundler --version
-    - gem install bundler --user-install
+    - gem install bundler
+    - bundler --version
+    - export PATH=/usr/local/bin/gem:$PATH
+	  - export PATH=/usr/local/bin/bundle:$PATH
+    - echo $PATH
     - bundler --version
     # - bundle install
     # - yarn install --frozen-lockfile --cache-folder .yarn-cache

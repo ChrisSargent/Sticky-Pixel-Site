@@ -11,7 +11,7 @@ See the website here: http://www.stickypixel.com
 # Install
 
 - Clone the repo
-- run `npm install`
+- run `yarn install`
 - run `bundle install` to install Jekyll plugins
 
 # Development

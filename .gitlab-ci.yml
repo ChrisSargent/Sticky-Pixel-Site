@@ -15,6 +15,9 @@ build:
     paths:
       - ./dist
   before_script:
+    - gem update --system
+    - gem install bundler
+    - bundler update --bundler
     - bundle install
     - yarn install --frozen-lockfile --cache-folder .yarn-cache
   script:

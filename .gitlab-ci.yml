@@ -31,7 +31,7 @@ build:
     - gem install bundler
     - bundler --version
     - export PATH=/usr/local/bin/gem:$PATH
-	  - export PATH=/usr/local/bin/bundle:$PATH
+    - export PATH=/usr/local/bin/bundle:$PATH
     - echo $PATH
     - bundler --version
     # - bundle install

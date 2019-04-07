@@ -24,8 +24,8 @@ build_deploy:
   after_script:
     - gsutil rsync -d ./dist gs://www.stickypixel.com
     - curl -X POST "https://api.cloudflare.com/client/v4/zones/84605ec2d4a19c5032a1ed0734da912a/purge_cache" \
-     -H "X-Auth-Email: $_CLOUDFLARE_EMAIL" \
-     -H "X-Auth-Key: $_CLOUDFLARE_API_KEY" \
+     -H "X-Auth-Email: $CLOUDFLARE_EMAIL" \
+     -H "X-Auth-Key: $CLOUDFLARE_API_KEY" \
      -H "Content-Type: application/json" \
      --data '{"files":[$PATHS]}'
   variables:

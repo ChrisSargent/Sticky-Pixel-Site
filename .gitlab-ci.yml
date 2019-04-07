@@ -1,0 +1,33 @@
+stages:
+  - build_deploy
+
+build_deploy:
+  only:
+    - master
+  image: google/cloud-sdk:alpine
+  stage: build_deploy
+  cache:
+    paths:
+      - .yarn-cache/
+  environment:
+    name: website/live
+    url: https://www.stickypixel.com
+  artifacts:
+    expire_in: 1 month
+    paths:
+      - ./dist
+  before_script:
+    - bundle install
+    - yarn install --frozen-lockfile --cache-folder .yarn-cache
+  script:
+    - yarn build
+  after_script:
+    - gsutil rsync -d ./dist gs://www.stickypixel.com
+    - curl -X POST "https://api.cloudflare.com/client/v4/zones/84605ec2d4a19c5032a1ed0734da912a/purge_cache" \
+     -H "X-Auth-Email: $_CLOUDFLARE_EMAIL" \
+     -H "X-Auth-Key: $_CLOUDFLARE_API_KEY" \
+     -H "Content-Type: application/json" \
+     --data '{"files":[$PATHS]}'
+  variables:
+    PATHS: https://www.stickypixel.com/index.html
+     

@@ -37,6 +37,8 @@ build_deploy:
     paths:
       - ./dist
   script:
+    - echo $GCP_SERVICE_KEY > /tmp/$CI_PIPELINE_ID.json
+    - gcloud auth activate-service-account --key-file /tmp/$CI_PIPELINE_ID.json
     - gsutil rsync -d ./dist gs://www.stickypixel.com
     - |
       curl -X POST "https://api.cloudflare.com/client/v4/zones/84605ec2d4a19c5032a1ed0734da912a/purge_cache" \

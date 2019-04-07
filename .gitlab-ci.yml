@@ -5,7 +5,7 @@ stages:
 build:
   only:
     - master
-  image: starefossen/ruby-node
+  image: starefossen/ruby-node:latest
   stage: build
   cache:
     paths:
@@ -15,9 +15,14 @@ build:
     paths:
       - ./dist
   before_script:
+    - ruby --version
+    - gem --version
+    - bundler --version
     - gem update --system
     - gem install bundler
-    - bundler update --bundler
+    - ruby --version
+    - gem --version
+    - bundler --version
     - bundle install
     - yarn install --frozen-lockfile --cache-folder .yarn-cache
   script:

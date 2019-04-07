@@ -10,6 +10,7 @@ build:
   cache:
     paths:
       - .yarn-cache/
+      - vendor/
   artifacts:
     expire_in: 1 month
     paths:
@@ -19,14 +20,15 @@ build:
     - gem --version
     - bundler --version
     - gem update --system
-    - gem install bundler
+    - gem install bundler --path vendor
     - ruby --version
     - gem --version
     - bundler --version
-    - bundle install
-    - yarn install --frozen-lockfile --cache-folder .yarn-cache
+    - gem install bundler --user-install
+    # - bundle install
+    # - yarn install --frozen-lockfile --cache-folder .yarn-cache
   script:
-    - yarn build
+    # - yarn build
 
 build_deploy:
   only:

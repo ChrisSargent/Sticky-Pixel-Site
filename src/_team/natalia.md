@@ -3,7 +3,7 @@ name: Natalia Prikhoda
 job_title: Front-End Developer
 type: team
 order: 2
-image: natalia.jpg
+image: natalia.jpg?v=@version@
 published: true
 ---
 

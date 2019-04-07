@@ -2,7 +2,7 @@
 name: Chris Sargent
 job_title: Founder & Digital Director
 order: 1
-image: chris.jpg
+image: chris.jpg?v=@version@
 published: true
 ---
 

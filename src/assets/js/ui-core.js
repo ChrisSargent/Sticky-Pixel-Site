@@ -3,10 +3,7 @@
  */
 
 var stickypixel = (function() {
-  var uiCache, lastKnownScrollPosition, ticking;
-  uiCache = {};
-  lastKnownScrollPosition = 0;
-  ticking = false;
+  var uiCache = {};
 
   function _init() {
     _cacheDom();
@@ -23,6 +20,8 @@ var stickypixel = (function() {
   }
 
   function _bindUIActions() {
+    var lastKnownScrollPosition = 0;
+    var ticking = false;
     // Throttle scroll event with request animation frame: https://developer.mozilla.org/en-US/docs/Web/Events/scroll
     window.addEventListener('scroll', function(e) {
       lastKnownScrollPosition = window.scrollY;
@@ -48,17 +47,16 @@ var stickypixel = (function() {
   }
 
   function _pageScroll(event) {
-    var targetId, targetEl;
+    var targetId = _getTargetHash(event.target);
+    var targetEl = document.getElementById(targetId);
+    var targetScrollPosition = targetEl.getBoundingClientRect().top + window.scrollY;
     event.preventDefault();
+    _scrollTo(targetScrollPosition, 450);
     _hideMobileNav();
-
-    targetId = _getTargetHash(event.target);
-    targetEl = document.getElementById(targetId);
-    _scrollTo(targetEl.getBoundingClientRect().top + window.scrollY, 450);
   }
 
   function _getTargetHash(el) {
-    var hash;
+    var hash = '';
 
     while (el.parentNode) {
       if (el.hash) {
@@ -77,11 +75,9 @@ var stickypixel = (function() {
   }
 
   function _scrollTo(to, duration) {
-    var start, change, increment;
-
-    start = document.documentElement.scrollTop || document.body.scrollTop || 0;
-    change = to - start;
-    increment = 20;
+    var start = document.documentElement.scrollTop || document.body.scrollTop || 0;
+    var change = to - start;
+    var increment = 20;
 
     var _animateScroll = function(elapsedTime) {
       elapsedTime += increment;

@@ -3,127 +3,122 @@
  */
 
 var stickypixel = (function() {
-  var uiCache,
-    lastKnownScrollPosition,
-    ticking
-  uiCache = {}
-  lastKnownScrollPosition = 0
-  ticking = false
+  var uiCache, lastKnownScrollPosition, ticking;
+  uiCache = {};
+  lastKnownScrollPosition = 0;
+  ticking = false;
 
   function _init() {
-    _cacheDom()
-    _bindUIActions()
-    _writeURLToInput()
-  };
+    _cacheDom();
+    _bindUIActions();
+    _writeURLToInput();
+  }
 
   function _cacheDom() {
     uiCache = {
       mainNav: document.getElementById('header--primary'),
       mobileNavCheck: document.getElementById('nav__toggle--primary'),
       intLinks: document.querySelectorAll('a[href^="#"]')
-    }
-  };
+    };
+  }
 
   function _bindUIActions() {
     // Throttle scroll event with request animation frame: https://developer.mozilla.org/en-US/docs/Web/Events/scroll
     window.addEventListener('scroll', function(e) {
-      lastKnownScrollPosition = window.scrollY
+      lastKnownScrollPosition = window.scrollY;
       if (!ticking) {
         window.requestAnimationFrame(function() {
-          _shrinkMainNav(lastKnownScrollPosition)
-          ticking = false
-        })
+          _shrinkMainNav(lastKnownScrollPosition);
+          ticking = false;
+        });
       }
-      ticking = true
-    })
+      ticking = true;
+    });
     for (var i = 0; i < uiCache.intLinks.length; i++) {
-      uiCache.intLinks[i].addEventListener('click', _pageScroll)
+      uiCache.intLinks[i].addEventListener('click', _pageScroll);
     }
-  };
+  }
 
   function _shrinkMainNav(scrollPos) {
     if (scrollPos > 50) {
-      uiCache.mainNav.classList.add('header--primary-shrink')
+      uiCache.mainNav.classList.add('header--primary-shrink');
     } else if (scrollPos <= 50) {
-      uiCache.mainNav.classList.remove('header--primary-shrink')
+      uiCache.mainNav.classList.remove('header--primary-shrink');
     }
-  };
+  }
 
   function _pageScroll(event) {
-    var targetId,
-      targetEl
-    event.preventDefault()
-    _hideMobileNav()
+    var targetId, targetEl;
+    event.preventDefault();
+    _hideMobileNav();
 
-    targetId = _getTargetHash(event.target)
-    targetEl = document.getElementById(targetId)
-    _scrollTo(targetEl.getBoundingClientRect().top + window.scrollY, 450)
-  };
+    targetId = _getTargetHash(event.target);
+    targetEl = document.getElementById(targetId);
+    _scrollTo(targetEl.getBoundingClientRect().top + window.scrollY, 450);
+  }
 
   function _getTargetHash(el) {
-    var hash
+    var hash;
 
     while (el.parentNode) {
       if (el.hash) {
-        break
+        break;
       }
-      el = el.parentNode
+      el = el.parentNode;
     }
-    hash = el.hash.split('#')[1]
+    hash = el.hash.split('#')[1];
     // Need this in so that the browser updates the URL with the hash
     if (window.history.pushState) {
-      window.history.pushState(null, null, el.hash)
+      window.history.pushState(null, null, el.hash);
     } else {
-      window.location.hash = el.hash
+      window.location.hash = el.hash;
     }
-    return hash
+    return hash;
   }
 
   function _scrollTo(to, duration) {
-    var start,
-      change,
-      increment
+    var start, change, increment;
 
-    start = document.documentElement.scrollTop || document.body.scrollTop || 0
-    change = to - start
-    increment = 20
+    start = document.documentElement.scrollTop || document.body.scrollTop || 0;
+    change = to - start;
+    increment = 20;
 
     var _animateScroll = function(elapsedTime) {
-      elapsedTime += increment
-      var position = _easeInOut(elapsedTime, start, change, duration)
-      document.documentElement.scrollTop = position
-      document.body.scrollTop = position
+      elapsedTime += increment;
+      var position = _easeInOut(elapsedTime, start, change, duration);
+      document.documentElement.scrollTop = position;
+      document.body.scrollTop = position;
 
       if (elapsedTime < duration) {
         setTimeout(function() {
-          _animateScroll(elapsedTime)
-        }, increment)
+          _animateScroll(elapsedTime);
+        }, increment);
       }
-    }
+    };
 
-    _animateScroll(0)
+    _animateScroll(0);
   }
 
   function _easeInOut(currentTime, start, change, duration) {
-    currentTime /= duration / 2
+    currentTime /= duration / 2;
     if (currentTime < 1) {
-      return change / 2 * currentTime * currentTime + start
+      return (change / 2) * currentTime * currentTime + start;
     }
-    currentTime -= 1
-    return -change / 2 * (currentTime * (currentTime - 2) - 1) + start
+    currentTime -= 1;
+    return (-change / 2) * (currentTime * (currentTime - 2) - 1) + start;
   }
 
   function _hideMobileNav(event) {
-    uiCache.mobileNavCheck.checked = false
-  };
+    uiCache.mobileNavCheck.checked = false;
+  }
 
   function _writeURLToInput() {
     // Submit Form - writes document URL to a hidden field
-    var currURL = document.location.href
-    document.getElementById('fieldukkddk').value = currURL
-  };
+    var currURL = document.location.href;
+    document.getElementById('fieldukkddk').value = currURL;
+  }
 
   // Run the Initialise Function when the Dom is ready
-  _init()
-  uiScroll.init()
-})()
+  _init();
+  uiScroll.init();
+})();

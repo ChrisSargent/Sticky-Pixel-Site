@@ -23,7 +23,6 @@ Travelaer is a digital product company serving the airline and travel industry. 
 Travelaer approached us to build their new, state-of-the-art website in order to better demonstrate their design, usability and technical expertise as well as improving their visibility to search engines and the outside world by integrating their existing, disparate blogs.
 {% endcontentfor %}
 
-
 {% contentfor approach %}
 After discussions with the Travelaer team we settled on building the site as a React.js single-page application, using WordPress as a CMS and serving content via its REST API. This gives their team the ability to easily add and update content & images with ease, in a familiar and, frankly, fantastic way using the standard, WordPress Admin interface.
 
@@ -32,26 +31,26 @@ The React.js powered front-end means that users are engaged in a native-app-like
 The modern and friendly feel, working across all devices, helps to reinforce Travelaer’s pursuit of being a state-of-the-art tech company focused on usability and design.
 {% endcontentfor %}
 
-
 {% contentfor why %}
 Sticky Pixel has collaborated closely with Travelaer in the past, working on two consulting projects for a large Airline IT Services company. In the first, we developed a library of reusable, front-end components and online style guide for a flagship consumer and business travel management app. In the second, we provided front-end development of a brand-new, enterprise-focused app that brought travel management right in to users' MS Outlook.
 
 This experience gave Travelaer the knowledge and confidence that we were able to produce high-quality results, reflecting their values.
 {% endcontentfor %}
 
-
 {% contentfor scope %}
 For this project, Travelaer already had a clear vision of the look and feel of the site and were able to provide us with comprehensive visual designs and content in Photoshop files. Our focus was on bringing those designs to life, delivering a beautiful, responsive and intuitive experience for users, including:
+
 - Initial site and state management architecture
 - Creation of bespoke, single-page, React.js powered site, using multiple reusable components and modules
 - Setup of WordPress using extensive custom fields to turn it in to a fully-fledged CMS
 - Customisation of the WordPress API using a mix of custom and built-in end points
 - Setup and customisation of Node.JS & Express server to provide the initial server-side render
 - Setup and hosting of the site on a Digital Ocean Linux / Nginx Server
-{% endcontentfor %}
-
+  {% endcontentfor %}
 
 {% contentfor testimonialx %}
+
 > “We are extremely happy with the approach and results that the team have delivered. Being a digital product company focused on flexibility, usability and customer experience, we needed a website that clearly demonstrated these values to our customers. They produced an accurate and relevant site, using the right tools and techniques for an engaging experience. This is our third collaboration with them and they did a fantastic job again, we will definitely continue to work with them on future projects.”
-<cite>Mike Slone, Travelaer CEO</cite>
+> <cite>Mike Slone, Travelaer CEO</cite> >
+
 {% endcontentfor %}

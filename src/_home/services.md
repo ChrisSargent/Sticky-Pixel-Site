@@ -10,6 +10,7 @@ classlist: section--detail
 To help our clients become more successful in ultra-competitive environments, we focus on three core services:
 
 ## Web and Application Development
+
 Building beautiful, digital things; using the latest HTML, CSS and Javascript technologies to create cohesive experiences for your customers across all devices.
 
 - Bespoke web and application design and development
@@ -19,6 +20,7 @@ Building beautiful, digital things; using the latest HTML, CSS and Javascript te
 - WordPress & CMS customisation
 
 ## UX / UI and Product Consulting
+
 Designing the look and feel of websites and applications to create memorable user interactions and product experience.
 
 - User and product discovery consulting
@@ -29,6 +31,7 @@ Designing the look and feel of websites and applications to create memorable use
 - Managing external development agencies where necessary, using Agile-inspired methods
 
 ## Digital Marketing
+
 We care about our clients' stories and we go out of our way to ensure they are told in the most compelling way. We employ content marketing methods to generate more leads, increase brand recognition and convert more prospects, leading to improvements in our clients' bottom line.
 
 - Marketing strategy design and consulting

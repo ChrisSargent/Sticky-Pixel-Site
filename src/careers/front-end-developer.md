@@ -20,6 +20,7 @@ Sticky Pixel is a small but ambitious digital design company based near Nice in 
 Due to high demand, we are seeking a web designer / front-end developer, initially on a freelance / part-time basis and hopefully leading to a full-time position. Our perfect match will be happy designing and developing beautiful websites, from concept to deployment according to our clients' specifications. We're not so fussed about how much experience you can bring (although it can help!) but we are interested in your attitude, passion and willingness to be part of building an amazing company.
 
 ## Things we’ll like best about you include your:
+
 - Boundless passion for web design and front-end development
 - Enthusiasm for learning new technologies
 - Fantastic communication and customer service skills
@@ -32,6 +33,7 @@ Due to high demand, we are seeking a web designer / front-end developer, initial
 - Ability to translate client requirements in to scope and specification documents
 
 ## Good to Have
+
 - Knowledge of javascript libraries and frameworks such as React, jQuery, Angular, Backbone etc.
 - Experience with SASS / LESS
 - Experience with a build system such as Grunt or Gulp

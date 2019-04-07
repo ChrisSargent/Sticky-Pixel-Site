@@ -8,10 +8,10 @@ ident: free-fridays
 published: true
 cont_size: --s
 buttons:
-    -   url: "#free-fridays"
-        text: Learn More &#x25BE;
-    -   url: "#contact"
-        text: Get in Touch
+  - url: '#free-fridays'
+    text: Learn More &#x25BE;
+  - url: '#contact'
+    text: Get in Touch
 ---
 
 Sticky Pixel is a small but ambitious digital design company based near Nice in the French Riviera. We love creating beautiful, effortless websites that drive the real-world growth of our clients’ businesses. We specialise in web design & development, front-end engineering and digital marketing activities.

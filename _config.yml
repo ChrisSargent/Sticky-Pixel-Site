@@ -6,7 +6,7 @@ baseurl: /
 author: Chris Sargent
 keywords: webapp, progressive webapp, digital product, digital design, app development, development, product design, product development, france, 06, riviera, antibes, nice, juan-les-pins, monaco, cannes, alpes-maritimes, english-speaking
 twitter_username: Chris5argent
-github_username:  ChrisSargent
+github_username: ChrisSargent
 google_plus: StickyPixelRocks
 linkedin_page: sticky-pixel
 facebook_page: stickypixel
@@ -46,19 +46,19 @@ collections:
     output: true
 
 primary_nav:
-  - url: "/"
+  - url: '/'
     text: Home
-  - url: "#about"
+  - url: '#about'
     text: About Us
-  - url: "#work"
+  - url: '#work'
     text: Work
-  - url: "#services"
+  - url: '#services'
     text: Services
-  - url: "#team"
+  - url: '#team'
     text: Team
-  - url: "#contact"
+  - url: '#contact'
     text: Contact Us
 
-gems:
+plugins:
   - jekyll-sitemap
   - jekyll-contentblocks

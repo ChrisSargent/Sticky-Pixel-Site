@@ -5,7 +5,7 @@ stages:
 build:
   only:
     - master
-  image: Starefossen/docker-ruby-node
+  image: starefossen/ruby-node
   stage: build
   cache:
     paths:

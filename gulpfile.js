@@ -199,4 +199,5 @@ gulp.task('build:watch', [
 gulp.task('build:ci', ['images', 'fonts', 'html', 'css', 'js']);
 
 gulp.task('start', ['build:watch']);
+// Gitlab ci can't run the critical css because needs puppeteer, disable for now
 gulp.task('build', ['critical']);

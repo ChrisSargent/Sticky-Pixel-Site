@@ -19,9 +19,9 @@ build:
     - bundle install
     - yarn install --frozen-lockfile --cache-folder .yarn-cache
   script:
-    - yarn build
+    - yarn build:ci
 
-build_deploy:
+deploy:
   only:
     - master
   image: google/cloud-sdk:alpine
@@ -39,12 +39,4 @@ build_deploy:
   script:
     - echo $GCP_GITLABCI_KEY > /tmp/$CI_PIPELINE_ID.json
     - gcloud auth activate-service-account --key-file /tmp/$CI_PIPELINE_ID.json
-    - gsutil rsync -d ./dist gs://www.stickypixel.com
-    - |
-      curl -X POST "https://api.cloudflare.com/client/v4/zones/84605ec2d4a19c5032a1ed0734da912a/purge_cache" \
-      -H "X-Auth-Email: ${CLOUDFLARE_EMAIL}" \
-      -H "X-Auth-Key: ${CLOUDFLARE_API_KEY}" \
-      -H "Content-Type: application/json" \
-      --data '{"files":[${PATHS}]}'
-  variables:
-    PATHS: https://www.stickypixel.com/index.html
+    - gsutil rsync -d -r -m ./dist gs://www.stickypixel.com

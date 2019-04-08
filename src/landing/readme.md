@@ -2,5 +2,5 @@
 - Create a new file here: https://github.com/stickypixel/website/new/master/src/landing
 - Paste the content in
 - Edit the parts you want to change
-- Name your file how you want the url of the page to be
+- Name your file how you want the url of the page to be, including the .md extension
 - Click 'commit new file'

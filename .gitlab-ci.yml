@@ -37,7 +37,7 @@ build_deploy:
     paths:
       - ./dist
   script:
-    - echo $GCP_SERVICE_KEY > /tmp/$CI_PIPELINE_ID.json
+    - echo $GCP_GITLABCI_KEY > /tmp/$CI_PIPELINE_ID.json
     - gcloud auth activate-service-account --key-file /tmp/$CI_PIPELINE_ID.json
     - gsutil rsync -d ./dist gs://www.stickypixel.com
     - |

@@ -1,17 +1,14 @@
-{% if page.meta_description %}
-  {% assign meta_description = page.meta_description %}
-{% else %}
-  {% assign meta_description = page.content | strip_html | strip_newlines | truncate: 150 %}
-{% endif %}
+{% if page.meta_description %} {% assign meta_description = page.meta_description %} {% else %} {%
+assign meta_description = page.content | strip_html | strip_newlines | truncate: 150 %} {% endif %}
 <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# website: http://ogp.me/ns/website#">
   <title>{{ page.meta_title }}</title>
   <meta charset="utf-8" />
   <meta name="keywords" content="{{ page.keywords | default: site.keywords }}" />
   <meta name="description" content="{{ meta_description }}" />
   <meta name="author" content="{{ page.author | default: site.author }}" />
-  <meta name="robots" content="index, follow">
-  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0">
-  <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.url }}">
+  <meta name="robots" content="index, follow" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0" />
+  <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.url }}" />
   <!-- Verifications -->
   <meta name="p:domain_verify" content="{{ site.pinterest_verify }}" />
   <meta name="msvalidate.01" content="{{ site.bing_verify }}" />
@@ -23,36 +20,96 @@
   <meta property="fb:app_id" content="{{ site.fb_app_id }}" />
   <meta property="fb:admins" content="{{ site.fb_admins }}" />
   <meta property="fb:profile_id" content="{{ site.fb_profile_id }}" />
-  <meta property="og:image" content="{{ site.images | prepend: site.url }}/{{ page.og_image | default: site.og_image }}" />
+  <meta
+    property="og:image"
+    content="{{ site.images | prepend: site.url }}/{{ page.og_image | default: site.og_image }}"
+  />
   <meta property="og:image:type" content="image/jpeg" />
   <meta property="og:image:width" content="1500" />
   <meta property="og:image:height" content="785" />
-  <!-- Google+ Stuff -->
-  <link rel="publisher" href="https://plus.google.com/{{ site.google_plus }}" />
   <!-- Favicons etc -->
-  <link rel="apple-touch-icon" sizes="57x57" href="{{site.images}}/favicons/apple-icon-57x57.png">
-  <link rel="apple-touch-icon" sizes="60x60" href="{{site.images}}/favicons/apple-icon-60x60.png">
-  <link rel="apple-touch-icon" sizes="72x72" href="{{site.images}}/favicons/apple-icon-72x72.png">
-  <link rel="apple-touch-icon" sizes="76x76" href="{{site.images}}/favicons/apple-icon-76x76.png">
-  <link rel="apple-touch-icon" sizes="114x114" href="{{site.images}}/favicons/apple-icon-114x114.png">
-  <link rel="apple-touch-icon" sizes="120x120" href="{{site.images}}/favicons/apple-icon-120x120.png">
-  <link rel="apple-touch-icon" sizes="144x144" href="{{site.images}}/favicons/apple-icon-144x144.png">
-  <link rel="apple-touch-icon" sizes="152x152" href="{{site.images}}/favicons/apple-icon-152x152.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="{{site.images}}/favicons/apple-icon-180x180.png">
-  <link rel="icon" type="image/png" sizes="192x192" href="{{site.images}}/favicons/android-icon-192x192.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="{{site.images}}/favicons/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="96x96" href="{{site.images}}/favicons/favicon-96x96.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="{{site.images}}/favicons/favicon-16x16.png">
-  <link rel="manifest" href="{{site.images}}/favicons/manifest.json">
-  <meta name="msapplication-TileColor" content="#ffffff">
-  <meta name="msapplication-TileImage" content="{{site.images}}/favicons/ms-icon-144x144.png">
-  <meta name="theme-color" content="#ffffff">
+  <link
+    rel="apple-touch-icon"
+    sizes="57x57"
+    href="{{ site.images }}/favicons/apple-icon-57x57.png"
+  />
+  <link
+    rel="apple-touch-icon"
+    sizes="60x60"
+    href="{{ site.images }}/favicons/apple-icon-60x60.png"
+  />
+  <link
+    rel="apple-touch-icon"
+    sizes="72x72"
+    href="{{ site.images }}/favicons/apple-icon-72x72.png"
+  />
+  <link
+    rel="apple-touch-icon"
+    sizes="76x76"
+    href="{{ site.images }}/favicons/apple-icon-76x76.png"
+  />
+  <link
+    rel="apple-touch-icon"
+    sizes="114x114"
+    href="{{ site.images }}/favicons/apple-icon-114x114.png"
+  />
+  <link
+    rel="apple-touch-icon"
+    sizes="120x120"
+    href="{{ site.images }}/favicons/apple-icon-120x120.png"
+  />
+  <link
+    rel="apple-touch-icon"
+    sizes="144x144"
+    href="{{ site.images }}/favicons/apple-icon-144x144.png"
+  />
+  <link
+    rel="apple-touch-icon"
+    sizes="152x152"
+    href="{{ site.images }}/favicons/apple-icon-152x152.png"
+  />
+  <link
+    rel="apple-touch-icon"
+    sizes="180x180"
+    href="{{ site.images }}/favicons/apple-icon-180x180.png"
+  />
+  <link
+    rel="icon"
+    type="image/png"
+    sizes="192x192"
+    href="{{ site.images }}/favicons/android-icon-192x192.png"
+  />
+  <link
+    rel="icon"
+    type="image/png"
+    sizes="32x32"
+    href="{{ site.images }}/favicons/favicon-32x32.png"
+  />
+  <link
+    rel="icon"
+    type="image/png"
+    sizes="96x96"
+    href="{{ site.images }}/favicons/favicon-96x96.png"
+  />
+  <link
+    rel="icon"
+    type="image/png"
+    sizes="16x16"
+    href="{{ site.images }}/favicons/favicon-16x16.png"
+  />
+  <link rel="manifest" href="{{ site.images }}/favicons/manifest.json" />
+  <meta name="msapplication-TileColor" content="#ffffff" />
+  <meta name="msapplication-TileImage" content="{{ site.images }}/favicons/ms-icon-144x144.png" />
+  <meta name="theme-color" content="#ffffff" />
   <script>
     // Add a class to the html element if JS is enabled
     (function(html) {
       html.classList.add('js');
     })(document.documentElement);
   </script>
-  <link href="{{site.assets}}/css/main.css?v=@version@" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Playfair+Display:900" rel="stylesheet">
+  <link href="{{ site.assets }}/css/main.css?v=@version@" rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Playfair+Display:900"
+    rel="stylesheet"
+  />
 </head>

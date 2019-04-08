@@ -99,7 +99,10 @@ gulp.task('browser-sync', function() {
     online: false,
     notify: false,
     server: {
-      baseDir: dist
+      baseDir: dist,
+      serveStaticOptions: {
+        extensions: ['html']
+      }
     }
   });
   gulp.watch([dist + '**/*.html', distJs + '**/*.js']).on('change', browserSync.reload);

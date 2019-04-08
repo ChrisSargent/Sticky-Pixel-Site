@@ -12,34 +12,39 @@
     "founder": "{{ site.founder}}",
     "email": "{{ site.email }}",
     "telephone": "{{ site.telephone }}",
-    "address": [{
-      "@type": "PostalAddress",
-      "addressCountry": "France",
-      "addressLocality": "Juan-les-Pins",
-      "addressRegion": "Alpes-Maritimes",
-      "postalCode": "06160",
-      "streetAddress": "Le Saphir, Rue Bricka"
-    }, {
-      "@type": "PostalAddress",
-      "addressCountry": "United Kingdom",
-      "addressLocality": "Rugby",
-      "addressRegion": "Warwickshire",
-      "postalCode": "CV21 4DU",
-      "streetAddress": "29, Crick Road"
-    }],
-    "contactPoint": [{
-      "@type": "ContactPoint",
-      "telephone": "{{ site.telephone }}",
-      "contactType": "customer service"
-    }, {
-      "@type": "ContactPoint",
-      "telephone": "{{ site.telephone }}",
-      "contactType": "sales"
-    }],
+    "address": [
+      {
+        "@type": "PostalAddress",
+        "addressCountry": "France",
+        "addressLocality": "Juan-les-Pins",
+        "addressRegion": "Alpes-Maritimes",
+        "postalCode": "06160",
+        "streetAddress": "Le Saphir, Rue Bricka"
+      },
+      {
+        "@type": "PostalAddress",
+        "addressCountry": "United Kingdom",
+        "addressLocality": "Rugby",
+        "addressRegion": "Warwickshire",
+        "postalCode": "CV21 4DU",
+        "streetAddress": "29, Crick Road"
+      }
+    ],
+    "contactPoint": [
+      {
+        "@type": "ContactPoint",
+        "telephone": "{{ site.telephone }}",
+        "contactType": "customer service"
+      },
+      {
+        "@type": "ContactPoint",
+        "telephone": "{{ site.telephone }}",
+        "contactType": "sales"
+      }
+    ],
     "sameAs": [
       "http://www.facebook.com/{{ site.facebook_page }}",
       "http://www.twitter.com/{{ site.twitter_username }}",
-      "http://plus.google.com/{{ site.google_plus }}",
       "http://https://www.linkedin.com/company/{{ site.linkedin_page }}",
       "http://github.com/{{ site.github_username }}",
       "http://instagram.com/{{ site.instagram_user }}",

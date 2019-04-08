@@ -7,6 +7,7 @@ See the website here: http://www.stickypixel.com
 - Node and NPM installed: https://nodejs.org/en/download/
 - Gulp Installed: https://www.npmjs.com/package/gulp-install
 - Jekyll (Ruby) Installed: https://jekyllrb.com
+- Bundler v1.16.3 Installed (version is important) `gem install bundler --version 1.16.3`
 
 # Install
 

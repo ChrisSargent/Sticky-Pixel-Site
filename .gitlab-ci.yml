@@ -39,4 +39,4 @@ deploy:
   script:
     - echo $GCP_GITLABCI_KEY > /tmp/$CI_PIPELINE_ID.json
     - gcloud auth activate-service-account --key-file /tmp/$CI_PIPELINE_ID.json
-    - gsutil rsync -d -r -m ./dist gs://www.stickypixel.com
+    - gsutil -m rsync -d -r ./dist gs://www.stickypixel.com

@@ -2,10 +2,10 @@
 title: Our Team
 ident: team
 order: 4
-bg: 'bg-imac.jpg'
+# bg: 'bg-imac.jpg'
 published: true
 cont_size: --m
-classlist: has__bgimg
+classlist: testimonial
 js_act_content: 'null'
 ---
 

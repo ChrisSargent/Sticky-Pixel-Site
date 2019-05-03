@@ -1,14 +1,10 @@
 ---
 name: Natalia Prikhoda
-job_title: Front-End Developer
+job_title: Senior Front-End Developer
 type: team
-order: 2
+order: 3
 image: natalia.jpg?v=@version@
 published: true
 ---
 
-Having had them around her when she was growing up, Natalia has always had a fascination for computers and their workings. Her interest in graphic design was planted by her father, a production artist, working on type and layouts for magazines, and cultivated by her mother introducing her to the wonders of Photoshop and in particular making text look like it’s on fire!
-
-Later, whilst studying for her educational psychology degree and PhD, she started to help friends and family with various small website projects and decided to take a course on computer science at her university. This led to the realisation that she still loved computers, coding and creating amazing things! Since then, she has worked for several Moscow-based agencies on many small and large-scale web development projects, and now works with Sticky Pixel, here in the French Riviera.
-
-**Specialties:** HTML, CSS, SASS, JavaScript, PHP, WordPress, Photoshop, Responsive Design, Igniting Type.
+Natalia started out creating websites for small businesses. Fast forward 8years, and she's the one meticulously studying every detail of our designs to ensure our products look exactly as envisioned using HTML, CSS and Javascript. Natalia also studies educational psychology at PhD level - probably why she's so good at understanding the truth and logic behind our client's ideas.

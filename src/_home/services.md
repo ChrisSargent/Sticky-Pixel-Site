@@ -13,11 +13,8 @@ To help our clients become more successful in ultra-competitive environments, we
 
 Building beautiful, digital things; using the latest HTML, CSS and Javascript technologies to create cohesive experiences for your customers across all devices.
 
+- Full stack development
 - Bespoke web and application design and development
-- Responsive development
-- Front-end engineering
-- eCommerce
-- WordPress & CMS customisation
 
 ## UX / UI and Product Consulting
 

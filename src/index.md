@@ -1,14 +1,12 @@
 ---
 layout: default
 ident: home
-title: Are you ready to&nbsp;<br>delight your customers?
-sub_title: You've come to the right place; we help our clients create beautiful and effective digital products.
-bg: bg-polygon.jpg
+title: We help global clients create<br>digital products that grow.
+sub_title: We pride ourselves on being the partner of choice for international companies who need a team experienced in full-lifecycle product development.
+bg: bg-polygon.svg
 meta_title: Digital Product Design & Development | Sticky Pixel
-meta_description: Sticky Pixel is a product design & development agency, relentless in the pursuit of creating beautiful and effortless digital experiences.
+meta_description: Sticky Pixel is a digital product design & development agency, relentless in the pursuit of creating beautiful and effortless digital experiences.
 buttons:
-  - url: '#about'
-    text: Learn More &#x25BE;
   - url: '#contact'
     text: Get in Touch
 ---

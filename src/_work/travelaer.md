@@ -48,9 +48,9 @@ For this project, Travelaer already had a clear vision of the look and feel of t
 - Setup and hosting of the site on a Digital Ocean Linux / Nginx Server
   {% endcontentfor %}
 
-{% contentfor testimonialx %}
+{% contentfor testimonial %}
 
 > “We are extremely happy with the approach and results that the team have delivered. Being a digital product company focused on flexibility, usability and customer experience, we needed a website that clearly demonstrated these values to our customers. They produced an accurate and relevant site, using the right tools and techniques for an engaging experience. This is our third collaboration with them and they did a fantastic job again, we will definitely continue to work with them on future projects.”
-> <cite>Mike Slone, Travelaer CEO</cite> >
+> <cite>Mike Slone, Travelaer CEO</cite>
 
 {% endcontentfor %}

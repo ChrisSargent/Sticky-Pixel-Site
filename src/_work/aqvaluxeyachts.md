@@ -45,7 +45,8 @@ For this project, AqvaLuxe Yachts provided us a diverse library of photos and th
 - Creation of a bespoke, responsive WordPress theme
 - Creation of an onsite search engine for seeking out the perfect yacht
 - Presenting their yachts using many, high-quality photos as well as detailed descriptions with well-structured information. The reasons for doing this were firstly to entice users to contact AqvaLuxe and secondly to ensure that users have a relatively accurate indication of what they can expect when arriving at their yacht.
-  {% endcontentfor %}
+
+{% endcontentfor %}
 
 {% contentfor testimonial %}
 
@@ -53,4 +54,6 @@ For this project, AqvaLuxe Yachts provided us a diverse library of photos and th
 > <cite>Alex Treleani, Owner of the AqvaLuxe Group of Companies</cite>
 
 > “One of the main purpose of this website was to get a more direct visual impact within our clients and Sticky Pixel did a great job. In addition to the site our users see, the administrative parts are also well structured meaning we can quickly and easily add and update new yacht listings.”
-> <cite>Agata Grillo, Charter Manager</cite> > {% endcontentfor %}
+> <cite>Agata Grillo, Charter Manager</cite>
+
+{% endcontentfor %}

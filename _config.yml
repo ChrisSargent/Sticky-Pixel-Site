@@ -47,10 +47,10 @@ primary_nav:
     text: Home
   - url: '#about'
     text: About Us
-  - url: '#work'
-    text: Work
   - url: '#services'
     text: Services
+  - url: '#work'
+    text: Work
   - url: '#team'
     text: Team
   - url: '#contact'

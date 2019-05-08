@@ -1,11 +1,10 @@
 ---
 title: Our Team
 ident: team
-order: 4
-# bg: 'bg-imac.jpg'
+order: 5
 published: true
 cont_size: --m
-classlist: testimonial
+classlist: dark shadow
 js_act_content: 'null'
 ---
 

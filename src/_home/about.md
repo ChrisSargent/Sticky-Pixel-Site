@@ -2,13 +2,12 @@
 title: About Us
 ident: about
 order: 1
-bg: bg-macbook.jpg
 published: true
 cont_size: --s
 ---
 
-Sticky Pixel is a design & development agency, relentless in the pursuit of creating products that help raise the competitiveness of our customers' businesses. We specialise in digital product design & build, embracing effortless user experience & beautiful interface design (UX / UI), front-end engineering, API & database (full-stack) development and a customer-first vision.
+Sticky Pixel is a digital product company, relentless in the pursuit of creating applications that grow. We specialise in designing and developing products that combine effortless user experience, beautiful interface design, state-of-the-art technology and a customer-first approach.
 
-We help our customers take their ideas from their heads and turn them in to a reality. We spend time to discover who they are, what they're trying to achieve and how their current digital activities are performing. Only then do we put together a solution to address those aspirations and stay aligned with their business goals.
+Whether big or small, we help our customers turn their ideas in to reality. Our team slots right into your company, bringing our experience and expertise of taking products from concept-to-launch, to help realise the potential of your products.
 
-Based in London, we are experienced in web app development, native app development and website development across a number of industries including Fin-tech, Blockchain, Travel-tech, Retail and Entertainment.
+Based in London and working with international clients, we are experienced in web and native app development across a number of industries including Fintech, Retail, Rewards, Blockchain, Travel-tech and Entertainment.

@@ -31,6 +31,10 @@ body
   max-width: $sz--xl
   margin: 0 auto
 
+=dark
+  color: $co--wt
+  background-color: $co--gr--dk
+
 %section
   position: relative
   background-repeat: no-repeat
@@ -54,20 +58,29 @@ body
     vertical-align: middle
 
 .testimonial
+  +dark
   display: table
   width: 100%
   min-height: 80vh
-  color: $co--wt
-  background-color: $co--gr--dk
+
+.dark
+  +dark
+
+.shadow
+  box-shadow: 0 0 25px 0px rgba(0,0,0,0.5)
+  z-index: 1
 
 .page--default
   .section--hero
+    overflow: hidden
+
     &::before
       content: ' '
       position: absolute
       top: 0
       right: 0
-      bottom: 0
+      // Just to prevent an issue with a white line displaying
+      bottom: -1px
       left: 0
       background-image: url('/assets/img/bg-polygon.svg')
       background-size: 100% auto

@@ -1,28 +1,33 @@
 ---
 title: Services
 ident: services
-order: 3
+order: 2
+bg: bg-colourful.jpg
 published: true
 cont_size: --s
-classlist: section--detail
+classlist: section--detail shadow
 ---
 
-To help our clients become more successful in ultra-competitive environments, we focus on three core services:
+## Design
 
-## Web and Application Development
+The first phase of most of the projects we work on uses a design sprint to ensure what we build will deliver a complete and delightful user experience.
 
-Building beautiful, digital things; using the latest HTML, CSS and Javascript technologies to create cohesive experiences for your customers across all devices.
+- UX workshop
+- Interactive prototypes
+- MVP build
+- UI / UX design
+- User Testing
+- User journey & story mapping
+- Interaction best practice
+- Designing for accessibility
+
+## Application Development
+
+We use the most state-of-the-art front-end, back-end and cloud technologies to create cohesive experiences across all devices and platforms.
 
 - Full stack development
 - Bespoke web and application design and development
-
-## UX / UI and Product Consulting
-
-Designing the look and feel of websites and applications to create memorable user interactions and product experience.
-
-- User and product discovery consulting
-- User scenarios and persona development
-- User journey & story mapping
-- User experience & interaction best practice
-- Designing for accessibility
-- Managing external development agencies where necessary, using Agile-inspired methods
+- Web App Development
+- Android & iOS Development
+- DevOps, Testing & Deployment
+- Maintenance

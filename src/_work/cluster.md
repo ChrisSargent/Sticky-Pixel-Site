@@ -42,4 +42,6 @@ Their Marketing and Communications Director and Board Member, Gregory Benassi, w
 {% contentfor testimonial %}
 
 > “We’re extremely proud of the new site that Sticky Pixel built. It has enabled us to more proactively publicise our news and events to existing members and has allowed other Yachting professionals find relevant service providers within our membership. In addition, because we’re now on the front page of relevant Google searches, we’ve seen an increase in new and returning visitors which has resulted in us attracting several new members. They did a fantastic job and were always a pleasure to work with.”
-> <cite>Gregory Benassi, Marketing and Communications Director.</cite> > {% endcontentfor %}
+> <cite>Gregory Benassi, Marketing and Communications Director.</cite>
+
+{% endcontentfor %}

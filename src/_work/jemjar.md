@@ -1,20 +1,20 @@
 ---
 layout: work
-title: Travelaer
-sub_title: Responsive and State-of-the-Art; for an Airline Software Company
-meta_title: Travelaer Website | Our Work
-meta_description: Responsive and State-of-the-Art website using React, Redux and WordPress for Travelaer, an Airline Software Company
-published: true
-hero: travelaer-hero.jpg
-desktop1: travelaer-dt-one.jpg
-desktop2: travelaer-dt-two.jpg
-mobile1: travelaer-mob-one.jpg
-mobile2: travelaer-mob-two.jpg
-order: 2
-website: http://www.travelaer.com/
-dates: September 2016 – March 2017
-technologies: Responsive, HTML, CSS, JavaScript, Sass, ReactJS, Redux, Isomorphic / Universal, PHP, WordPress, REST API, NodeJS, Express, Nginx
-services: Interaction Design, Front-End Build, Database Design & Admin, Back-End Development
+title: Jemjar
+sub_title: Bitcoin rewards program, connecting offline shopping and online rewards.
+meta_title: Jemjar Application | Our Work
+meta_description: Jemjar, a blockchain based digital rewards program, connecting offline shopping and online rewards.
+published: false
+hero: jemjar-hero.jpg
+desktop1: jemjar-dt-one.jpg
+desktop2: jemjar-dt-two.jpg
+mobile1: jemjar-mob-one.jpg
+mobile2: jemjar-mob-two.jpg
+order: 1
+website: http://app.jemjar.com/
+dates: Septemer 2017 – Present
+technologies: Blockchain, React.js, Node.js, MongoDB, AWS, Serverless
+services: Outsourced Product Team, Conception to Launch, Interaction Design, Front-End Build, API build, DevOps
 ---
 
 {% contentfor intro %}

@@ -7,5 +7,4 @@ classlist: section--work
 js_act_content: 'null'
 additional_content:
   - work-list.html
-cont_size: --m
 ---

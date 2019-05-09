@@ -10,10 +10,27 @@
   max-height: 520px
   margin: 0.75rem 0
   color: $co--wt
-  background-color: $co--gr--mid
-  background-repeat: no-repeat
-  background-position: 50%
-  background-size: cover
+  position: relative
+  overflow: hidden
+
+  &__background
+    display: block
+    position: absolute
+    top: 0
+    right: 0
+    bottom: 0
+    left: 0
+    background-color: $co--gr--mid
+    background-repeat: no-repeat
+    background-position: 50%
+    background-size: cover
+    transform: scale3d(1, 1, 1)
+    transition: transform $tr--mid ease-in-out
+  
+  &:hover
+    .tile__background
+      transform: scale3d(1.05, 1.05, 1.05)
+
 
   &__wrap
     position: relative
@@ -38,7 +55,14 @@
     font-weight: 300
 
   &__link
+    +fancy-link
+    font-size: $fs--s
+    font-weight: 300
+    position: absolute
+    bottom: 2em
+    left: 10%
     display: none
+    opacity: 0
 
 
 @media (min-width: $bp--l)
@@ -51,17 +75,9 @@
     height: 30vw
     margin: 0.5rem
 
-    &__wrap
-      opacity: 0
-
-      &:hover
-        opacity: 1
-
     &__link
-      +fancy-link
-      font-size: $fs--s
-      font-weight: 300
-      position: absolute
-      bottom: 2em
-      left: 10%
       display: block
+
+    &:hover
+      .tile__link
+        opacity: 1

@@ -2,7 +2,12 @@
 
 <ul class="mosaic js__act-content--up">
   {% for work in worklist %} {% unless work.url == page.url %}
-  <li class="tile" style="background-image:url({{ site.images }}/{{ work.hero }});">
+  <li class="tile">
+    <div
+      class="tile__background"
+      style="background-image:url({{ site.images }}/{{ work.hero }});"
+      aria-hidden="true"
+    ></div>
     <a class="tile__wrap" href="{{ work.url }}">
       <div>
         <h4 class="tile__title">{{ work.title }}</h4>

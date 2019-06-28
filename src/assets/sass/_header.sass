@@ -18,18 +18,18 @@
   .logo
     font-size: $fs--s
     line-height: 5em
-    position: absolute
     top: 0
     left: 0
     display: block
     padding: 0.6em 0.6em
     transition: padding $tr--slow ease-in-out
     color: inherit
+    box-sizing: content-box;
 
-  svg
-    display: block
-    width: 103.5px
-    height: 30px
+    svg
+      display: block
+      width: 103.5px
+      height: 30px
 
 @media (min-width: $bp--nav)
   .header--primary
